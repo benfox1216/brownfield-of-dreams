@@ -12,5 +12,5 @@ script:
 deploy:
   provider: heroku
   api_key:
-  app:
+  app: dreamy-brownfield
   run: rails db:migrate
