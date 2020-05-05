@@ -33,7 +33,7 @@ class ApplicationController < ActionController::Base
     max = repo_data.length < 5 ? repo_data.length : 5
     repos_to_display = []
     while counter < max
-      repos_to_display << Repo.new(repo_data[counter])
+      repos_to_display << Repo.new(repo_data[counter]["name"], repo_data[counter]["html_url"])
       counter += 1
     end
     repos_to_display
