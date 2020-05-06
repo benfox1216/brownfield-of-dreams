@@ -24,15 +24,16 @@ class ApplicationController < ActionController::Base
     raise ActionController::RoutingError, 'Not Found'
   end
 
-  def all_repos
-    Faraday.get('https://api.github.com/user/repos') do |req|
+  def access_github_data(uri)
+    response = Faraday.get("https://api.github.com/user/#{uri}") do |req|
       req.headers['Content-Type'] = 'application/json'
       req.headers['Authorization'] = "Bearer #{current_user.token}"
     end
+    JSON.parse(response.body)
   end
 
   def display_repos
-    repos = JSON.parse(all_repos.body)
+    repos = access_github_data("repos")
     return if repos.class == Hash
 
     count = 0
@@ -45,15 +46,8 @@ class ApplicationController < ActionController::Base
     display_repos
   end
 
-  def all_followers
-    Faraday.get('https://api.github.com/user/followers') do |req|
-      req.headers['Content-Type'] = 'application/json'
-      req.headers['Authorization'] = "Bearer #{current_user.token}"
-    end
-  end
-
   def display_followers
-    follows = JSON.parse(all_followers.body)
+    follows = access_github_data("followers")
     return if follows.class == Hash
 
     display_follows = []
