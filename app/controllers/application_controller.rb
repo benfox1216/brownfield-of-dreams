@@ -23,21 +23,24 @@ class ApplicationController < ActionController::Base
     raise ActionController::RoutingError, 'Not Found'
   end
 
-  def get_repos
-    all_repos = Faraday.get('https://api.github.com/user/repos' ) do |req|
+  def all_repos
+    Faraday.get('https://api.github.com/user/repos') do |req|
       req.headers['Content-Type'] = 'application/json'
       req.headers['Authorization'] = "Bearer #{current_user.token}"
     end
-    repo_data = JSON.parse(all_repos.body)
-    return if repo_data.class != Array
-    counter = 0
-    max = repo_data.length < 5 ? repo_data.length : 5
-    repos_to_display = []
-    while counter < max
-      repos_to_display << Repo.new(repo_data[counter]["name"], repo_data[counter]["html_url"])
-      counter += 1
-    end
-    repos_to_display
   end
 
+  def display_repos
+    repos = JSON.parse(all_repos.body)
+    return if repos.class != Array
+
+    count = 0
+    max = repos.length < 5 ? repos.length : 5
+    display_repos = []
+    while count < max
+      display_repos << Repo.new(repos[count]['name'], repos[count]['html_url'])
+      count += 1
+    end
+    display_repos
+  end
 end

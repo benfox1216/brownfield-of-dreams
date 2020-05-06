@@ -5,5 +5,4 @@ class Repo
     @name = name
     @url = url
   end
-  
 end
