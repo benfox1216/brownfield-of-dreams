@@ -34,7 +34,7 @@ describe 'A registered user' do
     stubbed_repos << Repo.new("Google", "www.google.com")
     stubbed_repos << Repo.new("Yahoo", "www.yahoo.com")
 
-    allow_any_instance_of(ApplicationController).to receive(:get_repos).and_return(stubbed_repos)
+    allow_any_instance_of(ApplicationController).to receive(:display_repos).and_return(stubbed_repos)
 
     visit '/'
     click_on "Sign In"

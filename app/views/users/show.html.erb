@@ -11,7 +11,7 @@
     <h3>GitHub Repositories</h3>
     <section class="repos">
       <ul>
-        <% get_repos.each do |repo| %>
+        <% display_repos.each do |repo| %>
           <li><%= link_to repo.name.upcase, repo.url %></li>
         <% end %>
       </ul>

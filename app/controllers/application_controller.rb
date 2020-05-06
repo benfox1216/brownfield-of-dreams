@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   helper_method :find_bookmark
   helper_method :list_tags
   helper_method :tutorial_name
-  helper_method :get_repos
+  helper_method :display_repos
 
   add_flash_types :success
 
