@@ -23,6 +23,5 @@ describe "An Admin can import a playlist" do
     click_link 'View it here'
 
     expect(current_path).to eq("/tutorials/#{tutorial.id}")
-    save_and_open_page
   end
 end

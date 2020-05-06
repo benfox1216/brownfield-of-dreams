@@ -8,7 +8,8 @@ class Admin::TutorialsController < Admin::BaseController
     if tutorial.save
       create_tutorial_playlist(tutorial_params[:playlist_id], tutorial)
       redirect_path = "/tutorials/#{tutorial.id}"
-      flash[:success] = "Successfully created tutorial. #{view_context.link_to 'View it here', redirect_path}."
+      flash[:success] = "Successfully created tutorial.
+                        #{view_context.link_to 'View it here', redirect_path}."
       redirect_to '/admin/dashboard'
     else
       render :new
@@ -36,7 +37,7 @@ class Admin::TutorialsController < Admin::BaseController
   private
 
   def tutorial_params
-    params.require(:tutorial).permit(:tag_list, :title, :description, :playlist_id)
-    # params.require(:tutorial).permit(:tag_list)
+    params.require(:tutorial).permit(:tag_list, :title,
+                                     :description, :playlist_id)
   end
 end
