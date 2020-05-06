@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'A registered user' do
-  it 'can see the github repos section' do
+  it 'can see the github followers section' do
     user = create(:user)
     user.update(token: ENV["GITHUB_API_KEY"])
 
@@ -11,11 +11,11 @@ describe 'A registered user' do
     fill_in 'session[password]', with: user.password
     click_on 'Log In'
     visit '/dashboard'
-
-    expect(page).to have_css(".repos")
+    save_and_open_page
+    expect(page).to have_css(".followers")
   end
 
-  it 'cant see the github repos section if it doesnt have a token' do
+  it 'cant see the github followers section if it doesnt have a token' do
     user = create(:user)
 
     visit '/'
@@ -25,17 +25,17 @@ describe 'A registered user' do
     click_on 'Log In'
     visit '/dashboard'
 
-    expect(page).to_not have_css(".repos")
+    expect(page).to_not have_css(".followers")
   end
 
-  it 'can see a list of repos in the section' do
+  it 'can see a list of followers in the section' do
     user = create(:user)
-    stubbed_repos = []
-    stubbed_repos << Repo.new("Google", "www.google.com")
-    stubbed_repos << Repo.new("Yahoo", "www.yahoo.com")
+    stubbed_followers = []
+    stubbed_followers << Repo.new("reid-andrew", "https://github.com/reid-andrew")
+    stubbed_followers << Repo.new("benfox1216", "https://github.com/benfox1216")
 
     allow_any_instance_of(User).to receive(:token).and_return("ABC123")
-    allow_any_instance_of(ApplicationController).to receive(:display_repos).and_return(stubbed_repos)
+    allow_any_instance_of(ApplicationController).to receive(:display_followers).and_return(stubbed_followers)
 
     visit '/'
     click_on "Sign In"
@@ -43,10 +43,11 @@ describe 'A registered user' do
     fill_in 'session[password]', with: user.password
     click_on 'Log In'
     visit '/dashboard'
+    save_and_open_page
 
-    within ".repos" do
-      expect(page).to have_link("GOOGLE")
-      expect(page).to have_link("YAHOO")
+    within ".followers" do
+      expect(page).to have_link("reid-andrew")
+      expect(page).to have_link("benfox1216")
     end
   end
 end

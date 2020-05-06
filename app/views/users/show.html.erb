@@ -7,15 +7,27 @@
     <li> <%= current_user.first_name  %> <%= current_user.last_name %> </li>
     <li> <%= current_user.email%> </li>
   </ul>
-  <% if display_repos != nil %>
+  <% if current_user.token != nil %>
     <h3>GitHub</h3>
-    <section class="repos">
+    <% if display_repos != nil %>
+      <section class="repos">
+        <ul>
+          <% display_repos.each do |repo| %>
+            <li><%= link_to repo.name.upcase, repo.url %></li>
+          <% end %>
+        </ul>
+      </section>
+    <% end %>
+    <% if display_followers != nil %>
+    <section class="followers">
+      <h4>Followers</h4>
       <ul>
-        <% display_repos.each do |repo| %>
-          <li><%= link_to repo.name.upcase, repo.url %></li>
+        <% display_followers.each do |follow| %>
+          <li><%= link_to follow.name, follow.url %></li>
         <% end %>
       </ul>
     </section>
+    <% end %>
   <% end %>
 
   <section>

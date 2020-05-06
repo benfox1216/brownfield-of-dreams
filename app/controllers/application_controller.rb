@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   helper_method :list_tags
   helper_method :tutorial_name
   helper_method :display_repos
+  helper_method :display_followers
 
   add_flash_types :success
 
@@ -42,5 +43,23 @@ class ApplicationController < ActionController::Base
       count += 1
     end
     display_repos
+  end
+
+  def all_followers
+    Faraday.get('https://api.github.com/user/followers') do |req|
+      req.headers['Content-Type'] = 'application/json'
+      req.headers['Authorization'] = "Bearer #{current_user.token}"
+    end
+  end
+
+  def display_followers
+    follows = JSON.parse(all_followers.body)
+    return if follows.class == Hash
+
+    display_follows = []
+    follows.each do |follower|
+      display_follows << Follower.new(follower['login'], follower['html_url'])
+    end
+    display_follows
   end
 end
