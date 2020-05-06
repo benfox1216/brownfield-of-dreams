@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 describe 'A registered user' do
-  it 'can see a list of github repos' do
+  it 'can see the github repos section' do
     user = create(:user)
-    user.update(token: "9ee6197bb82833d6abddb45c3b94d711b128bf76")
+    user.update(token: ENV["GITHUB_API_KEY"])
 
     visit '/'
     click_on "Sign In"
@@ -15,7 +15,7 @@ describe 'A registered user' do
     expect(page).to have_css(".repos")
   end
 
-  it 'cant see a list of github repos if it doesnt have a token' do
+  it 'cant see the github repos section if it doesnt have a token' do
     user = create(:user)
 
     visit '/'
@@ -26,5 +26,26 @@ describe 'A registered user' do
     visit '/dashboard'
 
     expect(page).to_not have_css(".repos")
+  end
+
+  it 'can see a list of repos in the section' do
+    user = create(:user)
+    stubbed_repos = []
+    stubbed_repos << Repo.new("Google", "www.google.com")
+    stubbed_repos << Repo.new("Yahoo", "www.yahoo.com")
+
+    allow_any_instance_of(ApplicationController).to receive(:get_repos).and_return(stubbed_repos)
+
+    visit '/'
+    click_on "Sign In"
+    fill_in 'session[email]', with: user.email
+    fill_in 'session[password]', with: user.password
+    click_on 'Log In'
+    visit '/dashboard'
+
+    within ".repos" do
+      expect(page).to have_link("GOOGLE")
+      expect(page).to have_link("YAHOO")
+    end
   end
 end
