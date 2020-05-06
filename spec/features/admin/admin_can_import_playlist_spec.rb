@@ -13,8 +13,8 @@ describe "An Admin can import a playlist" do
 
     fill_in 'Title', with: 'Animals Making Football Predictions'
     fill_in 'Description', with: "Yeah. It's exactly what it sounds like. What a world we live in."
-    fill_in 'Playlist ID', with: 'PLbpi6ZahtOH5NpWaK0akzu0Pgley4eEXH'
-    click_on 'Create Tutorial'
+    fill_in 'Playlist', with: 'PLbpi6ZahtOH5NpWaK0akzu0Pgley4eEXH'
+    click_on 'Save'
     tutorial = Tutorial.last
 
     expect(current_path).to eq('/admin/dashboard')
