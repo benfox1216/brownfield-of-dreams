@@ -11,7 +11,7 @@ describe 'A registered user' do
     fill_in 'session[password]', with: user.password
     click_on 'Log In'
     visit '/dashboard'
-    save_and_open_page
+
     expect(page).to have_css(".followers")
   end
 
@@ -43,7 +43,6 @@ describe 'A registered user' do
     fill_in 'session[password]', with: user.password
     click_on 'Log In'
     visit '/dashboard'
-    save_and_open_page
 
     within ".followers" do
       expect(page).to have_link("reid-andrew")
