@@ -32,7 +32,7 @@ class ApplicationController < ActionController::Base
 
   def display_repos
     repos = JSON.parse(all_repos.body)
-    return if repos.class != Array
+    return if repos.class == Hash
 
     count = 0
     max = repos.length < 5 ? repos.length : 5
