@@ -18,11 +18,21 @@
         </ul>
       </section>
     <% end %>
-    <% if display_followers != nil %>
+    <% if display_follow("followers") != nil %>
     <section class="followers">
       <h4>Followers</h4>
       <ul>
-        <% display_followers.each do |follow| %>
+        <% display_follow("followers").each do |follow| %>
+          <li><%= link_to follow.name, follow.url %></li>
+        <% end %>
+      </ul>
+    </section>
+    <% end %>
+    <% if display_follow("following") != nil %>
+    <section class="following">
+      <h4>Following</h4>
+      <ul>
+        <% display_follow("following").each do |follow| %>
           <li><%= link_to follow.name, follow.url %></li>
         <% end %>
       </ul>

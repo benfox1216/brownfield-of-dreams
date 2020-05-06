@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   helper_method :list_tags
   helper_method :tutorial_name
   helper_method :display_repos
-  helper_method :display_followers
+  helper_method :display_follow
 
   add_flash_types :success
 
@@ -46,13 +46,13 @@ class ApplicationController < ActionController::Base
     display_repos
   end
 
-  def display_followers
-    follows = access_github_data("followers")
+  def display_follow(ing_or_ers)
+    follows = access_github_data(ing_or_ers)
     return if follows.class == Hash
 
     display_follows = []
     follows.each do |follower|
-      display_follows << Follower.new(follower['login'], follower['html_url'])
+      display_follows << Follow.new(follower['login'], follower['html_url'])
     end
     display_follows
   end
