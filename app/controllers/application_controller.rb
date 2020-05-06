@@ -56,4 +56,24 @@ class ApplicationController < ActionController::Base
     end
     display_follows
   end
+
+  def create_tutorial_playlist(id, tutorial)
+    response = Faraday.get("https://www.googleapis.com/youtube/v3/playlistItems") do |req|
+      req.headers['Content-Type'] = 'application/json'
+      req.params['key'] = ENV["YOUTUBE_API_KEY"]
+      req.params['playlistId'] = id
+      req.params['part'] = 'contentDetails'
+    end
+    list_items = JSON.parse(response.body)
+
+    list_items["items"].each do |item|
+      id = item["contentDetails"]["videoId"]
+      item_lookup = YouTube::Video.detail_lookup(id)
+      title = item_lookup[:items][0][:snippet][:title]
+      description = item_lookup[:items][0][:snippet][:description]
+      thumbnail = YouTube::Video.by_id(id).thumbnail
+      video = tutorial.videos.new(video_id: id, title: title, description: description, thumbnail: thumbnail)
+      video.save
+    end
+  end
 end

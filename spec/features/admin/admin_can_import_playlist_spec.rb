@@ -18,11 +18,11 @@ describe "An Admin can import a playlist" do
     tutorial = Tutorial.last
 
     expect(current_path).to eq('/admin/dashboard')
-    save_and_open_page
     expect(page).to have_content('Successfully created tutorial. View it here.')
 
     click_link 'View it here'
 
-    expect(current_path).to eq("tutorials/#{tutorial.id}")
+    expect(current_path).to eq("/tutorials/#{tutorial.id}")
+    save_and_open_page
   end
 end

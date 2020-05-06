@@ -9,5 +9,9 @@ module YouTube
     def self.by_id(id)
       new(YoutubeService.new.video_info(id))
     end
+
+    def self.detail_lookup(id)
+      YoutubeService.new.video_info(id)
+    end
   end
 end

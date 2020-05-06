@@ -6,12 +6,11 @@ class Admin::TutorialsController < Admin::BaseController
   def create
     tutorial = Tutorial.create(tutorial_params)
     if tutorial.save
-      # flash[:success] = "Successfully created tutorial. View it here."
+      create_tutorial_playlist(tutorial_params[:playlist_id], tutorial)
       redirect_path = "/tutorials/#{tutorial.id}"
       flash[:success] = "Successfully created tutorial. #{view_context.link_to 'View it here', redirect_path}."
       redirect_to '/admin/dashboard'
     else
-      tutorial.errors.full_messages.to_sentence
       render :new
     end
   end
