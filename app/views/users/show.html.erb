@@ -7,6 +7,16 @@
     <li> <%= current_user.first_name  %> <%= current_user.last_name %> </li>
     <li> <%= current_user.email%> </li>
   </ul>
+  
+  <% if current_user.github_token %>
+    <h3>Github</h3>
+    <ul>
+      <% get_repos.each do |repo| %>
+        <li> <%= repo.name %> </li>
+      <% end %>
+    </ul>
+  <% end %>
+  
   <section>
     <h1>Bookmarked Segments</h1>
   </section>

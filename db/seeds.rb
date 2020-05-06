@@ -1,3 +1,5 @@
+User.delete_all
+
 prework_tutorial_data = {
   "title"=>"Back End Engineering - Prework",
   "description"=>"Videos for prework.",
@@ -115,4 +117,4 @@ m3_tutorial.videos.create!({
   "position"=>6
 })
 
-User.create!(email: 'admin@example.com', first_name: 'Bossy', last_name: 'McBosserton', password:  "password", role: :admin)
+User.create!(email: 'admin@example.com', first_name: 'Bossy', last_name: 'McBosserton', password:  "password", role: :admin, github_token: ENV['GITHUB_ACCESS_TOKEN'])

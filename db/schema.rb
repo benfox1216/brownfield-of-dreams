@@ -64,6 +64,7 @@ ActiveRecord::Schema.define(version: 2018_07_31_230036) do
     t.string "first_name"
     t.string "last_name"
     t.string "password_digest"
+    t.string "github_token"
     t.integer "role", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
