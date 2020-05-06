@@ -33,7 +33,7 @@ class ApplicationController < ActionController::Base
   end
 
   def display_repos
-    repos = access_github_data("repos")
+    repos = access_github_data('repos')
     return if repos.class == Hash
 
     count = 0
