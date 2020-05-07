@@ -1,5 +1,11 @@
 class YoutubeResults
   def create_tutorial_playlist(id, tutorial)
+    create_playlist_videos(id, tutorial)
+  end
+
+  private
+
+  def create_playlist_videos(id, tutorial)
     access_youtube_playlist(id).each do |item|
       create_video_from_playlist(item, tutorial)
     end
