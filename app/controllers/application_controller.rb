@@ -25,19 +25,13 @@ class ApplicationController < ActionController::Base
   end
 
   def access_youtube_playlist(id)
-    url = 'https://www.googleapis.com/youtube/v3/playlistItems'
-    response = Faraday.get(url) do |req|
-      req.headers['Content-Type'] = 'application/json'
-      req.params['key'] = ENV['YOUTUBE_API_KEY']
-      req.params['playlistId'] = id
-      req.params['part'] = 'contentDetails'
-    end
-    items = JSON.parse(response.body)
-    items['items']
+    yt = YoutubeService.new
+    items = yt.playlist_info(id)
+    items[:items]
   end
 
   def create_video_from_playlist(item, tutorial)
-    id = item['contentDetails']['videoId']
+    id = item[:contentDetails][:videoId]
     video = YouTube::Video.detail_lookup(id)
     new_video =
       tutorial.videos.new(video_id: id,
