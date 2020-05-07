@@ -3,8 +3,6 @@ class ApplicationController < ActionController::Base
   helper_method :find_bookmark
   helper_method :list_tags
   helper_method :tutorial_name
-  helper_method :display_repos
-  helper_method :display_follow
 
   add_flash_types :success
 
