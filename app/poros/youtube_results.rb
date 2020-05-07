@@ -11,10 +11,14 @@ class YoutubeResults
     end
   end
 
-  def access_youtube_playlist(id)
+  def access_youtube_playlist(id, page = nil, items = [])
     yt = YoutubeService.new
-    items = yt.playlist_info(id)
-    items[:items]
+    videos = yt.playlist_info(id, page)
+    items << videos[:items]
+    if videos[:nextPageToken]
+      access_youtube_playlist(id, videos[:nextPageToken], items)
+    end
+    items.flatten
   end
 
   def create_video_from_playlist(item, tutorial)
