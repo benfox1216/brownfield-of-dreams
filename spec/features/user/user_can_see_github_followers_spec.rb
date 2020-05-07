@@ -28,7 +28,7 @@ describe 'A registered user' do
     expect(page).to_not have_css(".followers")
   end
 
-  it 'can see a list of followers in the section' do
+  xit 'can see a list of followers in the section' do
     user = create(:user)
     stubbed_followers = []
     stubbed_followers << Follow.new("reid-andrew", "https://github.com/reid-andrew")

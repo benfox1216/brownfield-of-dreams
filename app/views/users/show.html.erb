@@ -9,30 +9,30 @@
   </ul>
   <% if current_user.token != nil %>
     <h3>GitHub</h3>
-    <% if @github.display_repos != nil %>
+    <% if @github.display_github_data('repos') != nil %>
       <section class="repos">
         <ul>
-          <% @github.display_repos.first(5).each do |repo| %>
+          <% @github.display_github_data('repos').each do |repo| %>
             <li><%= link_to repo.name.upcase, repo.url %></li>
           <% end %>
         </ul>
       </section>
     <% end %>
-    <% if @github.display_follow("followers") != nil %>
+    <% if @github.display_github_data('followers') != nil %>
     <section class="followers">
       <h4>Followers</h4>
       <ul>
-        <% @github.display_follow("followers").each do |follow| %>
+        <% @github.display_github_data('followers').each do |follow| %>
           <li><%= link_to follow.name, follow.url %></li>
         <% end %>
       </ul>
     </section>
     <% end %>
-    <% if @github.display_follow("following") != nil %>
+    <% if @github.display_github_data('following') != nil %>
     <section class="following">
       <h4>Following</h4>
       <ul>
-        <% @github.display_follow("following").each do |follow| %>
+        <% @github.display_github_data('following').each do |follow| %>
           <li><%= link_to follow.name, follow.url %></li>
         <% end %>
       </ul>

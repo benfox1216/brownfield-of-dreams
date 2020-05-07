@@ -23,6 +23,7 @@ class ApplicationController < ActionController::Base
   def four_oh_four
     raise ActionController::RoutingError, 'Not Found'
   end
+  
 
   def access_youtube_playlist(id)
     url = 'https://www.googleapis.com/youtube/v3/playlistItems'

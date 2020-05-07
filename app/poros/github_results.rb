@@ -4,30 +4,25 @@ class GithubResults
     @current_user = current_user
   end
 
-  def display_repos
-    gh = GithubService.new
-    repos = gh.github_json('repos', @current_user.token)
-    return if repos.class == Hash
+  def display_github_data(type)
+    data = call_github_service(type, @current_user)
+    return if data.class == Hash
 
-    count = 0
-    max = repos.length < 5 ? repos.length : 5
-    display_repos = []
-    while count < max
-      display_repos << Repo.new(repos[count]['name'], repos[count]['html_url'])
-      count += 1
+    data = data[0..4] if type == 'repos'
+
+    name = type == 'repos' ? 'name' : 'login'
+
+    display_data = []
+    data.each do |datum|
+      display_data << GithubData.new(datum[name], datum['html_url'])
     end
-    display_repos
+    display_data
   end
 
-  def display_follow(ing_or_ers)
-    gh = GithubService.new
-    follows = gh.github_json(ing_or_ers, @current_user.token)
-    return if follows.class == Hash
+  private
 
-    display_follows = []
-    follows.each do |follower|
-      display_follows << Follow.new(follower['login'], follower['html_url'])
-    end
-    display_follows
+  def call_github_service(uri, user)
+    gh = GithubService.new
+    gh.github_json(uri, user.token)
   end
 end

@@ -1,4 +1,4 @@
-class Repo
+class GithubData
   attr_reader :name, :url
 
   def initialize(name, url)
