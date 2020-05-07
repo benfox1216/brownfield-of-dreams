@@ -1,5 +1,4 @@
 class GithubService
-
   def github_json(uri, token)
     github_parse(uri, token)
   end
