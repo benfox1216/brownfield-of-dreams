@@ -39,7 +39,7 @@ describe 'A registered user' do
     stubbed_repos << Repo.new("Imgur", "www.imgur.com")
 
     allow_any_instance_of(User).to receive(:token).and_return("ABC123")
-    allow_any_instance_of(ApplicationController).to receive(:display_repos).and_return(stubbed_repos)
+    allow_any_instance_of(GithubResults).to receive(:display_repos).and_return(stubbed_repos)
 
     visit '/'
     click_on "Sign In"
