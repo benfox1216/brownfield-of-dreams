@@ -12,7 +12,7 @@
     <% if display_repos != nil %>
       <section class="repos">
         <ul>
-          <% display_repos.each do |repo| %>
+          <% display_repos.first(5).each do |repo| %>
             <li><%= link_to repo.name.upcase, repo.url %></li>
           <% end %>
         </ul>
