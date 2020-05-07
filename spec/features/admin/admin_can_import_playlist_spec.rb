@@ -43,7 +43,7 @@ describe "An Admin can import a playlist" do
     click_link 'Import YouTube Playlist'
     fill_in 'Title', with: '100 Greatest Punk Songs of All Time'
     fill_in 'Description', with: "Fingers crossed there's nothing terribly offensive in here because I'm not watching all these videos."
-    fill_in 'Playlist', with: 'PL0tDb4jw6kPy5q-S59cdj3RumlY1ah4S2'
+    fill_in 'Playlist', with: 'PLvP_6uwiamDS23WxoCfqY4LBOXF_yF1l9'
     click_on 'Save'
     click_link 'View it here'
   end
