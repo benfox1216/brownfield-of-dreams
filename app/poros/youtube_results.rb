@@ -24,6 +24,7 @@ class YoutubeResults
   def create_video_from_playlist(item, tutorial)
     id = item[:contentDetails][:videoId]
     video = YouTube::Video.detail_lookup(id)
+
     new_video =
       tutorial.videos.new(video_id: id,
                           title: video[:items][0][:snippet][:title],

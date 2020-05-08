@@ -41,10 +41,16 @@ describe "An Admin can import a playlist" do
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
     visit '/admin/tutorials/new'
     click_link 'Import YouTube Playlist'
-    fill_in 'Title', with: '100 Greatest Punk Songs of All Time'
-    fill_in 'Description', with: "Fingers crossed there's nothing terribly offensive in here because I'm not watching all these videos."
-    fill_in 'Playlist', with: 'PLvP_6uwiamDS23WxoCfqY4LBOXF_yF1l9'
+    fill_in 'Title', with: 'Organizing For Power'
+    fill_in 'Description', with: "Organizing is the lifeblood of our union. We run organizing drives all over the country to expand the ranks of our union and enforce the bargaining rights of our members through strategic campaigns."
+    fill_in 'Playlist', with: 'PLzbIMRuULnI4n3dKdJk2fqKK8I7nAV4Ns'
     click_on 'Save'
     click_link 'View it here'
+
+    expect(page).to have_link(Video.last.title)
+
+    list = find('#video_list').all('li')
+    expect(list.size).to eq(Tutorial.last.videos.count)
+    expect(list.size).to be > 50
   end
 end
