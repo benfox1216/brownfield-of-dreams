@@ -33,4 +33,28 @@ describe 'A registered user' do
     expect(page).to have_css(".following")
     expect(page).to have_css(".repos")
   end
+
+  it 'not see anything if it has invalid credentials' do
+    user = create(:user)
+
+    OmniAuth.config.mock_auth[:github] = :invalid_credentials
+
+    visit '/'
+    click_on "Sign In"
+    fill_in 'session[email]', with: user.email
+    fill_in 'session[password]', with: user.password
+    click_on 'Log In'
+    visit '/dashboard'
+
+    expect(page).to_not have_css(".followers")
+    expect(page).to_not have_css(".following")
+    expect(page).to_not have_css(".repos")
+
+    click_on "Connect to Github"
+
+    expect(page).to have_current_path('/dashboard')
+    expect(page).to_not have_css(".followers")
+    expect(page).to_not have_css(".following")
+    expect(page).to_not have_css(".repos")
+  end
 end

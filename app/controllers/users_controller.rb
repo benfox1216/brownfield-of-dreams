@@ -20,9 +20,11 @@ class UsersController < ApplicationController
 
 
   def update
-    current_user.update(token: request.env['omniauth.auth']["credentials"]["token"])
-    current_user.save
-    @current_user.reload
+    if request.env['omniauth.auth']
+      current_user.update(token: request.env['omniauth.auth']["credentials"]["token"])
+      current_user.save
+      @current_user.reload
+    end
     redirect_to dashboard_path
   end
 
