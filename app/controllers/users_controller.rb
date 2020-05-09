@@ -20,8 +20,10 @@ class UsersController < ApplicationController
 
 
   def update
-    require "pry"; binding.pry
-    current_user.update(token: request.env['omniauth.auth']["credentials"]["token"])
+    user = current_user
+    user.update(token: request.env['omniauth.auth']["credentials"]["token"])
+    user.save
+    @current_user.reload
     redirect_to dashboard_path
   end
 
