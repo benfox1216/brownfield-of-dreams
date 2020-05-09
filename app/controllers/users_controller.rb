@@ -18,6 +18,13 @@ class UsersController < ApplicationController
     end
   end
 
+
+  def update
+    require "pry"; binding.pry
+    current_user.update(token: request.env['omniauth.auth']["credentials"]["token"])
+    redirect_to dashboard_path
+  end
+
   private
 
   def user_params
