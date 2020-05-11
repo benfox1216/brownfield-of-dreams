@@ -34,7 +34,7 @@ describe 'A registered user' do
     expect(page).to have_css(".repos")
   end
 
-  it 'not see anything if it has invalid credentials' do
+  it 'can not see anything if it has invalid credentials' do
     user = create(:user)
 
     OmniAuth.config.mock_auth[:github] = :invalid_credentials
