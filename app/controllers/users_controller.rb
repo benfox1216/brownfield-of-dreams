@@ -18,10 +18,11 @@ class UsersController < ApplicationController
     end
   end
 
-
   def update
-    if request.env['omniauth.auth']
-      current_user.update(token: request.env['omniauth.auth']["credentials"]["token"])
+    if request.env['omniauth.auth'] &&
+       request.env['omniauth.auth']['credentials']
+      current_user.update(token:
+                          request.env['omniauth.auth']['credentials']['token'])
       current_user.save
       @current_user.reload
     end
