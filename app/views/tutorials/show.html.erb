@@ -3,7 +3,7 @@
 <h1 id="message"></h1>
 <div class="col col-4">
   <h4>Videos</h4>
-  <ul>
+  <ul id="video_list">
     <% @facade.videos.each do |video| %>
       <li>
         <h3><%= link_to video.title, tutorial_path(video_id: video.id), class: "show-link", id: video.position %></h3>

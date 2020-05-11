@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
-  def show; end
+  def show
+    @github = GithubResults.new(current_user)
+  end
 
   def new
     @user = User.new
@@ -14,6 +16,16 @@ class UsersController < ApplicationController
       flash[:error] = 'Username already exists'
       render :new
     end
+  end
+
+
+  def update
+    if request.env['omniauth.auth']
+      current_user.update(token: request.env['omniauth.auth']["credentials"]["token"])
+      current_user.save
+      @current_user.reload
+    end
+    redirect_to dashboard_path
   end
 
   private

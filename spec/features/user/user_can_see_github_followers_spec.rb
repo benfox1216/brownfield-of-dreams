@@ -31,11 +31,11 @@ describe 'A registered user' do
   it 'can see a list of followers in the section' do
     user = create(:user)
     stubbed_followers = []
-    stubbed_followers << Follow.new("reid-andrew", "https://github.com/reid-andrew")
-    stubbed_followers << Follow.new("benfox1216", "https://github.com/benfox1216")
-
+    stubbed_followers << GithubData.new("reid-andrew", "https://github.com/reid-andrew")
+    stubbed_followers << GithubData.new("benfox1216", "https://github.com/benfox1216")
     allow_any_instance_of(User).to receive(:token).and_return("ABC123")
-    allow_any_instance_of(ApplicationController).to receive(:display_follow).and_return(stubbed_followers)
+    allow_any_instance_of(GithubResults).to receive(:display_github_data).and_call_original
+    allow_any_instance_of(GithubResults).to receive(:display_github_data).with('followers').and_return(stubbed_followers)
 
     visit '/'
     click_on "Sign In"
