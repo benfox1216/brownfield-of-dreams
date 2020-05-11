@@ -5,6 +5,7 @@ describe 'A registered user' do
     OmniAuth.config.test_mode = true
     OmniAuth.config.mock_auth[:github] = nil
     Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:github]
+    WebMock.allow_net_connect!
   end
 
   it 'use OAuth to log in to GitHub' do
@@ -42,6 +43,9 @@ describe 'A registered user' do
       "uid"=>"53981830",
       "credentials"=>{"token"=>ENV["GITHUB_API_KEY_ALT"], "expires"=>false}})
 
+    repo_response = File.read('spec/fixtures/github_fixtures/repos.json')
+    stub_request(:any, "https://api.github.com/user/repos").to_return(body: repo_response)
+
     visit '/'
     click_on "Sign In"
     fill_in 'session[email]', with: user.email
@@ -59,6 +63,13 @@ describe 'A registered user' do
     expect(page).to have_css(".followers")
     expect(page).to have_css(".following")
     expect(page).to have_css(".repos")
+    within('.repos') do
+      expect(page).to have_content("FAKE_REPO_NUMBER_ONE")
+      expect(page).to have_content("FAKE_REPO_NUMBER_TWO")
+      expect(page).to have_content("FAKE_REPO_NUMBER_THREE")
+      expect(page).to have_content("FAKE_REPO_NUMBER_FOUR")
+      expect(page).to have_content("FAKE_REPO_NUMBER_FIVE")
+    end
   end
 
   it 'can not see anything if it has invalid credentials' do
