@@ -11,6 +11,8 @@ class GithubData
     user.id if user && existing_friendship_check(current_user, user) == []
   end
 
+  private
+
   def existing_friendship_check(current_user, user)
     Friend.where(user: current_user, user_friend: user)
   end
