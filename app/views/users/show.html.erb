@@ -7,6 +7,14 @@
     <li> <%= current_user.first_name  %> <%= current_user.last_name %> </li>
     <li> <%= current_user.email%> </li>
   </ul>
+  <h4>My Friends</h4>
+  <section class="friends">
+    <ul>
+      <% current_user.user_friends.each do |friend| %>
+        <li><%= friend.first_name  %> <%= friend.last_name %></li>
+      <% end %>
+    </ul>
+  </section>
   <% if current_user.token != nil %>
     <h3>GitHub</h3>
     <% if @github.display_github_data('repos') != nil %>
@@ -23,7 +31,11 @@
       <h4>Followers</h4>
       <ul>
         <% @github.display_github_data('followers').each do |follow| %>
-          <li><%= link_to follow.name, follow.url %></li>
+          <li id=<%=follow.name%>><%= link_to follow.name, follow.url %>
+            <% if follow.database_match(current_user, follow.name) %>
+              <%= button_to "Add as Friend", "/friend", params: { user_id: current_user, user_friend_id: follow.database_match(current_user, follow.name) }, method: :post%>
+            <% end %>
+          </li>
         <% end %>
       </ul>
     </section>
@@ -33,7 +45,11 @@
       <h4>Following</h4>
       <ul>
         <% @github.display_github_data('following').each do |follow| %>
-          <li><%= link_to follow.name, follow.url %></li>
+          <li id=<%=follow.name%>><%= link_to follow.name, follow.url %>
+            <% if follow.database_match(current_user, follow.name) %>
+              <%= button_to "Add as Friend", "/friend", params: { user_id: current_user, user_friend_id: follow.database_match(current_user, follow.name) }, method: :post%>
+            <% end %>
+          </li>
         <% end %>
       </ul>
     </section>

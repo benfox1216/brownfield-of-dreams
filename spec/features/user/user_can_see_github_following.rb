@@ -35,7 +35,7 @@ describe 'A registered user' do
     stubbed_following << Follow.new("benfox1216", "https://github.com/benfox1216")
 
     allow_any_instance_of(User).to receive(:token).and_return("ABC123")
-    allow_any_instance_of(GithubResults).to receive(:display_follow).and_return(stubbed_following)
+    allow_any_instance_of(GithubResults).to receive(:display_github_data).with('following').and_return(stubbed_following)
 
     visit '/'
     click_on "Sign In"
