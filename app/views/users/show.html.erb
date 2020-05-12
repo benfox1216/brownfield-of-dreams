@@ -26,7 +26,7 @@
           <li id=<%=follow.name%>><%= link_to follow.name, follow.url %>
             <% if follow.database_match(follow.name) %>
 
-              <%= button_to "Add as Friend", "/friend", params: { follow_user_id: follow.database_match(follow.name), user_id: current_user }, method: :post%>
+              <%= button_to "Add as Friend", "/friend", params: { user_id: current_user, user_friend_id: follow.database_match(follow.name) }, method: :post%>
             <% end %>
           </li>
         <% end %>

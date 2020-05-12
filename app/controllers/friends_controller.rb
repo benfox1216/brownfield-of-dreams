@@ -1,7 +1,6 @@
 class FriendsController < ApplicationController
 
   def create
-    require "pry"; binding.pry
     Friend.create(friend_params)
     redirect_to '/dashboard'
   end
@@ -10,6 +9,6 @@ class FriendsController < ApplicationController
 
 
   def friend_params
-    params.permit(:user_id, :follow_user_id)
+    params.permit(:user_id, :user_friend_id)
   end
 end
