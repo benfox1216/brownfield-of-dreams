@@ -87,12 +87,69 @@ describe 'A user can create friendships with ' do
         click_button("Add as Friend")
       end
     end
-    
+
     within ".friends" do
       expect(page).to have_content(@dione.first_name)
       expect(page).to have_content(@dione.last_name)
       expect(page).to_not have_content(@mike.first_name)
       expect(page).to_not have_content(@mike.last_name)
     end
+  end
+
+  it 'followers and then no longer see friendship button' do
+    visit '/'
+    click_on "Sign In"
+    fill_in 'session[email]', with: @josh.email
+    fill_in 'session[password]', with: @josh.password
+    click_on 'Log In'
+    visit '/dashboard'
+
+    within ".followers" do
+      within "#dione" do
+        expect(page).to have_button("Add as Friend")
+      end
+    end
+
+    within ".following" do
+      within "#dione" do
+        expect(page).to have_button("Add as Friend")
+      end
+    end
+
+    within ".followers" do
+      within "#dione" do
+        click_button("Add as Friend")
+      end
+    end
+
+    within ".followers" do
+      within "#dione" do
+        expect(page).to_not have_button("Add as Friend")
+      end
+    end
+
+    within ".following" do
+      within "#dione" do
+        expect(page).to_not have_button("Add as Friend")
+      end
+    end
+  end
+
+  it 'followers and gracefully fail if something goes wrong' do
+    allow_any_instance_of(FriendsController).to receive(:friend_params)
+                                            .and_return({user_id: 99, user_friend_id: 1234})
+    visit '/'
+    click_on "Sign In"
+    fill_in 'session[email]', with: @josh.email
+    fill_in 'session[password]', with: @josh.password
+    click_on 'Log In'
+    visit '/dashboard'
+    within ".followers" do
+      within "#dione" do
+        click_button("Add as Friend")
+      end
+    end
+    expect(current_path).to eq('/dashboard')
+    expect(page).to have_content('This friendship cannot be created.')
   end
 end
