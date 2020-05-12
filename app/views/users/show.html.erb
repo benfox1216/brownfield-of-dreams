@@ -7,6 +7,14 @@
     <li> <%= current_user.first_name  %> <%= current_user.last_name %> </li>
     <li> <%= current_user.email%> </li>
   </ul>
+  <h4>My Friends</h4>
+  <section class="friends">
+    <ul>
+      <% current_user.user_friends.each do |friend| %>
+        <li><%= friend.first_name  %> <%= friend.last_name %></li>
+      <% end %>
+    </ul>
+  </section>
   <% if current_user.token != nil %>
     <h3>GitHub</h3>
     <% if @github.display_github_data('repos') != nil %>
