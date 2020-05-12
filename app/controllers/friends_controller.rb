@@ -1,6 +1,7 @@
 class FriendsController < ApplicationController
 
   def create
+    require "pry"; binding.pry
     Friend.create(friend_params)
     redirect_to '/dashboard'
   end
