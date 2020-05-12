@@ -4,7 +4,11 @@ describe 'A user can create friendships with ' do
   before(:each) do
     @josh = create(:user) #User in system with GH token
     @dione = create(:user) #GH follower of Josh in system
+    @dione.update(github_username: "dione")
+    @dione.reload
     @mike = create(:user)  #GH follower of Josh not in system
+    @mike.update(github_username: nil)
+    @mike.reload
 
     stubbed_followers = []
     stubbed_followers << GithubData.new("dione", "https://github.com")
@@ -26,7 +30,6 @@ describe 'A user can create friendships with ' do
     visit '/dashboard'
 
     expect(@josh.friends).to eq([])
-
     within ".followers" do
       within "#dione" do
         expect(page).to have_link("Add as Friend")
