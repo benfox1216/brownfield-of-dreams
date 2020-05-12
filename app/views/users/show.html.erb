@@ -23,7 +23,7 @@
       <h4>Followers</h4>
       <ul>
         <% @github.display_github_data('followers').each do |follow| %>
-          <li><%= link_to follow.name, follow.url %></li>
+          <li id="follow.name"><%= link_to follow.name, follow.url %></li>
         <% end %>
       </ul>
     </section>
@@ -33,7 +33,7 @@
       <h4>Following</h4>
       <ul>
         <% @github.display_github_data('following').each do |follow| %>
-          <li><%= link_to follow.name, follow.url %></li>
+          <li id="follow.name"><%= link_to follow.name, follow.url %></li>
         <% end %>
       </ul>
     </section>
