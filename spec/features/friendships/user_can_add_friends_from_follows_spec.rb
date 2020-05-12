@@ -44,6 +44,7 @@ describe 'A user can create friendships with ' do
         click_button("Add as Friend")
       end
     end
+
     expect(current_path).to eq('/dashboard')
     expect(@josh.user_friends).to eq([@dione])
   end
@@ -149,6 +150,7 @@ describe 'A user can create friendships with ' do
         click_button("Add as Friend")
       end
     end
+
     expect(current_path).to eq('/dashboard')
     expect(page).to have_content('This friendship cannot be created.')
   end

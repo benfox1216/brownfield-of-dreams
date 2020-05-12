@@ -1,9 +1,7 @@
 class FriendsController < ApplicationController
   def create
     new_friend = Friend.create(friend_params)
-    if !new_friend.save
-      flash[:error] = 'This friendship cannot be created.'
-    end
+    flash[:error] = 'This friendship cannot be created.' unless new_friend.save
     redirect_to '/dashboard'
   end
 
