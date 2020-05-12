@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'A registered user' do
-  it 'can see the github followers section' do
+  it 'can see the github followers section', :vcr do
     user = create(:user)
     user.update(token: ENV["GITHUB_API_KEY"])
 
@@ -28,7 +28,7 @@ describe 'A registered user' do
     expect(page).to_not have_css(".followers")
   end
 
-  it 'can see a list of followers in the section' do
+  it 'can see a list of followers in the section', :vcr do
     user = create(:user)
     stubbed_followers = []
     stubbed_followers << GithubData.new("reid-andrew", "https://github.com/reid-andrew")

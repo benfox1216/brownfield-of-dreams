@@ -29,7 +29,8 @@ gem 'omniauth-census', git: "https://github.com/turingschool-projects/omniauth-c
 gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
 
 group :test do
-  gem 'webmock'
+  gem 'webmock', require: false
+  gem 'vcr'
 end
 
 group :development, :test do
@@ -47,10 +48,6 @@ group :development, :test do
   gem 'webdrivers'
 end
 
-group :test do
-  gem 'webmock'
-end
-
 group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
@@ -59,3 +56,4 @@ group :development do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+

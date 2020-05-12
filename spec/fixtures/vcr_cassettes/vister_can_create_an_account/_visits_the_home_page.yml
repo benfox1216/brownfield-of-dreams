@@ -1,0 +1,121 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/56f3ebe9bb34f6dd6fa40976b0897913/url
+    body:
+      encoding: UTF-8
+      string: '{"url":"http://127.0.0.1:54775/"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '33'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '14'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":null}'
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:38:45 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/56f3ebe9bb34f6dd6fa40976b0897913/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":".//a[./@href][((((./@id = ''Sign In'') or
+        (normalize-space(string(.)) = ''Sign In'')) or (./@title = ''Sign In'')) or
+        .//img[(./@alt = ''Sign In'')])] | .//input[((((./@type = ''submit'') or (./@type
+        = ''reset'')) or (./@type = ''image'')) or (./@type = ''button''))][((((./@id
+        = ''Sign In'') or (./@name = ''Sign In'')) or (./@value = ''Sign In'')) or
+        (./@title = ''Sign In''))] | .//input[(./@type = ''image'')][(./@alt = ''Sign
+        In'')] | .//button[((((((./@id = ''Sign In'') or (./@name = ''Sign In''))
+        or (./@value = ''Sign In'')) or (./@title = ''Sign In'')) or (normalize-space(string(.))
+        = ''Sign In'')) or .//img[(./@alt = ''Sign In'')])] | .//input[(./@type =
+        ''image'')][(./@alt = ''Sign In'')]"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '687'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '12'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":[]}'
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:38:45 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/56f3ebe9bb34f6dd6fa40976b0897913/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":".//a[./@href][((((./@id = ''Sign In'') or
+        contains(normalize-space(string(.)), ''Sign In'')) or contains(./@title, ''Sign
+        In'')) or .//img[contains(./@alt, ''Sign In'')])] | .//input[((((./@type =
+        ''submit'') or (./@type = ''reset'')) or (./@type = ''image'')) or (./@type
+        = ''button''))][((((./@id = ''Sign In'') or (./@name = ''Sign In'')) or contains(./@value,
+        ''Sign In'')) or contains(./@title, ''Sign In''))] | .//input[(./@type = ''image'')][contains(./@alt,
+        ''Sign In'')] | .//button[((((((./@id = ''Sign In'') or (./@name = ''Sign
+        In'')) or contains(./@value, ''Sign In'')) or contains(./@title, ''Sign In''))
+        or contains(normalize-space(string(.)), ''Sign In'')) or .//img[contains(./@alt,
+        ''Sign In'')])] | .//input[(./@type = ''image'')][contains(./@alt, ''Sign
+        In'')]"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '764'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '12'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":[]}'
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:38:45 GMT
+recorded_with: VCR 5.1.0

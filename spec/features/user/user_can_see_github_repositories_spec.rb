@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'A registered user' do
-  it 'can see the github repos section' do
+  it 'can see the github repos section', :vcr do
     user = create(:user)
     user.update(token: ENV["GITHUB_API_KEY"])
 
@@ -28,7 +28,7 @@ describe 'A registered user' do
     expect(page).to_not have_css(".repos")
   end
 
-  it 'can see a list of 5 repos in the section' do
+  it 'can see a list of 5 repos in the section', :vcr do
     user = create(:user)
     user.update(token: "Not_a_real_token")
     stubbed_repos = [{"id"=>1, "name"=>"Google", "html_url"=>"www.google.com"},

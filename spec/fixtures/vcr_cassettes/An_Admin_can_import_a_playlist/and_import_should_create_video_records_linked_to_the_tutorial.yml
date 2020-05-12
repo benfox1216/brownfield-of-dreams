@@ -1,0 +1,2638 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/playlistItems?key=<YOUTUBE_API_KEY>&pageToken&part=contentDetails&playlistId=PLbpi6ZahtOH5NpWaK0akzu0Pgley4eEXH
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Tue, 12 May 2020 07:16:32 GMT
+      Date:
+      - Tue, 12 May 2020 07:16:32 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"Dn5xIderbhAnUk5TAW0qkFFir0M/u1bV6hGxB7ggqQgYgyS6TKxEig0"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+         "kind": "youtube#playlistItemListResponse",
+         "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/u1bV6hGxB7ggqQgYgyS6TKxEig0\"",
+         "nextPageToken": "CAUQAA",
+         "pageInfo": {
+          "totalResults": 11,
+          "resultsPerPage": 5
+         },
+         "items": [
+          {
+           "kind": "youtube#playlistItem",
+           "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/KqkPj6y7Ig5VvdJT6yGav9plcp0\"",
+           "id": "UExicGk2WmFodE9INU5wV2FLMGFrenUwUGdsZXk0ZUVYSC41NkI0NEY2RDEwNTU3Q0M2",
+           "contentDetails": {
+            "videoId": "6EF4zRMfrlk",
+            "videoPublishedAt": "2018-01-31T15:42:32.000Z"
+           }
+          },
+          {
+           "kind": "youtube#playlistItem",
+           "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/5hCMKgX_Co8ct5BRQnhqOO04B3M\"",
+           "id": "UExicGk2WmFodE9INU5wV2FLMGFrenUwUGdsZXk0ZUVYSC4yODlGNEE0NkRGMEEzMEQy",
+           "contentDetails": {
+            "videoId": "fqbBqDEdR1w",
+            "videoPublishedAt": "2018-01-28T22:32:27.000Z"
+           }
+          },
+          {
+           "kind": "youtube#playlistItem",
+           "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/ug2igVtJ2GQKfkFJF7XL7Uvmwa4\"",
+           "id": "UExicGk2WmFodE9INU5wV2FLMGFrenUwUGdsZXk0ZUVYSC4wMTcyMDhGQUE4NTIzM0Y5",
+           "contentDetails": {
+            "videoId": "7yszxvXsr8Q",
+            "videoPublishedAt": "2018-02-02T17:45:48.000Z"
+           }
+          },
+          {
+           "kind": "youtube#playlistItem",
+           "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/otmgoawMDwxhB25uOB-k1XngoMs\"",
+           "id": "UExicGk2WmFodE9INU5wV2FLMGFrenUwUGdsZXk0ZUVYSC41MjE1MkI0OTQ2QzJGNzNG",
+           "contentDetails": {
+            "videoId": "yAJ28SMedUw",
+            "videoPublishedAt": "2018-02-01T11:00:04.000Z"
+           }
+          },
+          {
+           "kind": "youtube#playlistItem",
+           "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/tnY4emGWfqEejoR8lJMkh62eQXQ\"",
+           "id": "UExicGk2WmFodE9INU5wV2FLMGFrenUwUGdsZXk0ZUVYSC4wOTA3OTZBNzVEMTUzOTMy",
+           "contentDetails": {
+            "videoId": "bL7zkCnetcA",
+            "videoPublishedAt": "2018-02-01T05:18:33.000Z"
+           }
+          }
+         ]
+        }
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:32 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/playlistItems?key=<YOUTUBE_API_KEY>&pageToken=CAUQAA&part=contentDetails&playlistId=PLbpi6ZahtOH5NpWaK0akzu0Pgley4eEXH
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:32 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#playlistItemListResponse",
+          "etag": "NE8H5Qxl2Qih9As1nlxwwp_z8yE",
+          "nextPageToken": "CAoQAA",
+          "prevPageToken": "CAUQAQ",
+          "items": [
+            {
+              "kind": "youtube#playlistItem",
+              "etag": "mCjkyydoW6SSAFaKoXKCHiIrMfM",
+              "id": "UExicGk2WmFodE9INU5wV2FLMGFrenUwUGdsZXk0ZUVYSC4xMkVGQjNCMUM1N0RFNEUx",
+              "contentDetails": {
+                "videoId": "0Y99Pobv4zs",
+                "videoPublishedAt": "2018-02-01T22:22:46Z"
+              }
+            },
+            {
+              "kind": "youtube#playlistItem",
+              "etag": "xj46jrx8Hcl8qxDCZ-yhD2hgla4",
+              "id": "UExicGk2WmFodE9INU5wV2FLMGFrenUwUGdsZXk0ZUVYSC41MzJCQjBCNDIyRkJDN0VD",
+              "contentDetails": {
+                "videoId": "K45X1hgeRFc",
+                "videoPublishedAt": "2018-01-31T17:15:45Z"
+              }
+            },
+            {
+              "kind": "youtube#playlistItem",
+              "etag": "2RrtH7ppFc2yLnJkBAESGBAUM6Q",
+              "id": "UExicGk2WmFodE9INU5wV2FLMGFrenUwUGdsZXk0ZUVYSC5DQUNERDQ2NkIzRUQxNTY1",
+              "contentDetails": {
+                "videoId": "OLlmosCADqY",
+                "videoPublishedAt": "2018-01-31T16:08:01Z"
+              }
+            },
+            {
+              "kind": "youtube#playlistItem",
+              "etag": "0c2_m54WvEHnzCsQpBw--qQ1YrY",
+              "id": "UExicGk2WmFodE9INU5wV2FLMGFrenUwUGdsZXk0ZUVYSC45NDk1REZENzhEMzU5MDQz",
+              "contentDetails": {
+                "videoId": "xZB3qhJ5vbk",
+                "videoPublishedAt": "2018-01-29T03:23:39Z"
+              }
+            },
+            {
+              "kind": "youtube#playlistItem",
+              "etag": "ykHlcUSoJBW4triQDO0c4RMB1Gg",
+              "id": "UExicGk2WmFodE9INU5wV2FLMGFrenUwUGdsZXk0ZUVYSC5GNjNDRDREMDQxOThCMDQ2",
+              "contentDetails": {
+                "videoId": "X2y0_s85Xx4",
+                "videoPublishedAt": "2018-02-01T16:55:07Z"
+              }
+            }
+          ],
+          "pageInfo": {
+            "totalResults": 11,
+            "resultsPerPage": 5
+          }
+        }
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:32 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/playlistItems?key=<YOUTUBE_API_KEY>&pageToken=CAoQAA&part=contentDetails&playlistId=PLbpi6ZahtOH5NpWaK0akzu0Pgley4eEXH
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Tue, 12 May 2020 07:16:32 GMT
+      Date:
+      - Tue, 12 May 2020 07:16:32 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"Dn5xIderbhAnUk5TAW0qkFFir0M/9ILdjtzpehLCCb-9lcVXJV1UeIE"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+         "kind": "youtube#playlistItemListResponse",
+         "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/9ILdjtzpehLCCb-9lcVXJV1UeIE\"",
+         "prevPageToken": "CAoQAQ",
+         "pageInfo": {
+          "totalResults": 11,
+          "resultsPerPage": 5
+         },
+         "items": [
+          {
+           "kind": "youtube#playlistItem",
+           "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/ASvBKkxiQxMWTmauknZF2B6qRq8\"",
+           "id": "UExicGk2WmFodE9INU5wV2FLMGFrenUwUGdsZXk0ZUVYSC40NzZCMERDMjVEN0RFRThB",
+           "contentDetails": {
+            "videoId": "zUDcGDK_bRw",
+            "videoPublishedAt": "2018-02-03T19:09:26.000Z"
+           }
+          }
+         ]
+        }
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:32 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=6EF4zRMfrlk&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:32 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#videoListResponse",
+          "etag": "HdaU8tItXT4b0Sia2iArTOtmNNc",
+          "items": [
+            {
+              "kind": "youtube#video",
+              "etag": "1Up5lktTq69OTWfyeODYzf3qx30",
+              "id": "6EF4zRMfrlk",
+              "snippet": {
+                "publishedAt": "2018-01-31T15:42:32Z",
+                "channelId": "UClnQCgFa9lCBL-KXZMOoO9Q",
+                "title": "April the Giraffe's Super Bowl LII Prediction",
+                "description": "April the Giraffe weighs in, in a very big way, on her prediction for the winners of Super Bowl LII !\n\nWe wish both teams and their fans luck!\n\nAnimal Adventure Park\nHarpursville, NY \n\nwww.TheAnimalAdventurePark.com",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/6EF4zRMfrlk/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/6EF4zRMfrlk/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/6EF4zRMfrlk/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Animal Adventure Park",
+                "tags": [
+                  "april the giraffe",
+                  "super bowl",
+                  "nfl",
+                  "predictions",
+                  "new england patriots",
+                  "philadelphia eagles"
+                ],
+                "categoryId": "15",
+                "liveBroadcastContent": "none",
+                "localized": {
+                  "title": "April the Giraffe's Super Bowl LII Prediction",
+                  "description": "April the Giraffe weighs in, in a very big way, on her prediction for the winners of Super Bowl LII !\n\nWe wish both teams and their fans luck!\n\nAnimal Adventure Park\nHarpursville, NY \n\nwww.TheAnimalAdventurePark.com"
+                },
+                "defaultAudioLanguage": "en"
+              },
+              "contentDetails": {
+                "duration": "PT1M1S",
+                "dimension": "2d",
+                "definition": "hd",
+                "caption": "false",
+                "licensedContent": true,
+                "contentRating": {},
+                "projection": "rectangular"
+              },
+              "statistics": {
+                "viewCount": "184741",
+                "likeCount": "3747",
+                "dislikeCount": "428",
+                "favoriteCount": "0",
+                "commentCount": "0"
+              }
+            }
+          ],
+          "pageInfo": {
+            "totalResults": 1,
+            "resultsPerPage": 1
+          }
+        }
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:32 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=6EF4zRMfrlk&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:32 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#videoListResponse",
+          "etag": "HdaU8tItXT4b0Sia2iArTOtmNNc",
+          "items": [
+            {
+              "kind": "youtube#video",
+              "etag": "1Up5lktTq69OTWfyeODYzf3qx30",
+              "id": "6EF4zRMfrlk",
+              "snippet": {
+                "publishedAt": "2018-01-31T15:42:32Z",
+                "channelId": "UClnQCgFa9lCBL-KXZMOoO9Q",
+                "title": "April the Giraffe's Super Bowl LII Prediction",
+                "description": "April the Giraffe weighs in, in a very big way, on her prediction for the winners of Super Bowl LII !\n\nWe wish both teams and their fans luck!\n\nAnimal Adventure Park\nHarpursville, NY \n\nwww.TheAnimalAdventurePark.com",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/6EF4zRMfrlk/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/6EF4zRMfrlk/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/6EF4zRMfrlk/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Animal Adventure Park",
+                "tags": [
+                  "april the giraffe",
+                  "super bowl",
+                  "nfl",
+                  "predictions",
+                  "new england patriots",
+                  "philadelphia eagles"
+                ],
+                "categoryId": "15",
+                "liveBroadcastContent": "none",
+                "localized": {
+                  "title": "April the Giraffe's Super Bowl LII Prediction",
+                  "description": "April the Giraffe weighs in, in a very big way, on her prediction for the winners of Super Bowl LII !\n\nWe wish both teams and their fans luck!\n\nAnimal Adventure Park\nHarpursville, NY \n\nwww.TheAnimalAdventurePark.com"
+                },
+                "defaultAudioLanguage": "en"
+              },
+              "contentDetails": {
+                "duration": "PT1M1S",
+                "dimension": "2d",
+                "definition": "hd",
+                "caption": "false",
+                "licensedContent": true,
+                "contentRating": {},
+                "projection": "rectangular"
+              },
+              "statistics": {
+                "viewCount": "184741",
+                "likeCount": "3747",
+                "dislikeCount": "428",
+                "favoriteCount": "0",
+                "commentCount": "0"
+              }
+            }
+          ],
+          "pageInfo": {
+            "totalResults": 1,
+            "resultsPerPage": 1
+          }
+        }
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:32 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=fqbBqDEdR1w&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Tue, 12 May 2020 07:16:33 GMT
+      Date:
+      - Tue, 12 May 2020 07:16:33 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"Dn5xIderbhAnUk5TAW0qkFFir0M/QvL8Q3wTIfj-L1axRa7jHkTcfVY"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+         "kind": "youtube#videoListResponse",
+         "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/QvL8Q3wTIfj-L1axRa7jHkTcfVY\"",
+         "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 1
+         },
+         "items": [
+          {
+           "kind": "youtube#video",
+           "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/slz6GGHZfELGmYrSilm-LkNjR8w\"",
+           "id": "fqbBqDEdR1w",
+           "snippet": {
+            "publishedAt": "2018-01-28T22:32:27.000Z",
+            "channelId": "UCG6_vtkcSBdcCHnSFb1zonQ",
+            "title": "Teddy Bear the Porcupine Predicts Super Bowl 52",
+            "description": "With a 5-1 record of predicting Super Bowl winners, Teddy Bear the Porcupine is the #1 animal prognosticator! His prediction for Super Bowl 52 shows that it will be a long, hard-fought battle for the victor! Copyright 2018, Zooniversity LLC. \nOnline sites are welcome to link to this address or embed with Google ads intact (no ad blocking). FILE COPYING IS STRICTLY PROHIBITED WITHOUT WRITTEN PERMISSION, copyrights will be actively protected.\nSEE ALL OF TEDDY BEAR'S VIDEOS AT WWW.YOUTUBE.COM/ZOONIVERSITY1\nRead All About Teddy! www.zooniversity.org/our-animals/teddy-bear-the-porcupine/\nLike Teddy! www.facebook.com/TeddyPorcupine\nFollow Teddy! www.twitter.com/TeddyPorcupine",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/fqbBqDEdR1w/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/fqbBqDEdR1w/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/fqbBqDEdR1w/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/fqbBqDEdR1w/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             },
+             "maxres": {
+              "url": "https://i.ytimg.com/vi/fqbBqDEdR1w/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+             }
+            },
+            "channelTitle": "Zooniversity1",
+            "tags": [
+             "super bowl",
+             "prediction",
+             "patriots",
+             "eagles",
+             "animal",
+             "predict",
+             "prognostication",
+             "prognosticate",
+             "porcupine",
+             "corn",
+             "picks",
+             "winner",
+             "teddy",
+             "teddy bear",
+             "cute",
+             "video",
+             "record",
+             "football",
+             "predicts",
+             "zooniversity",
+             "viral video"
+            ],
+            "categoryId": "15",
+            "liveBroadcastContent": "none",
+            "defaultLanguage": "en",
+            "localized": {
+             "title": "Teddy Bear the Porcupine Predicts Super Bowl 52",
+             "description": "With a 5-1 record of predicting Super Bowl winners, Teddy Bear the Porcupine is the #1 animal prognosticator! His prediction for Super Bowl 52 shows that it will be a long, hard-fought battle for the victor! Copyright 2018, Zooniversity LLC. \nOnline sites are welcome to link to this address or embed with Google ads intact (no ad blocking). FILE COPYING IS STRICTLY PROHIBITED WITHOUT WRITTEN PERMISSION, copyrights will be actively protected.\nSEE ALL OF TEDDY BEAR'S VIDEOS AT WWW.YOUTUBE.COM/ZOONIVERSITY1\nRead All About Teddy! www.zooniversity.org/our-animals/teddy-bear-the-porcupine/\nLike Teddy! www.facebook.com/TeddyPorcupine\nFollow Teddy! www.twitter.com/TeddyPorcupine"
+            }
+           },
+           "contentDetails": {
+            "duration": "PT1M45S",
+            "dimension": "2d",
+            "definition": "hd",
+            "caption": "false",
+            "licensedContent": true,
+            "projection": "rectangular"
+           },
+           "statistics": {
+            "viewCount": "49290",
+            "likeCount": "682",
+            "dislikeCount": "77",
+            "favoriteCount": "0",
+            "commentCount": "330"
+           }
+          }
+         ]
+        }
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:33 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=fqbBqDEdR1w&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:33 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#videoListResponse",
+          "etag": "GsbwTZAKLY6LCwzh_a7LdIDkVTE",
+          "items": [
+            {
+              "kind": "youtube#video",
+              "etag": "WeyGc_HDqI1j0wjsgSwcAKbCbnA",
+              "id": "fqbBqDEdR1w",
+              "snippet": {
+                "publishedAt": "2018-01-28T22:32:27Z",
+                "channelId": "UCG6_vtkcSBdcCHnSFb1zonQ",
+                "title": "Teddy Bear the Porcupine Predicts Super Bowl 52",
+                "description": "With a 5-1 record of predicting Super Bowl winners, Teddy Bear the Porcupine is the #1 animal prognosticator! His prediction for Super Bowl 52 shows that it will be a long, hard-fought battle for the victor! Copyright 2018, Zooniversity LLC. \nOnline sites are welcome to link to this address or embed with Google ads intact (no ad blocking). FILE COPYING IS STRICTLY PROHIBITED WITHOUT WRITTEN PERMISSION, copyrights will be actively protected.\nSEE ALL OF TEDDY BEAR'S VIDEOS AT WWW.YOUTUBE.COM/ZOONIVERSITY1\nRead All About Teddy! www.zooniversity.org/our-animals/teddy-bear-the-porcupine/\nLike Teddy! www.facebook.com/TeddyPorcupine\nFollow Teddy! www.twitter.com/TeddyPorcupine",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/fqbBqDEdR1w/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/fqbBqDEdR1w/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/fqbBqDEdR1w/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  },
+                  "standard": {
+                    "url": "https://i.ytimg.com/vi/fqbBqDEdR1w/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                  },
+                  "maxres": {
+                    "url": "https://i.ytimg.com/vi/fqbBqDEdR1w/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                "channelTitle": "Zooniversity1",
+                "tags": [
+                  "super bowl",
+                  "prediction",
+                  "patriots",
+                  "eagles",
+                  "animal",
+                  "predict",
+                  "prognostication",
+                  "prognosticate",
+                  "porcupine",
+                  "corn",
+                  "picks",
+                  "winner",
+                  "teddy",
+                  "teddy bear",
+                  "cute",
+                  "video",
+                  "record",
+                  "football",
+                  "predicts",
+                  "zooniversity",
+                  "viral video"
+                ],
+                "categoryId": "15",
+                "liveBroadcastContent": "none",
+                "defaultLanguage": "en",
+                "localized": {
+                  "title": "Teddy Bear the Porcupine Predicts Super Bowl 52",
+                  "description": "With a 5-1 record of predicting Super Bowl winners, Teddy Bear the Porcupine is the #1 animal prognosticator! His prediction for Super Bowl 52 shows that it will be a long, hard-fought battle for the victor! Copyright 2018, Zooniversity LLC. \nOnline sites are welcome to link to this address or embed with Google ads intact (no ad blocking). FILE COPYING IS STRICTLY PROHIBITED WITHOUT WRITTEN PERMISSION, copyrights will be actively protected.\nSEE ALL OF TEDDY BEAR'S VIDEOS AT WWW.YOUTUBE.COM/ZOONIVERSITY1\nRead All About Teddy! www.zooniversity.org/our-animals/teddy-bear-the-porcupine/\nLike Teddy! www.facebook.com/TeddyPorcupine\nFollow Teddy! www.twitter.com/TeddyPorcupine"
+                }
+              },
+              "contentDetails": {
+                "duration": "PT1M45S",
+                "dimension": "2d",
+                "definition": "hd",
+                "caption": "false",
+                "licensedContent": true,
+                "contentRating": {},
+                "projection": "rectangular"
+              },
+              "statistics": {
+                "viewCount": "49290",
+                "likeCount": "682",
+                "dislikeCount": "77",
+                "favoriteCount": "0",
+                "commentCount": "330"
+              }
+            }
+          ],
+          "pageInfo": {
+            "totalResults": 1,
+            "resultsPerPage": 1
+          }
+        }
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:33 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=7yszxvXsr8Q&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:33 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#videoListResponse",
+          "etag": "IQg_YVj_KHLpH0SNQshOp5cU8zE",
+          "items": [
+            {
+              "kind": "youtube#video",
+              "etag": "wXl57QAteLB5Q_uL7c2EoqpK46w",
+              "id": "7yszxvXsr8Q",
+              "snippet": {
+                "publishedAt": "2018-02-02T17:45:48Z",
+                "channelId": "UCVuFPbAjTi3mqpH-0veJRWg",
+                "title": "Giant Panda Picks Eagles As Super Bowl Winners",
+                "description": "You know it's almost Super Bowl time when animals start predicting the outcome!",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/7yszxvXsr8Q/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/7yszxvXsr8Q/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/7yszxvXsr8Q/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  },
+                  "standard": {
+                    "url": "https://i.ytimg.com/vi/7yszxvXsr8Q/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                  },
+                  "maxres": {
+                    "url": "https://i.ytimg.com/vi/7yszxvXsr8Q/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                "channelTitle": "CBS Philly",
+                "tags": [
+                  "Eyewitness News Mid-day",
+                  "Super Bowl 2018",
+                  "ANIMALS predict super bowl win",
+                  "animals pick eagles to win sup",
+                  "eagles 2018 super bowl",
+                  "panda super bowl winner memphi"
+                ],
+                "categoryId": "25",
+                "liveBroadcastContent": "none",
+                "localized": {
+                  "title": "Giant Panda Picks Eagles As Super Bowl Winners",
+                  "description": "You know it's almost Super Bowl time when animals start predicting the outcome!"
+                }
+              },
+              "contentDetails": {
+                "duration": "PT23S",
+                "dimension": "2d",
+                "definition": "hd",
+                "caption": "true",
+                "licensedContent": true,
+                "contentRating": {},
+                "projection": "rectangular"
+              },
+              "statistics": {
+                "viewCount": "883",
+                "likeCount": "5",
+                "dislikeCount": "1",
+                "favoriteCount": "0",
+                "commentCount": "2"
+              }
+            }
+          ],
+          "pageInfo": {
+            "totalResults": 1,
+            "resultsPerPage": 1
+          }
+        }
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:33 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=7yszxvXsr8Q&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:33 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#videoListResponse",
+          "etag": "IQg_YVj_KHLpH0SNQshOp5cU8zE",
+          "items": [
+            {
+              "kind": "youtube#video",
+              "etag": "wXl57QAteLB5Q_uL7c2EoqpK46w",
+              "id": "7yszxvXsr8Q",
+              "snippet": {
+                "publishedAt": "2018-02-02T17:45:48Z",
+                "channelId": "UCVuFPbAjTi3mqpH-0veJRWg",
+                "title": "Giant Panda Picks Eagles As Super Bowl Winners",
+                "description": "You know it's almost Super Bowl time when animals start predicting the outcome!",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/7yszxvXsr8Q/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/7yszxvXsr8Q/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/7yszxvXsr8Q/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  },
+                  "standard": {
+                    "url": "https://i.ytimg.com/vi/7yszxvXsr8Q/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                  },
+                  "maxres": {
+                    "url": "https://i.ytimg.com/vi/7yszxvXsr8Q/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                "channelTitle": "CBS Philly",
+                "tags": [
+                  "Eyewitness News Mid-day",
+                  "Super Bowl 2018",
+                  "ANIMALS predict super bowl win",
+                  "animals pick eagles to win sup",
+                  "eagles 2018 super bowl",
+                  "panda super bowl winner memphi"
+                ],
+                "categoryId": "25",
+                "liveBroadcastContent": "none",
+                "localized": {
+                  "title": "Giant Panda Picks Eagles As Super Bowl Winners",
+                  "description": "You know it's almost Super Bowl time when animals start predicting the outcome!"
+                }
+              },
+              "contentDetails": {
+                "duration": "PT23S",
+                "dimension": "2d",
+                "definition": "hd",
+                "caption": "true",
+                "licensedContent": true,
+                "contentRating": {},
+                "projection": "rectangular"
+              },
+              "statistics": {
+                "viewCount": "883",
+                "likeCount": "5",
+                "dislikeCount": "1",
+                "favoriteCount": "0",
+                "commentCount": "2"
+              }
+            }
+          ],
+          "pageInfo": {
+            "totalResults": 1,
+            "resultsPerPage": 1
+          }
+        }
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:33 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=yAJ28SMedUw&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:33 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#videoListResponse",
+          "etag": "ekRfooyR-VWEYp13ekTB8Yomb4A",
+          "items": [
+            {
+              "kind": "youtube#video",
+              "etag": "1elzjFFBZ1nFsMpcuYBp_jruS2k",
+              "id": "yAJ28SMedUw",
+              "snippet": {
+                "publishedAt": "2018-02-01T11:00:04Z",
+                "channelId": "UC8-Th83bH_thdKZDJCrn88g",
+                "title": "Puppies Predict the Winner of Super Bowl LII",
+                "description": "Jimmy welcomes back his panel of puppies to predict the results of the 2018 Super Bowl matchup between the Philadelphia Eagles and New England Patriots.\n\nSubscribe NOW to The Tonight Show Starring Jimmy Fallon: http://bit.ly/1nwT1aN\n\nWatch The Tonight Show Starring Jimmy Fallon Weeknights 11:35/10:35c\nGet more Jimmy Fallon: \nFollow Jimmy: http://Twitter.com/JimmyFallon\nLike Jimmy: https://Facebook.com/JimmyFallon\n\nGet more The Tonight Show Starring Jimmy Fallon: \nFollow The Tonight Show: http://Twitter.com/FallonTonight\nLike The Tonight Show: https://Facebook.com/FallonTonight\nThe Tonight Show Tumblr: http://fallontonight.tumblr.com/\n\nGet more NBC: \nNBC YouTube: http://bit.ly/1dM1qBH\nLike NBC: http://Facebook.com/NBC\nFollow NBC: http://Twitter.com/NBC\nNBC Tumblr: http://nbctv.tumblr.com/\n\nThe Tonight Show Starring Jimmy Fallon features hilarious highlights from the show including: comedy sketches, music parodies, celebrity interviews, ridiculous games, and, of course, Jimmy's Thank You Notes and hashtags! You'll also find behind the scenes videos and other great web exclusives.\n\nPuppies Predict the Winner of Super Bowl LII\nhttp://www.youtube.com/fallontonight",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/yAJ28SMedUw/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/yAJ28SMedUw/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/yAJ28SMedUw/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  },
+                  "standard": {
+                    "url": "https://i.ytimg.com/vi/yAJ28SMedUw/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                  },
+                  "maxres": {
+                    "url": "https://i.ytimg.com/vi/yAJ28SMedUw/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                "channelTitle": "The Tonight Show Starring Jimmy Fallon",
+                "tags": [
+                  "The Tonight Show",
+                  "Jimmy Fallon",
+                  "Puppies Predict",
+                  "Winner",
+                  "Super Bowl LII",
+                  "NBC",
+                  "NBC TV",
+                  "Television",
+                  "Funny",
+                  "Talk Show",
+                  "comedic",
+                  "humor",
+                  "snl",
+                  "Fallon Stand-up",
+                  "Fallon monologue",
+                  "tonight",
+                  "show",
+                  "jokes",
+                  "funny video",
+                  "interview",
+                  "variety",
+                  "comedy sketches",
+                  "talent",
+                  "celebrities",
+                  "video",
+                  "clip",
+                  "highlight",
+                  "Philadelphia Eagles",
+                  "New England Patriots",
+                  "Minnesota"
+                ],
+                "categoryId": "23",
+                "liveBroadcastContent": "none",
+                "localized": {
+                  "title": "Puppies Predict the Winner of Super Bowl LII",
+                  "description": "Jimmy welcomes back his panel of puppies to predict the results of the 2018 Super Bowl matchup between the Philadelphia Eagles and New England Patriots.\n\nSubscribe NOW to The Tonight Show Starring Jimmy Fallon: http://bit.ly/1nwT1aN\n\nWatch The Tonight Show Starring Jimmy Fallon Weeknights 11:35/10:35c\nGet more Jimmy Fallon: \nFollow Jimmy: http://Twitter.com/JimmyFallon\nLike Jimmy: https://Facebook.com/JimmyFallon\n\nGet more The Tonight Show Starring Jimmy Fallon: \nFollow The Tonight Show: http://Twitter.com/FallonTonight\nLike The Tonight Show: https://Facebook.com/FallonTonight\nThe Tonight Show Tumblr: http://fallontonight.tumblr.com/\n\nGet more NBC: \nNBC YouTube: http://bit.ly/1dM1qBH\nLike NBC: http://Facebook.com/NBC\nFollow NBC: http://Twitter.com/NBC\nNBC Tumblr: http://nbctv.tumblr.com/\n\nThe Tonight Show Starring Jimmy Fallon features hilarious highlights from the show including: comedy sketches, music parodies, celebrity interviews, ridiculous games, and, of course, Jimmy's Thank You Notes and hashtags! You'll also find behind the scenes videos and other great web exclusives.\n\nPuppies Predict the Winner of Super Bowl LII\nhttp://www.youtube.com/fallontonight"
+                },
+                "defaultAudioLanguage": "en"
+              },
+              "contentDetails": {
+                "duration": "PT2M7S",
+                "dimension": "2d",
+                "definition": "hd",
+                "caption": "true",
+                "licensedContent": true,
+                "contentRating": {},
+                "projection": "rectangular"
+              },
+              "statistics": {
+                "viewCount": "545943",
+                "likeCount": "6016",
+                "dislikeCount": "609",
+                "favoriteCount": "0",
+                "commentCount": "1176"
+              }
+            }
+          ],
+          "pageInfo": {
+            "totalResults": 1,
+            "resultsPerPage": 1
+          }
+        }
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:33 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=yAJ28SMedUw&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Tue, 12 May 2020 07:16:34 GMT
+      Date:
+      - Tue, 12 May 2020 07:16:34 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"Dn5xIderbhAnUk5TAW0qkFFir0M/tsGZNEdVtVKAg_1esLydVrGxVSg"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+         "kind": "youtube#videoListResponse",
+         "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/tsGZNEdVtVKAg_1esLydVrGxVSg\"",
+         "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 1
+         },
+         "items": [
+          {
+           "kind": "youtube#video",
+           "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/i3aLkpcI6i_JGHvtnMYpS0EXzxc\"",
+           "id": "yAJ28SMedUw",
+           "snippet": {
+            "publishedAt": "2018-02-01T11:00:04.000Z",
+            "channelId": "UC8-Th83bH_thdKZDJCrn88g",
+            "title": "Puppies Predict the Winner of Super Bowl LII",
+            "description": "Jimmy welcomes back his panel of puppies to predict the results of the 2018 Super Bowl matchup between the Philadelphia Eagles and New England Patriots.\n\nSubscribe NOW to The Tonight Show Starring Jimmy Fallon: http://bit.ly/1nwT1aN\n\nWatch The Tonight Show Starring Jimmy Fallon Weeknights 11:35/10:35c\nGet more Jimmy Fallon: \nFollow Jimmy: http://Twitter.com/JimmyFallon\nLike Jimmy: https://Facebook.com/JimmyFallon\n\nGet more The Tonight Show Starring Jimmy Fallon: \nFollow The Tonight Show: http://Twitter.com/FallonTonight\nLike The Tonight Show: https://Facebook.com/FallonTonight\nThe Tonight Show Tumblr: http://fallontonight.tumblr.com/\n\nGet more NBC: \nNBC YouTube: http://bit.ly/1dM1qBH\nLike NBC: http://Facebook.com/NBC\nFollow NBC: http://Twitter.com/NBC\nNBC Tumblr: http://nbctv.tumblr.com/\n\nThe Tonight Show Starring Jimmy Fallon features hilarious highlights from the show including: comedy sketches, music parodies, celebrity interviews, ridiculous games, and, of course, Jimmy's Thank You Notes and hashtags! You'll also find behind the scenes videos and other great web exclusives.\n\nPuppies Predict the Winner of Super Bowl LII\nhttp://www.youtube.com/fallontonight",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/yAJ28SMedUw/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/yAJ28SMedUw/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/yAJ28SMedUw/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/yAJ28SMedUw/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             },
+             "maxres": {
+              "url": "https://i.ytimg.com/vi/yAJ28SMedUw/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+             }
+            },
+            "channelTitle": "The Tonight Show Starring Jimmy Fallon",
+            "tags": [
+             "The Tonight Show",
+             "Jimmy Fallon",
+             "Puppies Predict",
+             "Winner",
+             "Super Bowl LII",
+             "NBC",
+             "NBC TV",
+             "Television",
+             "Funny",
+             "Talk Show",
+             "comedic",
+             "humor",
+             "snl",
+             "Fallon Stand-up",
+             "Fallon monologue",
+             "tonight",
+             "show",
+             "jokes",
+             "funny video",
+             "interview",
+             "variety",
+             "comedy sketches",
+             "talent",
+             "celebrities",
+             "video",
+             "clip",
+             "highlight",
+             "Philadelphia Eagles",
+             "New England Patriots",
+             "Minnesota"
+            ],
+            "categoryId": "23",
+            "liveBroadcastContent": "none",
+            "localized": {
+             "title": "Puppies Predict the Winner of Super Bowl LII",
+             "description": "Jimmy welcomes back his panel of puppies to predict the results of the 2018 Super Bowl matchup between the Philadelphia Eagles and New England Patriots.\n\nSubscribe NOW to The Tonight Show Starring Jimmy Fallon: http://bit.ly/1nwT1aN\n\nWatch The Tonight Show Starring Jimmy Fallon Weeknights 11:35/10:35c\nGet more Jimmy Fallon: \nFollow Jimmy: http://Twitter.com/JimmyFallon\nLike Jimmy: https://Facebook.com/JimmyFallon\n\nGet more The Tonight Show Starring Jimmy Fallon: \nFollow The Tonight Show: http://Twitter.com/FallonTonight\nLike The Tonight Show: https://Facebook.com/FallonTonight\nThe Tonight Show Tumblr: http://fallontonight.tumblr.com/\n\nGet more NBC: \nNBC YouTube: http://bit.ly/1dM1qBH\nLike NBC: http://Facebook.com/NBC\nFollow NBC: http://Twitter.com/NBC\nNBC Tumblr: http://nbctv.tumblr.com/\n\nThe Tonight Show Starring Jimmy Fallon features hilarious highlights from the show including: comedy sketches, music parodies, celebrity interviews, ridiculous games, and, of course, Jimmy's Thank You Notes and hashtags! You'll also find behind the scenes videos and other great web exclusives.\n\nPuppies Predict the Winner of Super Bowl LII\nhttp://www.youtube.com/fallontonight"
+            },
+            "defaultAudioLanguage": "en"
+           },
+           "contentDetails": {
+            "duration": "PT2M7S",
+            "dimension": "2d",
+            "definition": "hd",
+            "caption": "true",
+            "licensedContent": true,
+            "projection": "rectangular"
+           },
+           "statistics": {
+            "viewCount": "545943",
+            "likeCount": "6016",
+            "dislikeCount": "609",
+            "favoriteCount": "0",
+            "commentCount": "1176"
+           }
+          }
+         ]
+        }
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:34 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=bL7zkCnetcA&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:34 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#videoListResponse",
+          "etag": "ugQKJxPYuCvbG-FALJBn61xCBRY",
+          "items": [
+            {
+              "kind": "youtube#video",
+              "etag": "Onu6Z1JyKOsYKQTFDbAfpcAP4Ko",
+              "id": "bL7zkCnetcA",
+              "snippet": {
+                "publishedAt": "2018-02-01T05:18:33Z",
+                "channelId": "UCD5IMaEgc5WkSSXWtkcVERQ",
+                "title": "HAMSTER PREDICTS SUPER BOWL LII WINNER",
+                "description": "This cute animal correctly predicted the winner of the Super Bowl last year. Can he predict the Super Bowl 52 winner? He's also the cutest pizza eater!\n\nDon't forget to Like, Share and Subscribe so you can always join me for breakfast. Alright, enough small talk, let's go nibble!",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/bL7zkCnetcA/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/bL7zkCnetcA/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/bL7zkCnetcA/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  },
+                  "standard": {
+                    "url": "https://i.ytimg.com/vi/bL7zkCnetcA/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                  },
+                  "maxres": {
+                    "url": "https://i.ytimg.com/vi/bL7zkCnetcA/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                "channelTitle": "Breakfast with Butternut the Hamster",
+                "tags": [
+                  "hamster",
+                  "hamster eating",
+                  "cute hamster",
+                  "tiny hamster",
+                  "hamster eating burrito",
+                  "tiny hamster eating",
+                  "tiny hamster food",
+                  "tiny hamster world",
+                  "hamster house",
+                  "hammy",
+                  "tastemade",
+                  "kawaii",
+                  "tiny kitchen",
+                  "tiny food",
+                  "DIY hamster treat",
+                  "DIY hamster food",
+                  "mini cooking",
+                  "hamster kitchen",
+                  "puppy predictor",
+                  "kitten bowl",
+                  "puppy bowl",
+                  "Jimmy Fallon puppy",
+                  "animal predict super bowl",
+                  "super bowl prediction",
+                  "super bowl 52",
+                  "super bowl 2018",
+                  "superbowl",
+                  "super bowl ad",
+                  "super bowl commercial"
+                ],
+                "categoryId": "15",
+                "liveBroadcastContent": "none",
+                "localized": {
+                  "title": "HAMSTER PREDICTS SUPER BOWL LII WINNER",
+                  "description": "This cute animal correctly predicted the winner of the Super Bowl last year. Can he predict the Super Bowl 52 winner? He's also the cutest pizza eater!\n\nDon't forget to Like, Share and Subscribe so you can always join me for breakfast. Alright, enough small talk, let's go nibble!"
+                }
+              },
+              "contentDetails": {
+                "duration": "PT1M55S",
+                "dimension": "2d",
+                "definition": "hd",
+                "caption": "false",
+                "licensedContent": false,
+                "contentRating": {},
+                "projection": "rectangular"
+              },
+              "statistics": {
+                "viewCount": "4656",
+                "likeCount": "55",
+                "dislikeCount": "4",
+                "favoriteCount": "0",
+                "commentCount": "56"
+              }
+            }
+          ],
+          "pageInfo": {
+            "totalResults": 1,
+            "resultsPerPage": 1
+          }
+        }
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:34 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=bL7zkCnetcA&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Tue, 12 May 2020 07:16:34 GMT
+      Date:
+      - Tue, 12 May 2020 07:16:34 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"Dn5xIderbhAnUk5TAW0qkFFir0M/k_ScX80SB_GW8GLsBqKrv1aVj2g"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+         "kind": "youtube#videoListResponse",
+         "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/k_ScX80SB_GW8GLsBqKrv1aVj2g\"",
+         "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 1
+         },
+         "items": [
+          {
+           "kind": "youtube#video",
+           "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/ujHfO0z5eIQSyjvOIczpnAbBIpw\"",
+           "id": "bL7zkCnetcA",
+           "snippet": {
+            "publishedAt": "2018-02-01T05:18:33.000Z",
+            "channelId": "UCD5IMaEgc5WkSSXWtkcVERQ",
+            "title": "HAMSTER PREDICTS SUPER BOWL LII WINNER",
+            "description": "This cute animal correctly predicted the winner of the Super Bowl last year. Can he predict the Super Bowl 52 winner? He's also the cutest pizza eater!\n\nDon't forget to Like, Share and Subscribe so you can always join me for breakfast. Alright, enough small talk, let's go nibble!",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/bL7zkCnetcA/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/bL7zkCnetcA/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/bL7zkCnetcA/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/bL7zkCnetcA/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             },
+             "maxres": {
+              "url": "https://i.ytimg.com/vi/bL7zkCnetcA/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+             }
+            },
+            "channelTitle": "Breakfast with Butternut the Hamster",
+            "tags": [
+             "hamster",
+             "hamster eating",
+             "cute hamster",
+             "tiny hamster",
+             "hamster eating burrito",
+             "tiny hamster eating",
+             "tiny hamster food",
+             "tiny hamster world",
+             "hamster house",
+             "hammy",
+             "tastemade",
+             "kawaii",
+             "tiny kitchen",
+             "tiny food",
+             "DIY hamster treat",
+             "DIY hamster food",
+             "mini cooking",
+             "hamster kitchen",
+             "puppy predictor",
+             "kitten bowl",
+             "puppy bowl",
+             "Jimmy Fallon puppy",
+             "animal predict super bowl",
+             "super bowl prediction",
+             "super bowl 52",
+             "super bowl 2018",
+             "superbowl",
+             "super bowl ad",
+             "super bowl commercial"
+            ],
+            "categoryId": "15",
+            "liveBroadcastContent": "none",
+            "localized": {
+             "title": "HAMSTER PREDICTS SUPER BOWL LII WINNER",
+             "description": "This cute animal correctly predicted the winner of the Super Bowl last year. Can he predict the Super Bowl 52 winner? He's also the cutest pizza eater!\n\nDon't forget to Like, Share and Subscribe so you can always join me for breakfast. Alright, enough small talk, let's go nibble!"
+            }
+           },
+           "contentDetails": {
+            "duration": "PT1M55S",
+            "dimension": "2d",
+            "definition": "hd",
+            "caption": "false",
+            "licensedContent": false,
+            "projection": "rectangular"
+           },
+           "statistics": {
+            "viewCount": "4656",
+            "likeCount": "55",
+            "dislikeCount": "4",
+            "favoriteCount": "0",
+            "commentCount": "56"
+           }
+          }
+         ]
+        }
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:34 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=0Y99Pobv4zs&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:34 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJraW5kIjogInlvdXR1YmUjdmlkZW9MaXN0UmVzcG9uc2UiLAogICJldGFnIjogInNRQkRwYVJTbk43b29NV2xXV1FXQm1IZlpYRSIsCiAgIml0ZW1zIjogWwogICAgewogICAgICAia2luZCI6ICJ5b3V0dWJlI3ZpZGVvIiwKICAgICAgImV0YWciOiAiWnQ1VHpQQzRVZFQxd3hRSzFXdWJCamhfU2hrIiwKICAgICAgImlkIjogIjBZOTlQb2J2NHpzIiwKICAgICAgInNuaXBwZXQiOiB7CiAgICAgICAgInB1Ymxpc2hlZEF0IjogIjIwMTgtMDItMDFUMjI6MjI6NDZaIiwKICAgICAgICAiY2hhbm5lbElkIjogIlVDRW43VXN2bGJLSk9sQ3pRMmh0Q3hwZyIsCiAgICAgICAgInRpdGxlIjogIkJhYnkgTGlvbiBQcmVkaWN0cyBXaW5uZXIgb2YgdGhlIEJpZyBHYW1lIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiQmFieSBsaW9uIEJhaGF0aSBhbmQgQXVudCBKYXNpcmkgd2VudCBzdHJhaWdodCBmb3IgdGhlIE5ldyBFbmdsYW5kIFBhdHJpb3RzJyBtZWF0eSBpY2UgY2FrZSB0b2RheSwgbWFraW5nIHRoZSBQYXRzIHRoZWlyIHBpY2sgdG8gd2luIHRoZSBTdXBlciBCb3dsISBObyBoYXJkIGZlZWxpbmdzLCBQaGlsYWRlbHBoaWEgRWFnbGVzLlxuXG7inqEgU3Vic2NyaWJlOiBiaXQubHkvU3Vic2NyaWJlRGFsbGFzWm9vVHViZVxuXG5CYWhhdGkgaXMgdGhlIGZpcnN0IGxpb24gY3ViIGJvcm4gYXQgdGhlIERhbGxhcyBab28gaW4gNDMgeWVhcnMsIHRoaXMgd2lsbCBhbHNvIGJlIGhlciBmaXJzdCBTdXBlciBCb3dsLiBPdXIgYW5pbWFscyBoYXZlIHByZWRpY3RlZCB0aGUgY29ycmVjdCB3aW5uZXJzIHRoZSBwYXN0IDMgeWVhcnMuIFNvLCBubyBwcmVzc3VyZSwgQmFoYXRpLi4uXG5cbkZvbGxvdyB0aGUgRGFsbGFzIFpvbzogXG5PZmZpY2lhbCBTaXRlOiBiaXQubHkvRGFsbGFzWm9vT2ZmaWNpYWxTaXRlXG5ab29Ib28gQmxvZzogYml0Lmx5L0RhbGxhc1pvb0hvb0Jsb2dcbkZhY2Vib29rOiBiaXQubHkvRGFsbGFzWm9vRmFjZWJvb2tcbkluc3RhZ3JhbTogYml0Lmx5L0RhbGxhc1pvb0luc3RhZ3JhbVxuVHdpdHRlcjogYml0Lmx5L0RhbGxhc1pvb1R3aXR0ZXJcblxuRW5nYWdpbmcgUGVvcGxlICYgU2F2aW5nIFdpbGRsaWZlIiwKICAgICAgICAidGh1bWJuYWlscyI6IHsKICAgICAgICAgICJkZWZhdWx0IjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvMFk5OVBvYnY0enMvZGVmYXVsdC5qcGciLAogICAgICAgICAgICAid2lkdGgiOiAxMjAsCiAgICAgICAgICAgICJoZWlnaHQiOiA5MAogICAgICAgICAgfSwKICAgICAgICAgICJtZWRpdW0iOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS8wWTk5UG9idjR6cy9tcWRlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogMzIwLAogICAgICAgICAgICAiaGVpZ2h0IjogMTgwCiAgICAgICAgICB9LAogICAgICAgICAgImhpZ2giOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS8wWTk5UG9idjR6cy9ocWRlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogNDgwLAogICAgICAgICAgICAiaGVpZ2h0IjogMzYwCiAgICAgICAgICB9LAogICAgICAgICAgInN0YW5kYXJkIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvMFk5OVBvYnY0enMvc2RkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDY0MCwKICAgICAgICAgICAgImhlaWdodCI6IDQ4MAogICAgICAgICAgfSwKICAgICAgICAgICJtYXhyZXMiOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS8wWTk5UG9idjR6cy9tYXhyZXNkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgICAgICJoZWlnaHQiOiA3MjAKICAgICAgICAgIH0KICAgICAgICB9LAogICAgICAgICJjaGFubmVsVGl0bGUiOiAiRGFsbGFzIFpvbyIsCiAgICAgICAgInRhZ3MiOiBbCiAgICAgICAgICAiRGFsbGFzIFpvbyIsCiAgICAgICAgICAiRGFsbGFzIiwKICAgICAgICAgICJUZXhhcyIsCiAgICAgICAgICAiQW5pbWFsIiwKICAgICAgICAgICJsaW9uIiwKICAgICAgICAgICJjdWIiLAogICAgICAgICAgImJhYnkgYW5pbWFsIiwKICAgICAgICAgICJzdXBlcmJvd2wiLAogICAgICAgICAgImZvb3RiYWxsIiwKICAgICAgICAgICJ6b28iCiAgICAgICAgXSwKICAgICAgICAiY2F0ZWdvcnlJZCI6ICIxNSIsCiAgICAgICAgImxpdmVCcm9hZGNhc3RDb250ZW50IjogIm5vbmUiLAogICAgICAgICJsb2NhbGl6ZWQiOiB7CiAgICAgICAgICAidGl0bGUiOiAiQmFieSBMaW9uIFByZWRpY3RzIFdpbm5lciBvZiB0aGUgQmlnIEdhbWUiLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIkJhYnkgbGlvbiBCYWhhdGkgYW5kIEF1bnQgSmFzaXJpIHdlbnQgc3RyYWlnaHQgZm9yIHRoZSBOZXcgRW5nbGFuZCBQYXRyaW90cycgbWVhdHkgaWNlIGNha2UgdG9kYXksIG1ha2luZyB0aGUgUGF0cyB0aGVpciBwaWNrIHRvIHdpbiB0aGUgU3VwZXIgQm93bCEgTm8gaGFyZCBmZWVsaW5ncywgUGhpbGFkZWxwaGlhIEVhZ2xlcy5cblxu4p6hIFN1YnNjcmliZTogYml0Lmx5L1N1YnNjcmliZURhbGxhc1pvb1R1YmVcblxuQmFoYXRpIGlzIHRoZSBmaXJzdCBsaW9uIGN1YiBib3JuIGF0IHRoZSBEYWxsYXMgWm9vIGluIDQzIHllYXJzLCB0aGlzIHdpbGwgYWxzbyBiZSBoZXIgZmlyc3QgU3VwZXIgQm93bC4gT3VyIGFuaW1hbHMgaGF2ZSBwcmVkaWN0ZWQgdGhlIGNvcnJlY3Qgd2lubmVycyB0aGUgcGFzdCAzIHllYXJzLiBTbywgbm8gcHJlc3N1cmUsIEJhaGF0aS4uLlxuXG5Gb2xsb3cgdGhlIERhbGxhcyBab286IFxuT2ZmaWNpYWwgU2l0ZTogYml0Lmx5L0RhbGxhc1pvb09mZmljaWFsU2l0ZVxuWm9vSG9vIEJsb2c6IGJpdC5seS9EYWxsYXNab29Ib29CbG9nXG5GYWNlYm9vazogYml0Lmx5L0RhbGxhc1pvb0ZhY2Vib29rXG5JbnN0YWdyYW06IGJpdC5seS9EYWxsYXNab29JbnN0YWdyYW1cblR3aXR0ZXI6IGJpdC5seS9EYWxsYXNab29Ud2l0dGVyXG5cbkVuZ2FnaW5nIFBlb3BsZSAmIFNhdmluZyBXaWxkbGlmZSIKICAgICAgICB9LAogICAgICAgICJkZWZhdWx0QXVkaW9MYW5ndWFnZSI6ICJlbiIKICAgICAgfSwKICAgICAgImNvbnRlbnREZXRhaWxzIjogewogICAgICAgICJkdXJhdGlvbiI6ICJQVDQ1UyIsCiAgICAgICAgImRpbWVuc2lvbiI6ICIyZCIsCiAgICAgICAgImRlZmluaXRpb24iOiAiaGQiLAogICAgICAgICJjYXB0aW9uIjogImZhbHNlIiwKICAgICAgICAibGljZW5zZWRDb250ZW50IjogdHJ1ZSwKICAgICAgICAiY29udGVudFJhdGluZyI6IHt9LAogICAgICAgICJwcm9qZWN0aW9uIjogInJlY3Rhbmd1bGFyIgogICAgICB9LAogICAgICAic3RhdGlzdGljcyI6IHsKICAgICAgICAidmlld0NvdW50IjogIjI5MzYiLAogICAgICAgICJsaWtlQ291bnQiOiAiNDEiLAogICAgICAgICJkaXNsaWtlQ291bnQiOiAiMiIsCiAgICAgICAgImZhdm9yaXRlQ291bnQiOiAiMCIsCiAgICAgICAgImNvbW1lbnRDb3VudCI6ICI2IgogICAgICB9CiAgICB9CiAgXSwKICAicGFnZUluZm8iOiB7CiAgICAidG90YWxSZXN1bHRzIjogMSwKICAgICJyZXN1bHRzUGVyUGFnZSI6IDEKICB9Cn0K
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:34 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=0Y99Pobv4zs&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:34 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJraW5kIjogInlvdXR1YmUjdmlkZW9MaXN0UmVzcG9uc2UiLAogICJldGFnIjogInNRQkRwYVJTbk43b29NV2xXV1FXQm1IZlpYRSIsCiAgIml0ZW1zIjogWwogICAgewogICAgICAia2luZCI6ICJ5b3V0dWJlI3ZpZGVvIiwKICAgICAgImV0YWciOiAiWnQ1VHpQQzRVZFQxd3hRSzFXdWJCamhfU2hrIiwKICAgICAgImlkIjogIjBZOTlQb2J2NHpzIiwKICAgICAgInNuaXBwZXQiOiB7CiAgICAgICAgInB1Ymxpc2hlZEF0IjogIjIwMTgtMDItMDFUMjI6MjI6NDZaIiwKICAgICAgICAiY2hhbm5lbElkIjogIlVDRW43VXN2bGJLSk9sQ3pRMmh0Q3hwZyIsCiAgICAgICAgInRpdGxlIjogIkJhYnkgTGlvbiBQcmVkaWN0cyBXaW5uZXIgb2YgdGhlIEJpZyBHYW1lIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiQmFieSBsaW9uIEJhaGF0aSBhbmQgQXVudCBKYXNpcmkgd2VudCBzdHJhaWdodCBmb3IgdGhlIE5ldyBFbmdsYW5kIFBhdHJpb3RzJyBtZWF0eSBpY2UgY2FrZSB0b2RheSwgbWFraW5nIHRoZSBQYXRzIHRoZWlyIHBpY2sgdG8gd2luIHRoZSBTdXBlciBCb3dsISBObyBoYXJkIGZlZWxpbmdzLCBQaGlsYWRlbHBoaWEgRWFnbGVzLlxuXG7inqEgU3Vic2NyaWJlOiBiaXQubHkvU3Vic2NyaWJlRGFsbGFzWm9vVHViZVxuXG5CYWhhdGkgaXMgdGhlIGZpcnN0IGxpb24gY3ViIGJvcm4gYXQgdGhlIERhbGxhcyBab28gaW4gNDMgeWVhcnMsIHRoaXMgd2lsbCBhbHNvIGJlIGhlciBmaXJzdCBTdXBlciBCb3dsLiBPdXIgYW5pbWFscyBoYXZlIHByZWRpY3RlZCB0aGUgY29ycmVjdCB3aW5uZXJzIHRoZSBwYXN0IDMgeWVhcnMuIFNvLCBubyBwcmVzc3VyZSwgQmFoYXRpLi4uXG5cbkZvbGxvdyB0aGUgRGFsbGFzIFpvbzogXG5PZmZpY2lhbCBTaXRlOiBiaXQubHkvRGFsbGFzWm9vT2ZmaWNpYWxTaXRlXG5ab29Ib28gQmxvZzogYml0Lmx5L0RhbGxhc1pvb0hvb0Jsb2dcbkZhY2Vib29rOiBiaXQubHkvRGFsbGFzWm9vRmFjZWJvb2tcbkluc3RhZ3JhbTogYml0Lmx5L0RhbGxhc1pvb0luc3RhZ3JhbVxuVHdpdHRlcjogYml0Lmx5L0RhbGxhc1pvb1R3aXR0ZXJcblxuRW5nYWdpbmcgUGVvcGxlICYgU2F2aW5nIFdpbGRsaWZlIiwKICAgICAgICAidGh1bWJuYWlscyI6IHsKICAgICAgICAgICJkZWZhdWx0IjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvMFk5OVBvYnY0enMvZGVmYXVsdC5qcGciLAogICAgICAgICAgICAid2lkdGgiOiAxMjAsCiAgICAgICAgICAgICJoZWlnaHQiOiA5MAogICAgICAgICAgfSwKICAgICAgICAgICJtZWRpdW0iOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS8wWTk5UG9idjR6cy9tcWRlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogMzIwLAogICAgICAgICAgICAiaGVpZ2h0IjogMTgwCiAgICAgICAgICB9LAogICAgICAgICAgImhpZ2giOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS8wWTk5UG9idjR6cy9ocWRlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogNDgwLAogICAgICAgICAgICAiaGVpZ2h0IjogMzYwCiAgICAgICAgICB9LAogICAgICAgICAgInN0YW5kYXJkIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvMFk5OVBvYnY0enMvc2RkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDY0MCwKICAgICAgICAgICAgImhlaWdodCI6IDQ4MAogICAgICAgICAgfSwKICAgICAgICAgICJtYXhyZXMiOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS8wWTk5UG9idjR6cy9tYXhyZXNkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgICAgICJoZWlnaHQiOiA3MjAKICAgICAgICAgIH0KICAgICAgICB9LAogICAgICAgICJjaGFubmVsVGl0bGUiOiAiRGFsbGFzIFpvbyIsCiAgICAgICAgInRhZ3MiOiBbCiAgICAgICAgICAiRGFsbGFzIFpvbyIsCiAgICAgICAgICAiRGFsbGFzIiwKICAgICAgICAgICJUZXhhcyIsCiAgICAgICAgICAiQW5pbWFsIiwKICAgICAgICAgICJsaW9uIiwKICAgICAgICAgICJjdWIiLAogICAgICAgICAgImJhYnkgYW5pbWFsIiwKICAgICAgICAgICJzdXBlcmJvd2wiLAogICAgICAgICAgImZvb3RiYWxsIiwKICAgICAgICAgICJ6b28iCiAgICAgICAgXSwKICAgICAgICAiY2F0ZWdvcnlJZCI6ICIxNSIsCiAgICAgICAgImxpdmVCcm9hZGNhc3RDb250ZW50IjogIm5vbmUiLAogICAgICAgICJsb2NhbGl6ZWQiOiB7CiAgICAgICAgICAidGl0bGUiOiAiQmFieSBMaW9uIFByZWRpY3RzIFdpbm5lciBvZiB0aGUgQmlnIEdhbWUiLAogICAgICAgICAgImRlc2NyaXB0aW9uIjogIkJhYnkgbGlvbiBCYWhhdGkgYW5kIEF1bnQgSmFzaXJpIHdlbnQgc3RyYWlnaHQgZm9yIHRoZSBOZXcgRW5nbGFuZCBQYXRyaW90cycgbWVhdHkgaWNlIGNha2UgdG9kYXksIG1ha2luZyB0aGUgUGF0cyB0aGVpciBwaWNrIHRvIHdpbiB0aGUgU3VwZXIgQm93bCEgTm8gaGFyZCBmZWVsaW5ncywgUGhpbGFkZWxwaGlhIEVhZ2xlcy5cblxu4p6hIFN1YnNjcmliZTogYml0Lmx5L1N1YnNjcmliZURhbGxhc1pvb1R1YmVcblxuQmFoYXRpIGlzIHRoZSBmaXJzdCBsaW9uIGN1YiBib3JuIGF0IHRoZSBEYWxsYXMgWm9vIGluIDQzIHllYXJzLCB0aGlzIHdpbGwgYWxzbyBiZSBoZXIgZmlyc3QgU3VwZXIgQm93bC4gT3VyIGFuaW1hbHMgaGF2ZSBwcmVkaWN0ZWQgdGhlIGNvcnJlY3Qgd2lubmVycyB0aGUgcGFzdCAzIHllYXJzLiBTbywgbm8gcHJlc3N1cmUsIEJhaGF0aS4uLlxuXG5Gb2xsb3cgdGhlIERhbGxhcyBab286IFxuT2ZmaWNpYWwgU2l0ZTogYml0Lmx5L0RhbGxhc1pvb09mZmljaWFsU2l0ZVxuWm9vSG9vIEJsb2c6IGJpdC5seS9EYWxsYXNab29Ib29CbG9nXG5GYWNlYm9vazogYml0Lmx5L0RhbGxhc1pvb0ZhY2Vib29rXG5JbnN0YWdyYW06IGJpdC5seS9EYWxsYXNab29JbnN0YWdyYW1cblR3aXR0ZXI6IGJpdC5seS9EYWxsYXNab29Ud2l0dGVyXG5cbkVuZ2FnaW5nIFBlb3BsZSAmIFNhdmluZyBXaWxkbGlmZSIKICAgICAgICB9LAogICAgICAgICJkZWZhdWx0QXVkaW9MYW5ndWFnZSI6ICJlbiIKICAgICAgfSwKICAgICAgImNvbnRlbnREZXRhaWxzIjogewogICAgICAgICJkdXJhdGlvbiI6ICJQVDQ1UyIsCiAgICAgICAgImRpbWVuc2lvbiI6ICIyZCIsCiAgICAgICAgImRlZmluaXRpb24iOiAiaGQiLAogICAgICAgICJjYXB0aW9uIjogImZhbHNlIiwKICAgICAgICAibGljZW5zZWRDb250ZW50IjogdHJ1ZSwKICAgICAgICAiY29udGVudFJhdGluZyI6IHt9LAogICAgICAgICJwcm9qZWN0aW9uIjogInJlY3Rhbmd1bGFyIgogICAgICB9LAogICAgICAic3RhdGlzdGljcyI6IHsKICAgICAgICAidmlld0NvdW50IjogIjI5MzYiLAogICAgICAgICJsaWtlQ291bnQiOiAiNDEiLAogICAgICAgICJkaXNsaWtlQ291bnQiOiAiMiIsCiAgICAgICAgImZhdm9yaXRlQ291bnQiOiAiMCIsCiAgICAgICAgImNvbW1lbnRDb3VudCI6ICI2IgogICAgICB9CiAgICB9CiAgXSwKICAicGFnZUluZm8iOiB7CiAgICAidG90YWxSZXN1bHRzIjogMSwKICAgICJyZXN1bHRzUGVyUGFnZSI6IDEKICB9Cn0K
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:34 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=K45X1hgeRFc&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:34 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJraW5kIjogInlvdXR1YmUjdmlkZW9MaXN0UmVzcG9uc2UiLAogICJldGFnIjogIktzWHFqSEJHbmxicktHWjhCclphdnlDZFFuNCIsCiAgIml0ZW1zIjogWwogICAgewogICAgICAia2luZCI6ICJ5b3V0dWJlI3ZpZGVvIiwKICAgICAgImV0YWciOiAibE5KVGNDTzg1cXcwQVE4TG9lZU5YNnBpX3hvIiwKICAgICAgImlkIjogIks0NVgxaGdlUkZjIiwKICAgICAgInNuaXBwZXQiOiB7CiAgICAgICAgInB1Ymxpc2hlZEF0IjogIjIwMTgtMDEtMzFUMTc6MTU6NDVaIiwKICAgICAgICAiY2hhbm5lbElkIjogIlVDbFM0OHVOQlpEaENNOUFpMzJYX2FpdyIsCiAgICAgICAgInRpdGxlIjogIk5pY2hvbGFzIHRoZSBEb2xwaGluIFByZWRpY3RzIFN1cGVyIEJvd2wgMjAxOCBXaW5uZXIiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJXYXRjaCBOaWNr4oCZcyBQaWNrISBXaG8gZGlkIHJlc2N1ZWQgZG9scGhpbiBOaWNob2xhcyBwcmVkaWN0IHRvIHdpbiBTdXBlciBCb3dsIExJST8gV2lsbCBpdCBiZSB0aGUgTmV3IEVuZ2xhbmQgUGF0cmlvdHMgb3IgUGhpbGFkZWxwaGlhIEVhZ2xlcz8gTGV04oCZcyBmaW5kIG91dCBhbmQgbGV0IHVzIGtub3cgaWYgeW91IGFncmVlIG9yIGRpc2FncmVlIVxuXG5OaWNob2xhcyBpcyBhbHJlYWR5IDYgZm9yIDcgb24gaGlzIHNwb3J0cyBwcmVkaWN0aW9ucyBhbmQgYW4gaW5jcmVkaWJsZSAzIGZvciAzIGluIGZvb3RiYWxsIHByZWRpY3Rpb25zLiBMYXN0IHllYXIgaGUgY29ycmVjdGx5IHByZWRpY3RlZCB0aGUgUGF0cmlvdHMgU3VwZXIgQm93bCB3aW4gYWdhaW5zdCB0aGUgQXRsYW50YSBGYWxjb25zLiBcblxuTGVhcm4gbW9yZSBhYm91dCBOaWNrJ3MgcmVzY3VlIHN0b3J5IGFuZCBsaWZlIGF0IENsZWFyd2F0ZXIgTWFyaW5lIEFxdWFyaXVtOiBodHRwczovL3d3dy5zZWV3aW50ZXIuY29tL2FuaW1hbHMvcGVybWFuZW50LXJlc2lkZW50cy9kb2xwaGlucy9uaWNob2xhcy9cblxuT3JpZ2luYWxseSBicm9hZGNhc3QgbGl2ZSBvbiBKYW4uIDI5LCAyMDE4LlxuXG5Eb25hdGUgdG8gQ2xlYXJ3YXRlciBNYXJpbmUgQXF1YXJpdW06IGh0dHA6Ly9iaXQubHkvMUtCazVYTlxuVmlzaXQgdXMgYXQgQ2xlYXJ3YXRlciBNYXJpbmUgQXF1YXJpdW06IGh0dHA6Ly9iaXQubHkvMUVLeXl0cFxuXG5odHRwczovL3d3dy5mYWNlYm9vay5jb20vU2VlV2ludGVyXG5odHRwczovL3d3dy5pbnN0YWdyYW0uY29tL2NtYXF1YXJpdW0vXG5odHRwczovL3R3aXR0ZXIuY29tL0NNQXF1YXJpdW1cbmh0dHBzOi8vd3d3LnBpbnRlcmVzdC5jb20vY21hcXVhcml1bS8iLAogICAgICAgICJ0aHVtYm5haWxzIjogewogICAgICAgICAgImRlZmF1bHQiOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9LNDVYMWhnZVJGYy9kZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDEyMCwKICAgICAgICAgICAgImhlaWdodCI6IDkwCiAgICAgICAgICB9LAogICAgICAgICAgIm1lZGl1bSI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL0s0NVgxaGdlUkZjL21xZGVmYXVsdC5qcGciLAogICAgICAgICAgICAid2lkdGgiOiAzMjAsCiAgICAgICAgICAgICJoZWlnaHQiOiAxODAKICAgICAgICAgIH0sCiAgICAgICAgICAiaGlnaCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL0s0NVgxaGdlUkZjL2hxZGVmYXVsdC5qcGciLAogICAgICAgICAgICAid2lkdGgiOiA0ODAsCiAgICAgICAgICAgICJoZWlnaHQiOiAzNjAKICAgICAgICAgIH0sCiAgICAgICAgICAic3RhbmRhcmQiOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9LNDVYMWhnZVJGYy9zZGRlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogNjQwLAogICAgICAgICAgICAiaGVpZ2h0IjogNDgwCiAgICAgICAgICB9LAogICAgICAgICAgIm1heHJlcyI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL0s0NVgxaGdlUkZjL21heHJlc2RlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAgICAgImhlaWdodCI6IDcyMAogICAgICAgICAgfQogICAgICAgIH0sCiAgICAgICAgImNoYW5uZWxUaXRsZSI6ICJDbGVhcndhdGVyIE1hcmluZSBBcXVhcml1bSIsCiAgICAgICAgInRhZ3MiOiBbCiAgICAgICAgICAiZG9scGhpbiBwcmVkaWN0aW9uIiwKICAgICAgICAgICJkb2xwaGluIHBsYXlpbmciLAogICAgICAgICAgImVhZ2xlcyIsCiAgICAgICAgICAicGF0cmlvdHMiLAogICAgICAgICAgImZvb3RiYWxsIiwKICAgICAgICAgICJzcG9ydHMgcHJlZGljdGlvbnMiLAogICAgICAgICAgIm5pY2tzIHBpY2tzIiwKICAgICAgICAgICJtYXJpbmUgbGlmZSByZXNjdWUiLAogICAgICAgICAgImRvbHBoaW4gdGFsZSIsCiAgICAgICAgICAiZG9scGhpbiIsCiAgICAgICAgICAic3VwZXIgYm93bCBvZGRzIiwKICAgICAgICAgICJhbmltYWwgY2FyZSIsCiAgICAgICAgICAic3VwZXIgYm93bCAyMDE4IiwKICAgICAgICAgICJjbGVhcndhdGVyIG1hcmluZSBhcXVhcml1bSIsCiAgICAgICAgICAic3VwZXIgYm93bCBMSUkiLAogICAgICAgICAgIm5pY2hvbGFzIHRoZSBkb2xwaGluIiwKICAgICAgICAgICJtYXJpbmUgbGlmZSIsCiAgICAgICAgICAiQ01BMjAxOCIsCiAgICAgICAgICAic3VwZXIgYm93bCBwcmVkaWN0aW9ucyIsCiAgICAgICAgICAic3VwZXIgYm93bCIsCiAgICAgICAgICAiYm90dGxlbm9zZSBkb2xwaGluIiwKICAgICAgICAgICJuZmwiLAogICAgICAgICAgImRvbHBoaW4gc3dpbW1pbmciCiAgICAgICAgXSwKICAgICAgICAiY2F0ZWdvcnlJZCI6ICIxNyIsCiAgICAgICAgImxpdmVCcm9hZGNhc3RDb250ZW50IjogIm5vbmUiLAogICAgICAgICJsb2NhbGl6ZWQiOiB7CiAgICAgICAgICAidGl0bGUiOiAiTmljaG9sYXMgdGhlIERvbHBoaW4gUHJlZGljdHMgU3VwZXIgQm93bCAyMDE4IFdpbm5lciIsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiV2F0Y2ggTmlja+KAmXMgUGljayEgV2hvIGRpZCByZXNjdWVkIGRvbHBoaW4gTmljaG9sYXMgcHJlZGljdCB0byB3aW4gU3VwZXIgQm93bCBMSUk/IFdpbGwgaXQgYmUgdGhlIE5ldyBFbmdsYW5kIFBhdHJpb3RzIG9yIFBoaWxhZGVscGhpYSBFYWdsZXM/IExldOKAmXMgZmluZCBvdXQgYW5kIGxldCB1cyBrbm93IGlmIHlvdSBhZ3JlZSBvciBkaXNhZ3JlZSFcblxuTmljaG9sYXMgaXMgYWxyZWFkeSA2IGZvciA3IG9uIGhpcyBzcG9ydHMgcHJlZGljdGlvbnMgYW5kIGFuIGluY3JlZGlibGUgMyBmb3IgMyBpbiBmb290YmFsbCBwcmVkaWN0aW9ucy4gTGFzdCB5ZWFyIGhlIGNvcnJlY3RseSBwcmVkaWN0ZWQgdGhlIFBhdHJpb3RzIFN1cGVyIEJvd2wgd2luIGFnYWluc3QgdGhlIEF0bGFudGEgRmFsY29ucy4gXG5cbkxlYXJuIG1vcmUgYWJvdXQgTmljaydzIHJlc2N1ZSBzdG9yeSBhbmQgbGlmZSBhdCBDbGVhcndhdGVyIE1hcmluZSBBcXVhcml1bTogaHR0cHM6Ly93d3cuc2Vld2ludGVyLmNvbS9hbmltYWxzL3Blcm1hbmVudC1yZXNpZGVudHMvZG9scGhpbnMvbmljaG9sYXMvXG5cbk9yaWdpbmFsbHkgYnJvYWRjYXN0IGxpdmUgb24gSmFuLiAyOSwgMjAxOC5cblxuRG9uYXRlIHRvIENsZWFyd2F0ZXIgTWFyaW5lIEFxdWFyaXVtOiBodHRwOi8vYml0Lmx5LzFLQms1WE5cblZpc2l0IHVzIGF0IENsZWFyd2F0ZXIgTWFyaW5lIEFxdWFyaXVtOiBodHRwOi8vYml0Lmx5LzFFS3l5dHBcblxuaHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL1NlZVdpbnRlclxuaHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9jbWFxdWFyaXVtL1xuaHR0cHM6Ly90d2l0dGVyLmNvbS9DTUFxdWFyaXVtXG5odHRwczovL3d3dy5waW50ZXJlc3QuY29tL2NtYXF1YXJpdW0vIgogICAgICAgIH0sCiAgICAgICAgImRlZmF1bHRBdWRpb0xhbmd1YWdlIjogImVuIgogICAgICB9LAogICAgICAiY29udGVudERldGFpbHMiOiB7CiAgICAgICAgImR1cmF0aW9uIjogIlBUNE0xMFMiLAogICAgICAgICJkaW1lbnNpb24iOiAiMmQiLAogICAgICAgICJkZWZpbml0aW9uIjogImhkIiwKICAgICAgICAiY2FwdGlvbiI6ICJmYWxzZSIsCiAgICAgICAgImxpY2Vuc2VkQ29udGVudCI6IHRydWUsCiAgICAgICAgImNvbnRlbnRSYXRpbmciOiB7fSwKICAgICAgICAicHJvamVjdGlvbiI6ICJyZWN0YW5ndWxhciIKICAgICAgfSwKICAgICAgInN0YXRpc3RpY3MiOiB7CiAgICAgICAgInZpZXdDb3VudCI6ICIzNDM5OTUiLAogICAgICAgICJsaWtlQ291bnQiOiAiMjM1NyIsCiAgICAgICAgImRpc2xpa2VDb3VudCI6ICI1NDAiLAogICAgICAgICJmYXZvcml0ZUNvdW50IjogIjAiLAogICAgICAgICJjb21tZW50Q291bnQiOiAiMTI4MSIKICAgICAgfQogICAgfQogIF0sCiAgInBhZ2VJbmZvIjogewogICAgInRvdGFsUmVzdWx0cyI6IDEsCiAgICAicmVzdWx0c1BlclBhZ2UiOiAxCiAgfQp9Cg==
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:34 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=K45X1hgeRFc&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:36 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJraW5kIjogInlvdXR1YmUjdmlkZW9MaXN0UmVzcG9uc2UiLAogICJldGFnIjogIktzWHFqSEJHbmxicktHWjhCclphdnlDZFFuNCIsCiAgIml0ZW1zIjogWwogICAgewogICAgICAia2luZCI6ICJ5b3V0dWJlI3ZpZGVvIiwKICAgICAgImV0YWciOiAibE5KVGNDTzg1cXcwQVE4TG9lZU5YNnBpX3hvIiwKICAgICAgImlkIjogIks0NVgxaGdlUkZjIiwKICAgICAgInNuaXBwZXQiOiB7CiAgICAgICAgInB1Ymxpc2hlZEF0IjogIjIwMTgtMDEtMzFUMTc6MTU6NDVaIiwKICAgICAgICAiY2hhbm5lbElkIjogIlVDbFM0OHVOQlpEaENNOUFpMzJYX2FpdyIsCiAgICAgICAgInRpdGxlIjogIk5pY2hvbGFzIHRoZSBEb2xwaGluIFByZWRpY3RzIFN1cGVyIEJvd2wgMjAxOCBXaW5uZXIiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJXYXRjaCBOaWNr4oCZcyBQaWNrISBXaG8gZGlkIHJlc2N1ZWQgZG9scGhpbiBOaWNob2xhcyBwcmVkaWN0IHRvIHdpbiBTdXBlciBCb3dsIExJST8gV2lsbCBpdCBiZSB0aGUgTmV3IEVuZ2xhbmQgUGF0cmlvdHMgb3IgUGhpbGFkZWxwaGlhIEVhZ2xlcz8gTGV04oCZcyBmaW5kIG91dCBhbmQgbGV0IHVzIGtub3cgaWYgeW91IGFncmVlIG9yIGRpc2FncmVlIVxuXG5OaWNob2xhcyBpcyBhbHJlYWR5IDYgZm9yIDcgb24gaGlzIHNwb3J0cyBwcmVkaWN0aW9ucyBhbmQgYW4gaW5jcmVkaWJsZSAzIGZvciAzIGluIGZvb3RiYWxsIHByZWRpY3Rpb25zLiBMYXN0IHllYXIgaGUgY29ycmVjdGx5IHByZWRpY3RlZCB0aGUgUGF0cmlvdHMgU3VwZXIgQm93bCB3aW4gYWdhaW5zdCB0aGUgQXRsYW50YSBGYWxjb25zLiBcblxuTGVhcm4gbW9yZSBhYm91dCBOaWNrJ3MgcmVzY3VlIHN0b3J5IGFuZCBsaWZlIGF0IENsZWFyd2F0ZXIgTWFyaW5lIEFxdWFyaXVtOiBodHRwczovL3d3dy5zZWV3aW50ZXIuY29tL2FuaW1hbHMvcGVybWFuZW50LXJlc2lkZW50cy9kb2xwaGlucy9uaWNob2xhcy9cblxuT3JpZ2luYWxseSBicm9hZGNhc3QgbGl2ZSBvbiBKYW4uIDI5LCAyMDE4LlxuXG5Eb25hdGUgdG8gQ2xlYXJ3YXRlciBNYXJpbmUgQXF1YXJpdW06IGh0dHA6Ly9iaXQubHkvMUtCazVYTlxuVmlzaXQgdXMgYXQgQ2xlYXJ3YXRlciBNYXJpbmUgQXF1YXJpdW06IGh0dHA6Ly9iaXQubHkvMUVLeXl0cFxuXG5odHRwczovL3d3dy5mYWNlYm9vay5jb20vU2VlV2ludGVyXG5odHRwczovL3d3dy5pbnN0YWdyYW0uY29tL2NtYXF1YXJpdW0vXG5odHRwczovL3R3aXR0ZXIuY29tL0NNQXF1YXJpdW1cbmh0dHBzOi8vd3d3LnBpbnRlcmVzdC5jb20vY21hcXVhcml1bS8iLAogICAgICAgICJ0aHVtYm5haWxzIjogewogICAgICAgICAgImRlZmF1bHQiOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9LNDVYMWhnZVJGYy9kZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDEyMCwKICAgICAgICAgICAgImhlaWdodCI6IDkwCiAgICAgICAgICB9LAogICAgICAgICAgIm1lZGl1bSI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL0s0NVgxaGdlUkZjL21xZGVmYXVsdC5qcGciLAogICAgICAgICAgICAid2lkdGgiOiAzMjAsCiAgICAgICAgICAgICJoZWlnaHQiOiAxODAKICAgICAgICAgIH0sCiAgICAgICAgICAiaGlnaCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL0s0NVgxaGdlUkZjL2hxZGVmYXVsdC5qcGciLAogICAgICAgICAgICAid2lkdGgiOiA0ODAsCiAgICAgICAgICAgICJoZWlnaHQiOiAzNjAKICAgICAgICAgIH0sCiAgICAgICAgICAic3RhbmRhcmQiOiB7CiAgICAgICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9LNDVYMWhnZVJGYy9zZGRlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogNjQwLAogICAgICAgICAgICAiaGVpZ2h0IjogNDgwCiAgICAgICAgICB9LAogICAgICAgICAgIm1heHJlcyI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL0s0NVgxaGdlUkZjL21heHJlc2RlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAgICAgImhlaWdodCI6IDcyMAogICAgICAgICAgfQogICAgICAgIH0sCiAgICAgICAgImNoYW5uZWxUaXRsZSI6ICJDbGVhcndhdGVyIE1hcmluZSBBcXVhcml1bSIsCiAgICAgICAgInRhZ3MiOiBbCiAgICAgICAgICAiZG9scGhpbiBwcmVkaWN0aW9uIiwKICAgICAgICAgICJkb2xwaGluIHBsYXlpbmciLAogICAgICAgICAgImVhZ2xlcyIsCiAgICAgICAgICAicGF0cmlvdHMiLAogICAgICAgICAgImZvb3RiYWxsIiwKICAgICAgICAgICJzcG9ydHMgcHJlZGljdGlvbnMiLAogICAgICAgICAgIm5pY2tzIHBpY2tzIiwKICAgICAgICAgICJtYXJpbmUgbGlmZSByZXNjdWUiLAogICAgICAgICAgImRvbHBoaW4gdGFsZSIsCiAgICAgICAgICAiZG9scGhpbiIsCiAgICAgICAgICAic3VwZXIgYm93bCBvZGRzIiwKICAgICAgICAgICJhbmltYWwgY2FyZSIsCiAgICAgICAgICAic3VwZXIgYm93bCAyMDE4IiwKICAgICAgICAgICJjbGVhcndhdGVyIG1hcmluZSBhcXVhcml1bSIsCiAgICAgICAgICAic3VwZXIgYm93bCBMSUkiLAogICAgICAgICAgIm5pY2hvbGFzIHRoZSBkb2xwaGluIiwKICAgICAgICAgICJtYXJpbmUgbGlmZSIsCiAgICAgICAgICAiQ01BMjAxOCIsCiAgICAgICAgICAic3VwZXIgYm93bCBwcmVkaWN0aW9ucyIsCiAgICAgICAgICAic3VwZXIgYm93bCIsCiAgICAgICAgICAiYm90dGxlbm9zZSBkb2xwaGluIiwKICAgICAgICAgICJuZmwiLAogICAgICAgICAgImRvbHBoaW4gc3dpbW1pbmciCiAgICAgICAgXSwKICAgICAgICAiY2F0ZWdvcnlJZCI6ICIxNyIsCiAgICAgICAgImxpdmVCcm9hZGNhc3RDb250ZW50IjogIm5vbmUiLAogICAgICAgICJsb2NhbGl6ZWQiOiB7CiAgICAgICAgICAidGl0bGUiOiAiTmljaG9sYXMgdGhlIERvbHBoaW4gUHJlZGljdHMgU3VwZXIgQm93bCAyMDE4IFdpbm5lciIsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiV2F0Y2ggTmlja+KAmXMgUGljayEgV2hvIGRpZCByZXNjdWVkIGRvbHBoaW4gTmljaG9sYXMgcHJlZGljdCB0byB3aW4gU3VwZXIgQm93bCBMSUk/IFdpbGwgaXQgYmUgdGhlIE5ldyBFbmdsYW5kIFBhdHJpb3RzIG9yIFBoaWxhZGVscGhpYSBFYWdsZXM/IExldOKAmXMgZmluZCBvdXQgYW5kIGxldCB1cyBrbm93IGlmIHlvdSBhZ3JlZSBvciBkaXNhZ3JlZSFcblxuTmljaG9sYXMgaXMgYWxyZWFkeSA2IGZvciA3IG9uIGhpcyBzcG9ydHMgcHJlZGljdGlvbnMgYW5kIGFuIGluY3JlZGlibGUgMyBmb3IgMyBpbiBmb290YmFsbCBwcmVkaWN0aW9ucy4gTGFzdCB5ZWFyIGhlIGNvcnJlY3RseSBwcmVkaWN0ZWQgdGhlIFBhdHJpb3RzIFN1cGVyIEJvd2wgd2luIGFnYWluc3QgdGhlIEF0bGFudGEgRmFsY29ucy4gXG5cbkxlYXJuIG1vcmUgYWJvdXQgTmljaydzIHJlc2N1ZSBzdG9yeSBhbmQgbGlmZSBhdCBDbGVhcndhdGVyIE1hcmluZSBBcXVhcml1bTogaHR0cHM6Ly93d3cuc2Vld2ludGVyLmNvbS9hbmltYWxzL3Blcm1hbmVudC1yZXNpZGVudHMvZG9scGhpbnMvbmljaG9sYXMvXG5cbk9yaWdpbmFsbHkgYnJvYWRjYXN0IGxpdmUgb24gSmFuLiAyOSwgMjAxOC5cblxuRG9uYXRlIHRvIENsZWFyd2F0ZXIgTWFyaW5lIEFxdWFyaXVtOiBodHRwOi8vYml0Lmx5LzFLQms1WE5cblZpc2l0IHVzIGF0IENsZWFyd2F0ZXIgTWFyaW5lIEFxdWFyaXVtOiBodHRwOi8vYml0Lmx5LzFFS3l5dHBcblxuaHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL1NlZVdpbnRlclxuaHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9jbWFxdWFyaXVtL1xuaHR0cHM6Ly90d2l0dGVyLmNvbS9DTUFxdWFyaXVtXG5odHRwczovL3d3dy5waW50ZXJlc3QuY29tL2NtYXF1YXJpdW0vIgogICAgICAgIH0sCiAgICAgICAgImRlZmF1bHRBdWRpb0xhbmd1YWdlIjogImVuIgogICAgICB9LAogICAgICAiY29udGVudERldGFpbHMiOiB7CiAgICAgICAgImR1cmF0aW9uIjogIlBUNE0xMFMiLAogICAgICAgICJkaW1lbnNpb24iOiAiMmQiLAogICAgICAgICJkZWZpbml0aW9uIjogImhkIiwKICAgICAgICAiY2FwdGlvbiI6ICJmYWxzZSIsCiAgICAgICAgImxpY2Vuc2VkQ29udGVudCI6IHRydWUsCiAgICAgICAgImNvbnRlbnRSYXRpbmciOiB7fSwKICAgICAgICAicHJvamVjdGlvbiI6ICJyZWN0YW5ndWxhciIKICAgICAgfSwKICAgICAgInN0YXRpc3RpY3MiOiB7CiAgICAgICAgInZpZXdDb3VudCI6ICIzNDM5OTUiLAogICAgICAgICJsaWtlQ291bnQiOiAiMjM1NyIsCiAgICAgICAgImRpc2xpa2VDb3VudCI6ICI1NDAiLAogICAgICAgICJmYXZvcml0ZUNvdW50IjogIjAiLAogICAgICAgICJjb21tZW50Q291bnQiOiAiMTI4MSIKICAgICAgfQogICAgfQogIF0sCiAgInBhZ2VJbmZvIjogewogICAgInRvdGFsUmVzdWx0cyI6IDEsCiAgICAicmVzdWx0c1BlclBhZ2UiOiAxCiAgfQp9Cg==
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:36 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=OLlmosCADqY&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Tue, 12 May 2020 07:16:36 GMT
+      Date:
+      - Tue, 12 May 2020 07:16:36 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"Dn5xIderbhAnUk5TAW0qkFFir0M/CA-edAEd_SsQB5sUFC2CU8y8Xb4"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogImtpbmQiOiAieW91dHViZSN2aWRlb0xpc3RSZXNwb25zZSIsCiAiZXRhZyI6ICJcIkRuNXhJZGVyYmhBblVrNVRBVzBxa0ZGaXIwTS9DQS1lZEFFZF9Tc1FCNXNVRkMyQ1U4eThYYjRcIiIsCiAicGFnZUluZm8iOiB7CiAgInRvdGFsUmVzdWx0cyI6IDEsCiAgInJlc3VsdHNQZXJQYWdlIjogMQogfSwKICJpdGVtcyI6IFsKICB7CiAgICJraW5kIjogInlvdXR1YmUjdmlkZW8iLAogICAiZXRhZyI6ICJcIkRuNXhJZGVyYmhBblVrNVRBVzBxa0ZGaXIwTS8xX05HSnFTLWhyU0YtQ2JkZnhrRjY3azFQZVlcIiIsCiAgICJpZCI6ICJPTGxtb3NDQURxWSIsCiAgICJzbmlwcGV0IjogewogICAgInB1Ymxpc2hlZEF0IjogIjIwMTgtMDEtMzFUMTY6MDg6MDEuMDAwWiIsCiAgICAiY2hhbm5lbElkIjogIlVDMlRLVXpwMldzcHFvcU5LR2JDa2VRZyIsCiAgICAidGl0bGUiOiAiUmVkIFBhbmRhIFN1cGVyIEJvd2wgUGlja3MiLAogICAgImRlc2NyaXB0aW9uIjogIvCfj4ggVGhlaXIgcGlja3MgYXJlIGluISBGZXJndXNvbiBnb2VzIHdpdGggdGhlIFBhdHJpb3RzLCBhbmQgTWVpLUxpIGNob29zZXMgdGhlIEVhZ2xlcy4gUm93YW4gY29tZXMgaW4gd2l0aCBhIGxhdGUgc2VsZWN0aW9uIGluIGZhdm9yIG9mIFBoaWxhZGVscGhpYSEiLAogICAgInRodW1ibmFpbHMiOiB7CiAgICAgImRlZmF1bHQiOiB7CiAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9PTGxtb3NDQURxWS9kZWZhdWx0LmpwZyIsCiAgICAgICJ3aWR0aCI6IDEyMCwKICAgICAgImhlaWdodCI6IDkwCiAgICAgfSwKICAgICAibWVkaXVtIjogewogICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvT0xsbW9zQ0FEcVkvbXFkZWZhdWx0LmpwZyIsCiAgICAgICJ3aWR0aCI6IDMyMCwKICAgICAgImhlaWdodCI6IDE4MAogICAgIH0sCiAgICAgImhpZ2giOiB7CiAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9PTGxtb3NDQURxWS9ocWRlZmF1bHQuanBnIiwKICAgICAgIndpZHRoIjogNDgwLAogICAgICAiaGVpZ2h0IjogMzYwCiAgICAgfSwKICAgICAic3RhbmRhcmQiOiB7CiAgICAgICJ1cmwiOiAiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9PTGxtb3NDQURxWS9zZGRlZmF1bHQuanBnIiwKICAgICAgIndpZHRoIjogNjQwLAogICAgICAiaGVpZ2h0IjogNDgwCiAgICAgfSwKICAgICAibWF4cmVzIjogewogICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvT0xsbW9zQ0FEcVkvbWF4cmVzZGVmYXVsdC5qcGciLAogICAgICAid2lkdGgiOiAxMjgwLAogICAgICAiaGVpZ2h0IjogNzIwCiAgICAgfQogICAgfSwKICAgICJjaGFubmVsVGl0bGUiOiAiUm9zcyBQYXJrIFpvbyIsCiAgICAidGFncyI6IFsKICAgICAic3BvcnRzIiwKICAgICAiZm9vdGJhbGwiLAogICAgICJzdXBlciBib3dsIiwKICAgICAic3VwZXIiLAogICAgICJib3dsIiwKICAgICAiYW5pbWFsIiwKICAgICAiYW5pbWFscyIsCiAgICAgInJlZCIsCiAgICAgInBhbmRhIiwKICAgICAicmVkIHBhbmRhIiwKICAgICAiYmlnIGdhbWUiLAogICAgICJ2aXJhbCIsCiAgICAgInZpZGVvIiwKICAgICAiY3V0ZSIsCiAgICAgImFkb3JhYmxlIiwKICAgICAiYWR2ZW50dXJlIiwKICAgICAicGFyayIsCiAgICAgInBhcmtzIiwKICAgICAiem9vIiwKICAgICAiem9vcyIsCiAgICAgImFxdWFyaXVtIiwKICAgICAibWF6aW5nIiwKICAgICAiYW1hemluZyIsCiAgICAgImVuZGFuZ2VyZWQiLAogICAgICJsb3ZlbHkiLAogICAgICJsb3ZlIiwKICAgICAic2F2ZSIKICAgIF0sCiAgICAiY2F0ZWdvcnlJZCI6ICIyMiIsCiAgICAibGl2ZUJyb2FkY2FzdENvbnRlbnQiOiAibm9uZSIsCiAgICAibG9jYWxpemVkIjogewogICAgICJ0aXRsZSI6ICJSZWQgUGFuZGEgU3VwZXIgQm93bCBQaWNrcyIsCiAgICAgImRlc2NyaXB0aW9uIjogIvCfj4ggVGhlaXIgcGlja3MgYXJlIGluISBGZXJndXNvbiBnb2VzIHdpdGggdGhlIFBhdHJpb3RzLCBhbmQgTWVpLUxpIGNob29zZXMgdGhlIEVhZ2xlcy4gUm93YW4gY29tZXMgaW4gd2l0aCBhIGxhdGUgc2VsZWN0aW9uIGluIGZhdm9yIG9mIFBoaWxhZGVscGhpYSEiCiAgICB9CiAgIH0sCiAgICJjb250ZW50RGV0YWlscyI6IHsKICAgICJkdXJhdGlvbiI6ICJQVDFNMTlTIiwKICAgICJkaW1lbnNpb24iOiAiMmQiLAogICAgImRlZmluaXRpb24iOiAiaGQiLAogICAgImNhcHRpb24iOiAiZmFsc2UiLAogICAgImxpY2Vuc2VkQ29udGVudCI6IGZhbHNlLAogICAgInByb2plY3Rpb24iOiAicmVjdGFuZ3VsYXIiCiAgIH0sCiAgICJzdGF0aXN0aWNzIjogewogICAgInZpZXdDb3VudCI6ICI3NDgiLAogICAgImxpa2VDb3VudCI6ICIxNCIsCiAgICAiZGlzbGlrZUNvdW50IjogIjAiLAogICAgImZhdm9yaXRlQ291bnQiOiAiMCIKICAgfQogIH0KIF0KfQo=
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:36 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=OLlmosCADqY&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:36 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJraW5kIjogInlvdXR1YmUjdmlkZW9MaXN0UmVzcG9uc2UiLAogICJldGFnIjogIlNTQTRFUklMRGFVT3hmQk81RUxzcjFOVnZscyIsCiAgIml0ZW1zIjogWwogICAgewogICAgICAia2luZCI6ICJ5b3V0dWJlI3ZpZGVvIiwKICAgICAgImV0YWciOiAiUFBkNHVKRmlRX21wUlYtY2Q1ams1TG1iRlVzIiwKICAgICAgImlkIjogIk9MbG1vc0NBRHFZIiwKICAgICAgInNuaXBwZXQiOiB7CiAgICAgICAgInB1Ymxpc2hlZEF0IjogIjIwMTgtMDEtMzFUMTY6MDg6MDFaIiwKICAgICAgICAiY2hhbm5lbElkIjogIlVDMlRLVXpwMldzcHFvcU5LR2JDa2VRZyIsCiAgICAgICAgInRpdGxlIjogIlJlZCBQYW5kYSBTdXBlciBCb3dsIFBpY2tzIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAi8J+PiCBUaGVpciBwaWNrcyBhcmUgaW4hIEZlcmd1c29uIGdvZXMgd2l0aCB0aGUgUGF0cmlvdHMsIGFuZCBNZWktTGkgY2hvb3NlcyB0aGUgRWFnbGVzLiBSb3dhbiBjb21lcyBpbiB3aXRoIGEgbGF0ZSBzZWxlY3Rpb24gaW4gZmF2b3Igb2YgUGhpbGFkZWxwaGlhISIsCiAgICAgICAgInRodW1ibmFpbHMiOiB7CiAgICAgICAgICAiZGVmYXVsdCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL09MbG1vc0NBRHFZL2RlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogMTIwLAogICAgICAgICAgICAiaGVpZ2h0IjogOTAKICAgICAgICAgIH0sCiAgICAgICAgICAibWVkaXVtIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvT0xsbW9zQ0FEcVkvbXFkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDMyMCwKICAgICAgICAgICAgImhlaWdodCI6IDE4MAogICAgICAgICAgfSwKICAgICAgICAgICJoaWdoIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvT0xsbW9zQ0FEcVkvaHFkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDQ4MCwKICAgICAgICAgICAgImhlaWdodCI6IDM2MAogICAgICAgICAgfSwKICAgICAgICAgICJzdGFuZGFyZCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL09MbG1vc0NBRHFZL3NkZGVmYXVsdC5qcGciLAogICAgICAgICAgICAid2lkdGgiOiA2NDAsCiAgICAgICAgICAgICJoZWlnaHQiOiA0ODAKICAgICAgICAgIH0sCiAgICAgICAgICAibWF4cmVzIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvT0xsbW9zQ0FEcVkvbWF4cmVzZGVmYXVsdC5qcGciLAogICAgICAgICAgICAid2lkdGgiOiAxMjgwLAogICAgICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgICAgICB9CiAgICAgICAgfSwKICAgICAgICAiY2hhbm5lbFRpdGxlIjogIlJvc3MgUGFyayBab28iLAogICAgICAgICJ0YWdzIjogWwogICAgICAgICAgInNwb3J0cyIsCiAgICAgICAgICAiZm9vdGJhbGwiLAogICAgICAgICAgInN1cGVyIGJvd2wiLAogICAgICAgICAgInN1cGVyIiwKICAgICAgICAgICJib3dsIiwKICAgICAgICAgICJhbmltYWwiLAogICAgICAgICAgImFuaW1hbHMiLAogICAgICAgICAgInJlZCIsCiAgICAgICAgICAicGFuZGEiLAogICAgICAgICAgInJlZCBwYW5kYSIsCiAgICAgICAgICAiYmlnIGdhbWUiLAogICAgICAgICAgInZpcmFsIiwKICAgICAgICAgICJ2aWRlbyIsCiAgICAgICAgICAiY3V0ZSIsCiAgICAgICAgICAiYWRvcmFibGUiLAogICAgICAgICAgImFkdmVudHVyZSIsCiAgICAgICAgICAicGFyayIsCiAgICAgICAgICAicGFya3MiLAogICAgICAgICAgInpvbyIsCiAgICAgICAgICAiem9vcyIsCiAgICAgICAgICAiYXF1YXJpdW0iLAogICAgICAgICAgIm1hemluZyIsCiAgICAgICAgICAiYW1hemluZyIsCiAgICAgICAgICAiZW5kYW5nZXJlZCIsCiAgICAgICAgICAibG92ZWx5IiwKICAgICAgICAgICJsb3ZlIiwKICAgICAgICAgICJzYXZlIgogICAgICAgIF0sCiAgICAgICAgImNhdGVnb3J5SWQiOiAiMjIiLAogICAgICAgICJsaXZlQnJvYWRjYXN0Q29udGVudCI6ICJub25lIiwKICAgICAgICAibG9jYWxpemVkIjogewogICAgICAgICAgInRpdGxlIjogIlJlZCBQYW5kYSBTdXBlciBCb3dsIFBpY2tzIiwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICLwn4+IIFRoZWlyIHBpY2tzIGFyZSBpbiEgRmVyZ3Vzb24gZ29lcyB3aXRoIHRoZSBQYXRyaW90cywgYW5kIE1laS1MaSBjaG9vc2VzIHRoZSBFYWdsZXMuIFJvd2FuIGNvbWVzIGluIHdpdGggYSBsYXRlIHNlbGVjdGlvbiBpbiBmYXZvciBvZiBQaGlsYWRlbHBoaWEhIgogICAgICAgIH0KICAgICAgfSwKICAgICAgImNvbnRlbnREZXRhaWxzIjogewogICAgICAgICJkdXJhdGlvbiI6ICJQVDFNMTlTIiwKICAgICAgICAiZGltZW5zaW9uIjogIjJkIiwKICAgICAgICAiZGVmaW5pdGlvbiI6ICJoZCIsCiAgICAgICAgImNhcHRpb24iOiAiZmFsc2UiLAogICAgICAgICJsaWNlbnNlZENvbnRlbnQiOiBmYWxzZSwKICAgICAgICAiY29udGVudFJhdGluZyI6IHt9LAogICAgICAgICJwcm9qZWN0aW9uIjogInJlY3Rhbmd1bGFyIgogICAgICB9LAogICAgICAic3RhdGlzdGljcyI6IHsKICAgICAgICAidmlld0NvdW50IjogIjc0OCIsCiAgICAgICAgImxpa2VDb3VudCI6ICIxNCIsCiAgICAgICAgImRpc2xpa2VDb3VudCI6ICIwIiwKICAgICAgICAiZmF2b3JpdGVDb3VudCI6ICIwIgogICAgICB9CiAgICB9CiAgXSwKICAicGFnZUluZm8iOiB7CiAgICAidG90YWxSZXN1bHRzIjogMSwKICAgICJyZXN1bHRzUGVyUGFnZSI6IDEKICB9Cn0K
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:36 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=xZB3qhJ5vbk&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:36 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#videoListResponse",
+          "etag": "vNVBYS3d9qCuVMW6URpFnMcUDak",
+          "items": [
+            {
+              "kind": "youtube#video",
+              "etag": "aRXP3dcFDUvi16KcydF269NUbJI",
+              "id": "xZB3qhJ5vbk",
+              "snippet": {
+                "publishedAt": "2018-01-29T03:23:39Z",
+                "channelId": "UC_KlNxePTaaI6DdCvz8UFYQ",
+                "title": "Chicken picks Super Bowl LII winner",
+                "description": "My psychic chicken, Favorite, is back at it again with another one of her predictions. This time she predicts the winner of Super Bowl LII one week before the event takes place. You saw it here first. Subscribe and stay tuned for more exciting happenings from the Clauss Video Archive. \n\nDon't forget to support all of the great small channels out there.\nPlease Gamble Responsibly!",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/xZB3qhJ5vbk/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/xZB3qhJ5vbk/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/xZB3qhJ5vbk/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  },
+                  "standard": {
+                    "url": "https://i.ytimg.com/vi/xZB3qhJ5vbk/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                  },
+                  "maxres": {
+                    "url": "https://i.ytimg.com/vi/xZB3qhJ5vbk/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                "channelTitle": "Clauss Video Archive",
+                "tags": [
+                  "psychic",
+                  "chicken",
+                  "animals",
+                  "Super Bowl LII",
+                  "Super Bowl 52",
+                  "super",
+                  "bowl",
+                  "LII",
+                  "52",
+                  "winner",
+                  "prediction",
+                  "preview",
+                  "outcome",
+                  "win",
+                  "game",
+                  "New England Patriots",
+                  "Philadelphia Eagles",
+                  "football",
+                  "are you ready for some football",
+                  "american",
+                  "future",
+                  "fortune",
+                  "pyschic reading",
+                  "predict",
+                  "play",
+                  "touchdown",
+                  "Sunday",
+                  "chicken picks",
+                  "favorite",
+                  "gamble",
+                  "gambling",
+                  "odds",
+                  "animal",
+                  "amazing",
+                  "predicting the future",
+                  "fortune telling",
+                  "Super Bowl",
+                  "superbowl",
+                  "miracle",
+                  "victory",
+                  "result",
+                  "pats",
+                  "patriots",
+                  "eagles",
+                  "wager",
+                  "bet",
+                  "paul",
+                  "octopus",
+                  "paul the psychic octopus"
+                ],
+                "categoryId": "19",
+                "liveBroadcastContent": "none",
+                "localized": {
+                  "title": "Chicken picks Super Bowl LII winner",
+                  "description": "My psychic chicken, Favorite, is back at it again with another one of her predictions. This time she predicts the winner of Super Bowl LII one week before the event takes place. You saw it here first. Subscribe and stay tuned for more exciting happenings from the Clauss Video Archive. \n\nDon't forget to support all of the great small channels out there.\nPlease Gamble Responsibly!"
+                }
+              },
+              "contentDetails": {
+                "duration": "PT3M22S",
+                "dimension": "2d",
+                "definition": "hd",
+                "caption": "false",
+                "licensedContent": true,
+                "contentRating": {},
+                "projection": "rectangular"
+              },
+              "statistics": {
+                "viewCount": "2636",
+                "likeCount": "117",
+                "dislikeCount": "3",
+                "favoriteCount": "0",
+                "commentCount": "149"
+              }
+            }
+          ],
+          "pageInfo": {
+            "totalResults": 1,
+            "resultsPerPage": 1
+          }
+        }
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:36 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=xZB3qhJ5vbk&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Tue, 12 May 2020 07:16:36 GMT
+      Date:
+      - Tue, 12 May 2020 07:16:36 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"Dn5xIderbhAnUk5TAW0qkFFir0M/UOv5jeAwPCiW9HWRg8NeXwnFZXk"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+         "kind": "youtube#videoListResponse",
+         "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/UOv5jeAwPCiW9HWRg8NeXwnFZXk\"",
+         "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 1
+         },
+         "items": [
+          {
+           "kind": "youtube#video",
+           "etag": "\"Dn5xIderbhAnUk5TAW0qkFFir0M/7i-aotKnd3-1Tg5i8NIsOGz5C8M\"",
+           "id": "xZB3qhJ5vbk",
+           "snippet": {
+            "publishedAt": "2018-01-29T03:23:39.000Z",
+            "channelId": "UC_KlNxePTaaI6DdCvz8UFYQ",
+            "title": "Chicken picks Super Bowl LII winner",
+            "description": "My psychic chicken, Favorite, is back at it again with another one of her predictions. This time she predicts the winner of Super Bowl LII one week before the event takes place. You saw it here first. Subscribe and stay tuned for more exciting happenings from the Clauss Video Archive. \n\nDon't forget to support all of the great small channels out there.\nPlease Gamble Responsibly!",
+            "thumbnails": {
+             "default": {
+              "url": "https://i.ytimg.com/vi/xZB3qhJ5vbk/default.jpg",
+              "width": 120,
+              "height": 90
+             },
+             "medium": {
+              "url": "https://i.ytimg.com/vi/xZB3qhJ5vbk/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             },
+             "high": {
+              "url": "https://i.ytimg.com/vi/xZB3qhJ5vbk/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+             },
+             "standard": {
+              "url": "https://i.ytimg.com/vi/xZB3qhJ5vbk/sddefault.jpg",
+              "width": 640,
+              "height": 480
+             },
+             "maxres": {
+              "url": "https://i.ytimg.com/vi/xZB3qhJ5vbk/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+             }
+            },
+            "channelTitle": "Clauss Video Archive",
+            "tags": [
+             "psychic",
+             "chicken",
+             "animals",
+             "Super Bowl LII",
+             "Super Bowl 52",
+             "super",
+             "bowl",
+             "LII",
+             "52",
+             "winner",
+             "prediction",
+             "preview",
+             "outcome",
+             "win",
+             "game",
+             "New England Patriots",
+             "Philadelphia Eagles",
+             "football",
+             "are you ready for some football",
+             "american",
+             "future",
+             "fortune",
+             "pyschic reading",
+             "predict",
+             "play",
+             "touchdown",
+             "Sunday",
+             "chicken picks",
+             "favorite",
+             "gamble",
+             "gambling",
+             "odds",
+             "animal",
+             "amazing",
+             "predicting the future",
+             "fortune telling",
+             "Super Bowl",
+             "superbowl",
+             "miracle",
+             "victory",
+             "result",
+             "pats",
+             "patriots",
+             "eagles",
+             "wager",
+             "bet",
+             "paul",
+             "octopus",
+             "paul the psychic octopus"
+            ],
+            "categoryId": "19",
+            "liveBroadcastContent": "none",
+            "localized": {
+             "title": "Chicken picks Super Bowl LII winner",
+             "description": "My psychic chicken, Favorite, is back at it again with another one of her predictions. This time she predicts the winner of Super Bowl LII one week before the event takes place. You saw it here first. Subscribe and stay tuned for more exciting happenings from the Clauss Video Archive. \n\nDon't forget to support all of the great small channels out there.\nPlease Gamble Responsibly!"
+            }
+           },
+           "contentDetails": {
+            "duration": "PT3M22S",
+            "dimension": "2d",
+            "definition": "hd",
+            "caption": "false",
+            "licensedContent": true,
+            "projection": "rectangular"
+           },
+           "statistics": {
+            "viewCount": "2636",
+            "likeCount": "117",
+            "dislikeCount": "3",
+            "favoriteCount": "0",
+            "commentCount": "149"
+           }
+          }
+         ]
+        }
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:36 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=X2y0_s85Xx4&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:37 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#videoListResponse",
+          "etag": "aeUQ0LRanH0h49pYxpd1Ggiv_qQ",
+          "items": [
+            {
+              "kind": "youtube#video",
+              "etag": "TPrWNGVic8Bovr9KG6HNa1W3Ujs",
+              "id": "X2y0_s85Xx4",
+              "snippet": {
+                "publishedAt": "2018-02-01T16:55:07Z",
+                "channelId": "UCpvy7R6hAUqAAZQI0rQIcxw",
+                "title": "Manatee predicts Super Bowl 2018 winner",
+                "description": "Buffet, one of two resident manatees at Mote Marine Laboratory's Marine Mammal Center in Sarasota, on Feb. 1, 2017, picks the Philadelphia Eagles to win Super Bowl LII. Story: http://www.heraldtribune.com/news/20180201/mote-marine-manatees-divided-once-again-on-super-bowl-winner",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/X2y0_s85Xx4/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/X2y0_s85Xx4/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/X2y0_s85Xx4/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  },
+                  "standard": {
+                    "url": "https://i.ytimg.com/vi/X2y0_s85Xx4/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                  },
+                  "maxres": {
+                    "url": "https://i.ytimg.com/vi/X2y0_s85Xx4/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                "channelTitle": "Sarasota Herald-Tribune",
+                "categoryId": "24",
+                "liveBroadcastContent": "none",
+                "localized": {
+                  "title": "Manatee predicts Super Bowl 2018 winner",
+                  "description": "Buffet, one of two resident manatees at Mote Marine Laboratory's Marine Mammal Center in Sarasota, on Feb. 1, 2017, picks the Philadelphia Eagles to win Super Bowl LII. Story: http://www.heraldtribune.com/news/20180201/mote-marine-manatees-divided-once-again-on-super-bowl-winner"
+                },
+                "defaultAudioLanguage": "en"
+              },
+              "contentDetails": {
+                "duration": "PT1M39S",
+                "dimension": "2d",
+                "definition": "hd",
+                "caption": "false",
+                "licensedContent": true,
+                "contentRating": {},
+                "projection": "rectangular"
+              },
+              "statistics": {
+                "viewCount": "1565",
+                "likeCount": "12",
+                "dislikeCount": "2",
+                "favoriteCount": "0",
+                "commentCount": "7"
+              }
+            }
+          ],
+          "pageInfo": {
+            "totalResults": 1,
+            "resultsPerPage": 1
+          }
+        }
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:37 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=X2y0_s85Xx4&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:37 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#videoListResponse",
+          "etag": "aeUQ0LRanH0h49pYxpd1Ggiv_qQ",
+          "items": [
+            {
+              "kind": "youtube#video",
+              "etag": "TPrWNGVic8Bovr9KG6HNa1W3Ujs",
+              "id": "X2y0_s85Xx4",
+              "snippet": {
+                "publishedAt": "2018-02-01T16:55:07Z",
+                "channelId": "UCpvy7R6hAUqAAZQI0rQIcxw",
+                "title": "Manatee predicts Super Bowl 2018 winner",
+                "description": "Buffet, one of two resident manatees at Mote Marine Laboratory's Marine Mammal Center in Sarasota, on Feb. 1, 2017, picks the Philadelphia Eagles to win Super Bowl LII. Story: http://www.heraldtribune.com/news/20180201/mote-marine-manatees-divided-once-again-on-super-bowl-winner",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/X2y0_s85Xx4/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/X2y0_s85Xx4/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/X2y0_s85Xx4/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  },
+                  "standard": {
+                    "url": "https://i.ytimg.com/vi/X2y0_s85Xx4/sddefault.jpg",
+                    "width": 640,
+                    "height": 480
+                  },
+                  "maxres": {
+                    "url": "https://i.ytimg.com/vi/X2y0_s85Xx4/maxresdefault.jpg",
+                    "width": 1280,
+                    "height": 720
+                  }
+                },
+                "channelTitle": "Sarasota Herald-Tribune",
+                "categoryId": "24",
+                "liveBroadcastContent": "none",
+                "localized": {
+                  "title": "Manatee predicts Super Bowl 2018 winner",
+                  "description": "Buffet, one of two resident manatees at Mote Marine Laboratory's Marine Mammal Center in Sarasota, on Feb. 1, 2017, picks the Philadelphia Eagles to win Super Bowl LII. Story: http://www.heraldtribune.com/news/20180201/mote-marine-manatees-divided-once-again-on-super-bowl-winner"
+                },
+                "defaultAudioLanguage": "en"
+              },
+              "contentDetails": {
+                "duration": "PT1M39S",
+                "dimension": "2d",
+                "definition": "hd",
+                "caption": "false",
+                "licensedContent": true,
+                "contentRating": {},
+                "projection": "rectangular"
+              },
+              "statistics": {
+                "viewCount": "1565",
+                "likeCount": "12",
+                "dislikeCount": "2",
+                "favoriteCount": "0",
+                "commentCount": "7"
+              }
+            }
+          ],
+          "pageInfo": {
+            "totalResults": 1,
+            "resultsPerPage": 1
+          }
+        }
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:37 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=zUDcGDK_bRw&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:37 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJraW5kIjogInlvdXR1YmUjdmlkZW9MaXN0UmVzcG9uc2UiLAogICJldGFnIjogIndZZ0NBcmRMZFpqbHFjOE1IS0Yxb1pNdXd5WSIsCiAgIml0ZW1zIjogWwogICAgewogICAgICAia2luZCI6ICJ5b3V0dWJlI3ZpZGVvIiwKICAgICAgImV0YWciOiAiWXA3Z0N3RXE2dG1VQTczelFsb3FKU2FrRTlZIiwKICAgICAgImlkIjogInpVRGNHREtfYlJ3IiwKICAgICAgInNuaXBwZXQiOiB7CiAgICAgICAgInB1Ymxpc2hlZEF0IjogIjIwMTgtMDItMDNUMTk6MDk6MjZaIiwKICAgICAgICAiY2hhbm5lbElkIjogIlVDNlZ6VWY4THlYeE96MlprUVA4X3VodyIsCiAgICAgICAgInRpdGxlIjogIkJsYWNrIENhdCBQcmVkaWN0cyBTdXBlciBCb3dsIDIwMTggV0lOTkVSUyEiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJTdWJzY3JpYmU6IGh0dHA6Ly9iaXQubHkvU3ViVG9DYXRNYW5DaHJpc1xuV2hvIHdpbGwgV0lOIFN1cGVyIEJvd2wgMjAxOD8gVGhlIE5ldyBFbmdsYW5kIFBhdHJpb3RzIG9yIHRoZSBQaGlsYWRlbHBoaWEgRWFnbGVzPyDigKYgQ29sZSB0aGUgQmxhY2sgQ2F0IHByZWRpY3RzIHRoZSB3aW5uZXIhIDopXG5cbvCfkLEgRmluZCBtZSBoZXJlLi4uXG7igKIgaHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL0NhdE1hbkNocmlzUG9vbGUvXG7igKIgaHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9jYXRtYW5jaHJpc3Bvb2xlXG5cbvCfkZUgQnV5IE91ciBNZXJjaDogaHR0cHM6Ly9zaG9wLmNvbGVhbmRtYXJtYWxhZGUuY29tXG7igKIgU2hvcCBvdXIgQW1hem9uIFN0b3JlOiBodHRwczovL3d3dy5hbWF6b24uY29tL3Nob3AvY29sZWFuZG1hcm1hbGFkZVxuXG5IYXZlIGEgcXVlc3Rpb24/IENvbnRhY3QgbWUgYXQ6IGNvbGVhbmRtYXJtYWxhZGVAZ21haWwuY29tIFxuQWZmaWxpYXRlIExpbmtzIG1heSBiZSBwcmVzZW50IGFib3ZlLlxuXG5BYm91dCBNZTogQ2F0IERhZCB0byBjZWxlYnJpY2F0cyBDb2xlICYgTWFybWFsYWRlIGFuZCBmb3JtZXIgdmlkZW9ncmFwaGVyIGF0IEJpZyBDYXQgUmVzY3VlIGluIFRhbXBhIEZM4oCmIGZvbGxvdyBtZSBmb3IgZGFpbHkgY2xpcHMsIHZsb2dzLCBjYXQgcmVzY3VlIHdvcmssIEJJRyBjYXQgdmlkZW9zIGFuZCBtb3JlIVxuXG5NdXNpYyAtIEJveCBmdWxsIG9mIHRveXMgLSBFcGlkZW1pYyBNdXNpYyIsCiAgICAgICAgInRodW1ibmFpbHMiOiB7CiAgICAgICAgICAiZGVmYXVsdCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL3pVRGNHREtfYlJ3L2RlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogMTIwLAogICAgICAgICAgICAiaGVpZ2h0IjogOTAKICAgICAgICAgIH0sCiAgICAgICAgICAibWVkaXVtIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvelVEY0dES19iUncvbXFkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDMyMCwKICAgICAgICAgICAgImhlaWdodCI6IDE4MAogICAgICAgICAgfSwKICAgICAgICAgICJoaWdoIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvelVEY0dES19iUncvaHFkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDQ4MCwKICAgICAgICAgICAgImhlaWdodCI6IDM2MAogICAgICAgICAgfSwKICAgICAgICAgICJzdGFuZGFyZCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL3pVRGNHREtfYlJ3L3NkZGVmYXVsdC5qcGciLAogICAgICAgICAgICAid2lkdGgiOiA2NDAsCiAgICAgICAgICAgICJoZWlnaHQiOiA0ODAKICAgICAgICAgIH0sCiAgICAgICAgICAibWF4cmVzIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvelVEY0dES19iUncvbWF4cmVzZGVmYXVsdC5qcGciLAogICAgICAgICAgICAid2lkdGgiOiAxMjgwLAogICAgICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgICAgICB9CiAgICAgICAgfSwKICAgICAgICAiY2hhbm5lbFRpdGxlIjogIkNhdCBNYW4gQ2hyaXMiLAogICAgICAgICJ0YWdzIjogWwogICAgICAgICAgIkNvbGUgYW5kIE1hcm1hbGFkZSIsCiAgICAgICAgICAiQ2F0cyIsCiAgICAgICAgICAiQ2F0IFZpZGVvcyIsCiAgICAgICAgICAiU3VwZXIgQm93bCIsCiAgICAgICAgICAiU3VwZXIgQm93bCAyMDE4IiwKICAgICAgICAgICJQcmVkaWN0IHN1cGVyIGJvd2wgd2lubmVyIiwKICAgICAgICAgICJOZXcgRW5nbGFuZCBQYXRyaW90cyIsCiAgICAgICAgICAiUGhpbGFkZWxwaGlhIEVhZ2xlcyIsCiAgICAgICAgICAiQW1lcmljYW4gRm9vdGJhbGwiLAogICAgICAgICAgIkNhdCBQc3ljaGljIiwKICAgICAgICAgICJibGFjayBjYXRzIGdvb2QgbHVjayIsCiAgICAgICAgICAiYmxhY2sgY2F0cyBiYWQgbHVjayIsCiAgICAgICAgICAid2luIiwKICAgICAgICAgICJiZXQiLAogICAgICAgICAgIndpbm5lcnMiLAogICAgICAgICAgImxvc2VycyIsCiAgICAgICAgICAiYmlnIGdhbWUiLAogICAgICAgICAgInN1bmRheSBmb290YmFsbCIKICAgICAgICBdLAogICAgICAgICJjYXRlZ29yeUlkIjogIjE1IiwKICAgICAgICAibGl2ZUJyb2FkY2FzdENvbnRlbnQiOiAibm9uZSIsCiAgICAgICAgImxvY2FsaXplZCI6IHsKICAgICAgICAgICJ0aXRsZSI6ICJCbGFjayBDYXQgUHJlZGljdHMgU3VwZXIgQm93bCAyMDE4IFdJTk5FUlMhIiwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJTdWJzY3JpYmU6IGh0dHA6Ly9iaXQubHkvU3ViVG9DYXRNYW5DaHJpc1xuV2hvIHdpbGwgV0lOIFN1cGVyIEJvd2wgMjAxOD8gVGhlIE5ldyBFbmdsYW5kIFBhdHJpb3RzIG9yIHRoZSBQaGlsYWRlbHBoaWEgRWFnbGVzPyDigKYgQ29sZSB0aGUgQmxhY2sgQ2F0IHByZWRpY3RzIHRoZSB3aW5uZXIhIDopXG5cbvCfkLEgRmluZCBtZSBoZXJlLi4uXG7igKIgaHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL0NhdE1hbkNocmlzUG9vbGUvXG7igKIgaHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9jYXRtYW5jaHJpc3Bvb2xlXG5cbvCfkZUgQnV5IE91ciBNZXJjaDogaHR0cHM6Ly9zaG9wLmNvbGVhbmRtYXJtYWxhZGUuY29tXG7igKIgU2hvcCBvdXIgQW1hem9uIFN0b3JlOiBodHRwczovL3d3dy5hbWF6b24uY29tL3Nob3AvY29sZWFuZG1hcm1hbGFkZVxuXG5IYXZlIGEgcXVlc3Rpb24/IENvbnRhY3QgbWUgYXQ6IGNvbGVhbmRtYXJtYWxhZGVAZ21haWwuY29tIFxuQWZmaWxpYXRlIExpbmtzIG1heSBiZSBwcmVzZW50IGFib3ZlLlxuXG5BYm91dCBNZTogQ2F0IERhZCB0byBjZWxlYnJpY2F0cyBDb2xlICYgTWFybWFsYWRlIGFuZCBmb3JtZXIgdmlkZW9ncmFwaGVyIGF0IEJpZyBDYXQgUmVzY3VlIGluIFRhbXBhIEZM4oCmIGZvbGxvdyBtZSBmb3IgZGFpbHkgY2xpcHMsIHZsb2dzLCBjYXQgcmVzY3VlIHdvcmssIEJJRyBjYXQgdmlkZW9zIGFuZCBtb3JlIVxuXG5NdXNpYyAtIEJveCBmdWxsIG9mIHRveXMgLSBFcGlkZW1pYyBNdXNpYyIKICAgICAgICB9CiAgICAgIH0sCiAgICAgICJjb250ZW50RGV0YWlscyI6IHsKICAgICAgICAiZHVyYXRpb24iOiAiUFQ1NFMiLAogICAgICAgICJkaW1lbnNpb24iOiAiMmQiLAogICAgICAgICJkZWZpbml0aW9uIjogImhkIiwKICAgICAgICAiY2FwdGlvbiI6ICJmYWxzZSIsCiAgICAgICAgImxpY2Vuc2VkQ29udGVudCI6IHRydWUsCiAgICAgICAgImNvbnRlbnRSYXRpbmciOiB7fSwKICAgICAgICAicHJvamVjdGlvbiI6ICJyZWN0YW5ndWxhciIKICAgICAgfSwKICAgICAgInN0YXRpc3RpY3MiOiB7CiAgICAgICAgInZpZXdDb3VudCI6ICI4MDc4MjYiLAogICAgICAgICJsaWtlQ291bnQiOiAiMTM4MTQiLAogICAgICAgICJkaXNsaWtlQ291bnQiOiAiMTUyOCIsCiAgICAgICAgImZhdm9yaXRlQ291bnQiOiAiMCIsCiAgICAgICAgImNvbW1lbnRDb3VudCI6ICIzNDExIgogICAgICB9CiAgICB9CiAgXSwKICAicGFnZUluZm8iOiB7CiAgICAidG90YWxSZXN1bHRzIjogMSwKICAgICJyZXN1bHRzUGVyUGFnZSI6IDEKICB9Cn0K
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:37 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=zUDcGDK_bRw&key=<YOUTUBE_API_KEY>&part=snippet,contentDetails,statistics
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 12 May 2020 07:16:37 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJraW5kIjogInlvdXR1YmUjdmlkZW9MaXN0UmVzcG9uc2UiLAogICJldGFnIjogIndZZ0NBcmRMZFpqbHFjOE1IS0Yxb1pNdXd5WSIsCiAgIml0ZW1zIjogWwogICAgewogICAgICAia2luZCI6ICJ5b3V0dWJlI3ZpZGVvIiwKICAgICAgImV0YWciOiAiWXA3Z0N3RXE2dG1VQTczelFsb3FKU2FrRTlZIiwKICAgICAgImlkIjogInpVRGNHREtfYlJ3IiwKICAgICAgInNuaXBwZXQiOiB7CiAgICAgICAgInB1Ymxpc2hlZEF0IjogIjIwMTgtMDItMDNUMTk6MDk6MjZaIiwKICAgICAgICAiY2hhbm5lbElkIjogIlVDNlZ6VWY4THlYeE96MlprUVA4X3VodyIsCiAgICAgICAgInRpdGxlIjogIkJsYWNrIENhdCBQcmVkaWN0cyBTdXBlciBCb3dsIDIwMTggV0lOTkVSUyEiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJTdWJzY3JpYmU6IGh0dHA6Ly9iaXQubHkvU3ViVG9DYXRNYW5DaHJpc1xuV2hvIHdpbGwgV0lOIFN1cGVyIEJvd2wgMjAxOD8gVGhlIE5ldyBFbmdsYW5kIFBhdHJpb3RzIG9yIHRoZSBQaGlsYWRlbHBoaWEgRWFnbGVzPyDigKYgQ29sZSB0aGUgQmxhY2sgQ2F0IHByZWRpY3RzIHRoZSB3aW5uZXIhIDopXG5cbvCfkLEgRmluZCBtZSBoZXJlLi4uXG7igKIgaHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL0NhdE1hbkNocmlzUG9vbGUvXG7igKIgaHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9jYXRtYW5jaHJpc3Bvb2xlXG5cbvCfkZUgQnV5IE91ciBNZXJjaDogaHR0cHM6Ly9zaG9wLmNvbGVhbmRtYXJtYWxhZGUuY29tXG7igKIgU2hvcCBvdXIgQW1hem9uIFN0b3JlOiBodHRwczovL3d3dy5hbWF6b24uY29tL3Nob3AvY29sZWFuZG1hcm1hbGFkZVxuXG5IYXZlIGEgcXVlc3Rpb24/IENvbnRhY3QgbWUgYXQ6IGNvbGVhbmRtYXJtYWxhZGVAZ21haWwuY29tIFxuQWZmaWxpYXRlIExpbmtzIG1heSBiZSBwcmVzZW50IGFib3ZlLlxuXG5BYm91dCBNZTogQ2F0IERhZCB0byBjZWxlYnJpY2F0cyBDb2xlICYgTWFybWFsYWRlIGFuZCBmb3JtZXIgdmlkZW9ncmFwaGVyIGF0IEJpZyBDYXQgUmVzY3VlIGluIFRhbXBhIEZM4oCmIGZvbGxvdyBtZSBmb3IgZGFpbHkgY2xpcHMsIHZsb2dzLCBjYXQgcmVzY3VlIHdvcmssIEJJRyBjYXQgdmlkZW9zIGFuZCBtb3JlIVxuXG5NdXNpYyAtIEJveCBmdWxsIG9mIHRveXMgLSBFcGlkZW1pYyBNdXNpYyIsCiAgICAgICAgInRodW1ibmFpbHMiOiB7CiAgICAgICAgICAiZGVmYXVsdCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL3pVRGNHREtfYlJ3L2RlZmF1bHQuanBnIiwKICAgICAgICAgICAgIndpZHRoIjogMTIwLAogICAgICAgICAgICAiaGVpZ2h0IjogOTAKICAgICAgICAgIH0sCiAgICAgICAgICAibWVkaXVtIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvelVEY0dES19iUncvbXFkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDMyMCwKICAgICAgICAgICAgImhlaWdodCI6IDE4MAogICAgICAgICAgfSwKICAgICAgICAgICJoaWdoIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvelVEY0dES19iUncvaHFkZWZhdWx0LmpwZyIsCiAgICAgICAgICAgICJ3aWR0aCI6IDQ4MCwKICAgICAgICAgICAgImhlaWdodCI6IDM2MAogICAgICAgICAgfSwKICAgICAgICAgICJzdGFuZGFyZCI6IHsKICAgICAgICAgICAgInVybCI6ICJodHRwczovL2kueXRpbWcuY29tL3ZpL3pVRGNHREtfYlJ3L3NkZGVmYXVsdC5qcGciLAogICAgICAgICAgICAid2lkdGgiOiA2NDAsCiAgICAgICAgICAgICJoZWlnaHQiOiA0ODAKICAgICAgICAgIH0sCiAgICAgICAgICAibWF4cmVzIjogewogICAgICAgICAgICAidXJsIjogImh0dHBzOi8vaS55dGltZy5jb20vdmkvelVEY0dES19iUncvbWF4cmVzZGVmYXVsdC5qcGciLAogICAgICAgICAgICAid2lkdGgiOiAxMjgwLAogICAgICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgICAgICB9CiAgICAgICAgfSwKICAgICAgICAiY2hhbm5lbFRpdGxlIjogIkNhdCBNYW4gQ2hyaXMiLAogICAgICAgICJ0YWdzIjogWwogICAgICAgICAgIkNvbGUgYW5kIE1hcm1hbGFkZSIsCiAgICAgICAgICAiQ2F0cyIsCiAgICAgICAgICAiQ2F0IFZpZGVvcyIsCiAgICAgICAgICAiU3VwZXIgQm93bCIsCiAgICAgICAgICAiU3VwZXIgQm93bCAyMDE4IiwKICAgICAgICAgICJQcmVkaWN0IHN1cGVyIGJvd2wgd2lubmVyIiwKICAgICAgICAgICJOZXcgRW5nbGFuZCBQYXRyaW90cyIsCiAgICAgICAgICAiUGhpbGFkZWxwaGlhIEVhZ2xlcyIsCiAgICAgICAgICAiQW1lcmljYW4gRm9vdGJhbGwiLAogICAgICAgICAgIkNhdCBQc3ljaGljIiwKICAgICAgICAgICJibGFjayBjYXRzIGdvb2QgbHVjayIsCiAgICAgICAgICAiYmxhY2sgY2F0cyBiYWQgbHVjayIsCiAgICAgICAgICAid2luIiwKICAgICAgICAgICJiZXQiLAogICAgICAgICAgIndpbm5lcnMiLAogICAgICAgICAgImxvc2VycyIsCiAgICAgICAgICAiYmlnIGdhbWUiLAogICAgICAgICAgInN1bmRheSBmb290YmFsbCIKICAgICAgICBdLAogICAgICAgICJjYXRlZ29yeUlkIjogIjE1IiwKICAgICAgICAibGl2ZUJyb2FkY2FzdENvbnRlbnQiOiAibm9uZSIsCiAgICAgICAgImxvY2FsaXplZCI6IHsKICAgICAgICAgICJ0aXRsZSI6ICJCbGFjayBDYXQgUHJlZGljdHMgU3VwZXIgQm93bCAyMDE4IFdJTk5FUlMhIiwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJTdWJzY3JpYmU6IGh0dHA6Ly9iaXQubHkvU3ViVG9DYXRNYW5DaHJpc1xuV2hvIHdpbGwgV0lOIFN1cGVyIEJvd2wgMjAxOD8gVGhlIE5ldyBFbmdsYW5kIFBhdHJpb3RzIG9yIHRoZSBQaGlsYWRlbHBoaWEgRWFnbGVzPyDigKYgQ29sZSB0aGUgQmxhY2sgQ2F0IHByZWRpY3RzIHRoZSB3aW5uZXIhIDopXG5cbvCfkLEgRmluZCBtZSBoZXJlLi4uXG7igKIgaHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL0NhdE1hbkNocmlzUG9vbGUvXG7igKIgaHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9jYXRtYW5jaHJpc3Bvb2xlXG5cbvCfkZUgQnV5IE91ciBNZXJjaDogaHR0cHM6Ly9zaG9wLmNvbGVhbmRtYXJtYWxhZGUuY29tXG7igKIgU2hvcCBvdXIgQW1hem9uIFN0b3JlOiBodHRwczovL3d3dy5hbWF6b24uY29tL3Nob3AvY29sZWFuZG1hcm1hbGFkZVxuXG5IYXZlIGEgcXVlc3Rpb24/IENvbnRhY3QgbWUgYXQ6IGNvbGVhbmRtYXJtYWxhZGVAZ21haWwuY29tIFxuQWZmaWxpYXRlIExpbmtzIG1heSBiZSBwcmVzZW50IGFib3ZlLlxuXG5BYm91dCBNZTogQ2F0IERhZCB0byBjZWxlYnJpY2F0cyBDb2xlICYgTWFybWFsYWRlIGFuZCBmb3JtZXIgdmlkZW9ncmFwaGVyIGF0IEJpZyBDYXQgUmVzY3VlIGluIFRhbXBhIEZM4oCmIGZvbGxvdyBtZSBmb3IgZGFpbHkgY2xpcHMsIHZsb2dzLCBjYXQgcmVzY3VlIHdvcmssIEJJRyBjYXQgdmlkZW9zIGFuZCBtb3JlIVxuXG5NdXNpYyAtIEJveCBmdWxsIG9mIHRveXMgLSBFcGlkZW1pYyBNdXNpYyIKICAgICAgICB9CiAgICAgIH0sCiAgICAgICJjb250ZW50RGV0YWlscyI6IHsKICAgICAgICAiZHVyYXRpb24iOiAiUFQ1NFMiLAogICAgICAgICJkaW1lbnNpb24iOiAiMmQiLAogICAgICAgICJkZWZpbml0aW9uIjogImhkIiwKICAgICAgICAiY2FwdGlvbiI6ICJmYWxzZSIsCiAgICAgICAgImxpY2Vuc2VkQ29udGVudCI6IHRydWUsCiAgICAgICAgImNvbnRlbnRSYXRpbmciOiB7fSwKICAgICAgICAicHJvamVjdGlvbiI6ICJyZWN0YW5ndWxhciIKICAgICAgfSwKICAgICAgInN0YXRpc3RpY3MiOiB7CiAgICAgICAgInZpZXdDb3VudCI6ICI4MDc4MjYiLAogICAgICAgICJsaWtlQ291bnQiOiAiMTM4MTQiLAogICAgICAgICJkaXNsaWtlQ291bnQiOiAiMTUyOCIsCiAgICAgICAgImZhdm9yaXRlQ291bnQiOiAiMCIsCiAgICAgICAgImNvbW1lbnRDb3VudCI6ICIzNDExIgogICAgICB9CiAgICB9CiAgXSwKICAicGFnZUluZm8iOiB7CiAgICAidG90YWxSZXN1bHRzIjogMSwKICAgICJyZXN1bHRzUGVyUGFnZSI6IDEKICB9Cn0K
+    http_version: null
+  recorded_at: Tue, 12 May 2020 07:16:37 GMT
+recorded_with: VCR 5.1.0
