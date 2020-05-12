@@ -47,4 +47,31 @@ describe 'A user can create friendships with ' do
     expect(current_path).to eq('/dashboard')
     expect(@josh.user_friends).to eq([@dione])
   end
+
+  it 'following' do
+    visit '/'
+    click_on "Sign In"
+    fill_in 'session[email]', with: @josh.email
+    fill_in 'session[password]', with: @josh.password
+    click_on 'Log In'
+    visit '/dashboard'
+
+    expect(@josh.friends).to eq([])
+    within ".following" do
+      within "#dione" do
+        expect(page).to have_button("Add as Friend")
+      end
+      within "#mike" do
+        expect(page).to_not have_button("Add as Friend")
+      end
+    end
+
+    within ".following" do
+      within "#dione" do
+        click_button("Add as Friend")
+      end
+    end
+    expect(current_path).to eq('/dashboard')
+    expect(@josh.user_friends).to eq([@dione])
+  end
 end
