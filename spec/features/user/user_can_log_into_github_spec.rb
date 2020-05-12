@@ -35,7 +35,7 @@ describe 'A registered user' do
     expect(page).to have_css(".repos")
   end
 
-  it 'can see different data if it is a different user', :vcr do
+  it 'can see different data if it is a different user' do
     user = create(:user)
 
     OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new({
