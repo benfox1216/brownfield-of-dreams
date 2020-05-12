@@ -7,6 +7,7 @@ class GithubData
   end
 
   def database_match(user_name)
-    User.where(github_username: user_name).first
+    user = User.where(github_username: user_name).first
+    user.id if user
   end
 end
