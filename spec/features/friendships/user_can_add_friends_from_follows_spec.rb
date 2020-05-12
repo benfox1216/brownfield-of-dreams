@@ -26,17 +26,15 @@ describe 'A user can create friendships with ' do
     visit '/dashboard'
 
     expect(@josh.friends).to eq([])
-  #
-  #   within ".followers" do
-  #     within "#dione" do
-  #       expect(page).to have_link("Add as Friend")
-  #       click_link("Add as Friend")
-  #       expect(current_path).to eq('/dashboard')
-  #     end
-  #     within "#mike" do
-  #       expect(page).to_not have_link("Add as Friend")
-  #     end
-  #   end
+
+    within ".followers" do
+      within "#dione" do
+        expect(page).to have_link("Add as Friend")
+      end
+      within "#mike" do
+        expect(page).to_not have_link("Add as Friend")
+      end
+    end
   #
   #   within "#dione" do
   #     click_link("Add as Friend")
