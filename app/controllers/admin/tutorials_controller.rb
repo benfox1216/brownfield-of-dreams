@@ -5,13 +5,17 @@ class Admin::TutorialsController < Admin::BaseController
 
   def create
     tutorial = Tutorial.create(tutorial_params)
-    if tutorial.save
+    
+    if tutorial.save && tutorial_params[:playlist_id]
       yt = YoutubeResults.new
       yt.create_tutorial_playlist(tutorial_params[:playlist_id], tutorial)
       redirect_path = "/tutorials/#{tutorial.id}"
       flash[:success] = "Successfully created tutorial.
                         #{view_context.link_to 'View it here', redirect_path}."
       redirect_to '/admin/dashboard'
+    elsif tutorial.save
+      flash[:success] = "Successfully created tutorial."
+      redirect_to "/tutorials/#{tutorial.id}"
     else
       render :new
     end
@@ -39,6 +43,6 @@ class Admin::TutorialsController < Admin::BaseController
 
   def tutorial_params
     params.require(:tutorial).permit(:tag_list, :title,
-                                     :description, :playlist_id)
+                                     :description, :playlist_id, :thumbnail)
   end
 end
