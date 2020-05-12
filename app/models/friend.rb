@@ -7,6 +7,7 @@ class Friend < ApplicationRecord
 
   def realism
     return unless user_id == followed_user_id
+
     errors.add :user, 'You can not befriend yourself. Go meet someone.'
   end
 end

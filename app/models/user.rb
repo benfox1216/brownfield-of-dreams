@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   has_many :user_videos, dependent: :destroy
   has_many :videos, through: :user_videos
-  has_many :friends
+  has_many :friends, dependent: :destroy
   has_many :follow_users, through: :friends, source: :user
 
   validates :email, uniqueness: true, presence: true

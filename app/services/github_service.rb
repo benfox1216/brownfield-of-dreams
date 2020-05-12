@@ -6,7 +6,7 @@ class GithubService
   private
 
   def github_response(uri, token)
-    uri = "user/#{uri}" unless uri == "user"
+    uri = "user/#{uri}" unless uri == 'user'
     Faraday.get("https://api.github.com/#{uri}") do |req|
       req.headers['Content-Type'] = 'application/json'
       req.headers['Authorization'] = "Bearer #{token}"

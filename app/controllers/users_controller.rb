@@ -22,12 +22,9 @@ class UsersController < ApplicationController
     if request.env['omniauth.auth'] &&
        request.env['omniauth.auth']['credentials']
       current_user.update(token:
-                          request.env['omniauth.auth']['credentials']['token'])
-      if current_user.save
-        current_user.update(github_username:
-                            update_github_username['login'])
-        current_user.save
-      end
+                          request.env['omniauth.auth']['credentials']['token'],
+                          github_username: update_github_username['login'])
+      current_user.save
       @current_user.reload
     end
     redirect_to dashboard_path
@@ -37,7 +34,7 @@ class UsersController < ApplicationController
 
   def update_github_username
     gh = GithubResults.new(current_user)
-    gh.display_github_data("user")
+    gh.display_github_data('user')
   end
 
   def user_params
