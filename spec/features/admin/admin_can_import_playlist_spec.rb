@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "An Admin can import a playlist" do
   let(:admin)    { create(:admin) }
 
-  scenario "and it should create a tutorial" do
+  scenario "and it should create a tutorial", :vcr do
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
 
     visit '/admin/tutorials/new'
@@ -24,7 +24,7 @@ describe "An Admin can import a playlist" do
     expect(current_path).to eq("/tutorials/#{tutorial.id}")
   end
 
-  scenario "and import should create video records linked to the tutorial" do
+  scenario "and import should create video records linked to the tutorial", :vcr do
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
 
     visit '/admin/tutorials/new'
@@ -37,7 +37,7 @@ describe "An Admin can import a playlist" do
     expect(Video.last.tutorial_id).to eq(Tutorial.last.id)
   end
 
-  scenario "and it can contain >50 videos" do
+  scenario "and it can contain >50 videos", :vcr do
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
     visit '/admin/tutorials/new'
     click_link 'Import YouTube Playlist'

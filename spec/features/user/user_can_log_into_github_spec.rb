@@ -8,7 +8,7 @@ describe 'A registered user' do
     WebMock.allow_net_connect!
   end
 
-  it 'use OAuth to log in to GitHub' do
+  it 'use OAuth to log in to GitHub', :vcr do
     user = create(:user)
 
     OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new({
@@ -35,7 +35,7 @@ describe 'A registered user' do
     expect(page).to have_css(".repos")
   end
 
-  it 'can see different data if it is a different user' do
+  it 'can see different data if it is a different user', :vcr do
     user = create(:user)
 
     OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new({
