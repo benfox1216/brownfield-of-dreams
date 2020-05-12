@@ -87,7 +87,7 @@ describe 'A user can create friendships with ' do
         click_button("Add as Friend")
       end
     end
-
+    
     within ".friends" do
       expect(page).to have_content(@dione.first_name)
       expect(page).to have_content(@dione.last_name)

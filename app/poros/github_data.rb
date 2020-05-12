@@ -6,8 +6,12 @@ class GithubData
     @url = url
   end
 
-  def database_match(user_name)
+  def database_match(current_user, user_name)
     user = User.where(github_username: user_name).first
-    user.id if user
+    user.id if user && existing_friendship_check(current_user, user) == []
+  end
+
+  def existing_friendship_check(current_user, user)
+    Friend.where(user: current_user, user_friend: user)
   end
 end

@@ -32,8 +32,8 @@
       <ul>
         <% @github.display_github_data('followers').each do |follow| %>
           <li id=<%=follow.name%>><%= link_to follow.name, follow.url %>
-            <% if follow.database_match(follow.name) %>
-              <%= button_to "Add as Friend", "/friend", params: { user_id: current_user, user_friend_id: follow.database_match(follow.name) }, method: :post%>
+            <% if follow.database_match(current_user, follow.name) %>
+              <%= button_to "Add as Friend", "/friend", params: { user_id: current_user, user_friend_id: follow.database_match(current_user, follow.name) }, method: :post%>
             <% end %>
           </li>
         <% end %>
@@ -46,8 +46,8 @@
       <ul>
         <% @github.display_github_data('following').each do |follow| %>
           <li id=<%=follow.name%>><%= link_to follow.name, follow.url %>
-            <% if follow.database_match(follow.name) %>
-              <%= button_to "Add as Friend", "/friend", params: { user_id: current_user, user_friend_id: follow.database_match(follow.name) }, method: :post%>
+            <% if follow.database_match(current_user, follow.name) %>
+              <%= button_to "Add as Friend", "/friend", params: { user_id: current_user, user_friend_id: follow.database_match(current_user, follow.name) }, method: :post%>
             <% end %>
           </li>
         <% end %>
