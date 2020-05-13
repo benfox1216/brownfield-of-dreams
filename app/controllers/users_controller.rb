@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   def create
     user = User.create(user_params)
     if user.save
+      send_registration_email(user)
       session[:user_id] = user.id
       flash[:success] = registration_success(user)
       redirect_to dashboard_path
@@ -36,6 +37,10 @@ class UsersController < ApplicationController
   def update_github_username
     gh = GithubResults.new(current_user)
     gh.display_github_data('user')
+  end
+
+  def send_registration_email(user)
+    RegistrationEmailerMailer.inform(user).deliver_now
   end
 
   def registration_success(user)
