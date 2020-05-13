@@ -31,6 +31,29 @@ describe 'A registered user' do
     expect(page).to have_css(".repos")
   end
 
+  it 'updates user info when logging in with OAuth' do
+    user = create(:user)
+    OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new({
+    "provider"=>"github",
+    "uid"=>"53981830",
+    "credentials"=>{"token"=>ENV["GITHUB_API_KEY"], "expires"=>false}})
+    user_response = File.read('spec/fixtures/github_fixtures/user.json')
+    stub_request(:any, "https://api.github.com/user").to_return(body: user_response)
+
+    visit '/'
+    click_on "Sign In"
+    fill_in 'session[email]', with: user.email
+    fill_in 'session[password]', with: user.password
+    click_on 'Log In'
+    visit '/dashboard'
+
+    user.update(token: ENV["GITHUB_API_KEY"])
+    click_on "Connect to Github"
+
+    user.reload
+    expect(user.github_username).to eq('gibberish')
+  end
+
   it 'can see different data if it is a different user', :vcr do
     user = create(:user)
 

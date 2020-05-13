@@ -25,7 +25,7 @@ class UsersController < ApplicationController
        request.env['omniauth.auth']['credentials']
       current_user.update(token:
                           request.env['omniauth.auth']['credentials']['token'],
-                          github_username: update_github_username['login'])
+                          github_username: update_github_username)
       current_user.save
       @current_user.reload
     end
@@ -36,7 +36,7 @@ class UsersController < ApplicationController
 
   def update_github_username
     gh = GithubResults.new(current_user)
-    gh.display_github_data('user')
+    gh.display_github_user_info
   end
 
   def send_registration_email(user)

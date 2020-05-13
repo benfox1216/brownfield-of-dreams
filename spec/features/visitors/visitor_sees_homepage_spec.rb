@@ -23,4 +23,27 @@ describe 'Visitor' do
       end
     end
   end
+
+  describe 'on the about page' do
+    it 'can see some info' do
+      visit '/about'
+      expect(page).to have_content("This application is designed to pull in youtube information to populate tutorials from Turing School of Software and Design's youtube channel. It's designed for anyone learning how to code, with additional features for current students.")
+    end
+  end
+
+  describe 'on the get started page' do
+    it 'can see some info' do
+      visit '/get_started'
+      expect(page).to have_content("Browse tutorials from the homepage.")
+      expect(page).to have_content("Filter results by selecting a filter on the side bar of the homepage.")
+      expect(page).to have_content("Register to bookmark segments.")
+      expect(page).to have_content("Sign in with census if you are a current student for addition content.")
+    end
+  end
+
+  describe 'on admin pages' do
+    it 'can only see a 404' do
+      expect{ visit '/admin/dashboard' }.to raise_error(ActionController::RoutingError)
+    end
+  end
 end
