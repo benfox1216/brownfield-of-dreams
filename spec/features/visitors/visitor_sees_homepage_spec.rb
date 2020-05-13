@@ -40,4 +40,10 @@ describe 'Visitor' do
       expect(page).to have_content("Sign in with census if you are a current student for addition content.")
     end
   end
+
+  describe 'on admin pages' do
+    it 'can only see a 404' do
+      expect{ visit '/admin/dashboard' }.to raise_error(ActionController::RoutingError)
+    end
+  end
 end
