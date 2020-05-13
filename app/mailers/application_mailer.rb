@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'welcome@turingvideotutorials.com'
+  default from: 'no-reply@turingvideotutorials.io'
   layout 'mailer'
 end
