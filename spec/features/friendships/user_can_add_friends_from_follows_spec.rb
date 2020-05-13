@@ -91,9 +91,7 @@ describe 'A user can create friendships with ' do
 
     within ".friends" do
       expect(page).to have_content(@dione.first_name)
-      expect(page).to have_content(@dione.last_name)
       expect(page).to_not have_content(@mike.first_name)
-      expect(page).to_not have_content(@mike.last_name)
     end
   end
 

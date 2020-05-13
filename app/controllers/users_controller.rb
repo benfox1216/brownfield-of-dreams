@@ -10,7 +10,9 @@ class UsersController < ApplicationController
   def create
     user = User.create(user_params)
     if user.save
+      send_registration_email(user)
       session[:user_id] = user.id
+      flash[:success] = registration_success(user)
       redirect_to dashboard_path
     else
       flash[:error] = 'Username already exists'
@@ -35,6 +37,15 @@ class UsersController < ApplicationController
   def update_github_username
     gh = GithubResults.new(current_user)
     gh.display_github_data('user')
+  end
+
+  def send_registration_email(user)
+    RegistrationEmailerMailer.inform(user).deliver_now
+  end
+
+  def registration_success(user)
+    "Logged in as #{user.first_name} #{user.last_name}.
+     This account has not yet been activated. Please check your email."
   end
 
   def user_params

@@ -1,0 +1,14 @@
+<div class="user-login">
+  <main>
+<h4>Invite a GitHub User</h4>
+  <section>
+    <%= form_tag("/invite", method: :post) do %>
+      <div >
+        <%= label_tag :github_handle %>
+        <%= text_field_tag :github_handle %>
+      </div>
+      <%= submit_tag 'Send Invite', class: "mt2 btn btn-primary mb1 bg-teal" %>
+    <% end %>
+  </section>
+  </main>
+</div>

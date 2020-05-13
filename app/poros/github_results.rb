@@ -18,6 +18,11 @@ class GithubResults
     display_data
   end
 
+  def find_github_user(username)
+    data = call_github_service("users/#{username}", @current_user)
+    data['email']
+  end
+
   private
 
   def call_github_service(uri, user)

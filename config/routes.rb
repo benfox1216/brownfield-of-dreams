@@ -41,6 +41,12 @@ Rails.application.routes.draw do
 
   post '/friend', to: 'friends#create'
 
+  get '/confirmed/:user_id', to: 'confirmation#show'
+  post 'confirmation', to: 'confirmation#update'
+
+  get 'invite', to: 'invites#new'
+  post 'invite', to: 'invites#create'
+
   resources :users, only: [:new, :create, :update, :edit]
 
   resources :tutorials, only: [:show, :index] do
