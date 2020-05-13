@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'As an unregistered user when I try to register I ' do
 
-  it 'Should see a flash message about account activation' do
+  it 'should see a flash message about account activation' do
     visit '/'
     click_link 'Register'
 
@@ -19,5 +19,18 @@ describe 'As an unregistered user when I try to register I ' do
     expect(current_path).to eq('/dashboard')
     expect(page).to have_content('Logged in as Joe Hill.')
     expect(page).to have_content('This account has not yet been activated. Please check your email.')
+  end
+
+  it 'should be directed to activation page when clicking link in email' do
+    user = create(:user)
+
+    visit "/confirmed/#{user.id}"
+
+    expect(page).to have_content('Thank you! Your account is now activated.')
+
+    click_button 'Go to Dashboard'
+
+    expect(current_path).to eq('/dashboard')
+    expect(page).to have_content('Status: Active')
   end
 end
