@@ -6,7 +6,7 @@ class InvitesController < ApplicationController
     if gh_user
       GithubInvitationMailer.inform(current_user[:github_username],
                                     invite_params[:github_handle],
-                                    invitee_email)
+                                    gh_user)
                                     .deliver_now
       flash[:success] = 'Successfully sent invite!'
     else
