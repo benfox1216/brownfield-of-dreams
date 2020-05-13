@@ -20,7 +20,7 @@ class GithubResults
 
   def find_github_user(username)
     data = call_github_service("users/#{username}", @current_user)
-    data["email"]
+    data['email']
   end
 
   private
