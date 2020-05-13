@@ -11,7 +11,8 @@ class Admin::TutorialsController < Admin::BaseController
       flash[:success] = 'Successfully created tutorial.'
       redirect_to "/tutorials/#{tutorial.id}"
     else
-      render :new
+      flash[:error] = 'Your tutorial was not created. Please try again.'
+      redirect_to '/admin/tutorials/new'
     end
   end
 

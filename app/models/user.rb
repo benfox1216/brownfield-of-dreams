@@ -10,6 +10,7 @@ class User < ApplicationRecord
   has_many :friender_users, through: :frienders, source: :user
   validates :email, uniqueness: true, presence: true
   validates :first_name, presence: true
+  validates :password_digest, presence: true
   enum role: { default: 0, admin: 1 }
   has_secure_password
 end
