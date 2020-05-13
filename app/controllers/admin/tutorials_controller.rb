@@ -5,7 +5,7 @@ class Admin::TutorialsController < Admin::BaseController
 
   def create
     tutorial = Tutorial.create(tutorial_params)
-    
+
     if tutorial.save && tutorial_params[:playlist_id]
       yt = YoutubeResults.new
       yt.create_tutorial_playlist(tutorial_params[:playlist_id], tutorial)
@@ -14,7 +14,7 @@ class Admin::TutorialsController < Admin::BaseController
                         #{view_context.link_to 'View it here', redirect_path}."
       redirect_to '/admin/dashboard'
     elsif tutorial.save
-      flash[:success] = "Successfully created tutorial."
+      flash[:success] = 'Successfully created tutorial.'
       redirect_to "/tutorials/#{tutorial.id}"
     else
       render :new

@@ -1,121 +1,204 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: http://127.0.0.1:9515/session/56f3ebe9bb34f6dd6fa40976b0897913/url
+    method: get
+    uri: https://api.github.com/user/repos
     body:
-      encoding: UTF-8
-      string: '{"url":"http://127.0.0.1:54775/"}'
+      encoding: US-ASCII
+      string: ''
     headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
       User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Content-Length:
-      - '33'
+      - Faraday v1.0.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 41a6888f1dcb772101bfe3ef38c52dc3eeb50c73
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 401
+      message: Unauthorized
     headers:
-      Content-Length:
-      - '14'
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 13 May 2020 07:08:39 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
+      Content-Length:
+      - '83'
+      Status:
+      - 401 Unauthorized
+      X-Github-Media-Type:
+      - github.v3; format=json
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '55'
+      X-Ratelimit-Reset:
+      - '1589354548'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval,
+        X-GitHub-Media-Type, Deprecation, Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Github-Request-Id:
+      - C151:40EB:1E8958:35B9C2:5EBB9CF7
     body:
       encoding: UTF-8
-      string: '{"value":null}'
+      string: '{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}'
     http_version: null
-  recorded_at: Tue, 12 May 2020 07:38:45 GMT
+  recorded_at: Wed, 13 May 2020 07:08:39 GMT
 - request:
-    method: post
-    uri: http://127.0.0.1:9515/session/56f3ebe9bb34f6dd6fa40976b0897913/elements
+    method: get
+    uri: https://api.github.com/user/followers
     body:
-      encoding: UTF-8
-      string: '{"using":"xpath","value":".//a[./@href][((((./@id = ''Sign In'') or
-        (normalize-space(string(.)) = ''Sign In'')) or (./@title = ''Sign In'')) or
-        .//img[(./@alt = ''Sign In'')])] | .//input[((((./@type = ''submit'') or (./@type
-        = ''reset'')) or (./@type = ''image'')) or (./@type = ''button''))][((((./@id
-        = ''Sign In'') or (./@name = ''Sign In'')) or (./@value = ''Sign In'')) or
-        (./@title = ''Sign In''))] | .//input[(./@type = ''image'')][(./@alt = ''Sign
-        In'')] | .//button[((((((./@id = ''Sign In'') or (./@name = ''Sign In''))
-        or (./@value = ''Sign In'')) or (./@title = ''Sign In'')) or (normalize-space(string(.))
-        = ''Sign In'')) or .//img[(./@alt = ''Sign In'')])] | .//input[(./@type =
-        ''image'')][(./@alt = ''Sign In'')]"}'
+      encoding: US-ASCII
+      string: ''
     headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
       User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Content-Length:
-      - '687'
+      - Faraday v1.0.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 41a6888f1dcb772101bfe3ef38c52dc3eeb50c73
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 401
+      message: Unauthorized
     headers:
-      Content-Length:
-      - '12'
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 13 May 2020 07:08:39 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
+      Content-Length:
+      - '83'
+      Status:
+      - 401 Unauthorized
+      X-Github-Media-Type:
+      - github.v3; format=json
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '54'
+      X-Ratelimit-Reset:
+      - '1589354548'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval,
+        X-GitHub-Media-Type, Deprecation, Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Github-Request-Id:
+      - C152:5E1E:31C621:569557:5EBB9CF7
     body:
       encoding: UTF-8
-      string: '{"value":[]}'
+      string: '{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}'
     http_version: null
-  recorded_at: Tue, 12 May 2020 07:38:45 GMT
+  recorded_at: Wed, 13 May 2020 07:08:39 GMT
 - request:
-    method: post
-    uri: http://127.0.0.1:9515/session/56f3ebe9bb34f6dd6fa40976b0897913/elements
+    method: get
+    uri: https://api.github.com/user/following
     body:
-      encoding: UTF-8
-      string: '{"using":"xpath","value":".//a[./@href][((((./@id = ''Sign In'') or
-        contains(normalize-space(string(.)), ''Sign In'')) or contains(./@title, ''Sign
-        In'')) or .//img[contains(./@alt, ''Sign In'')])] | .//input[((((./@type =
-        ''submit'') or (./@type = ''reset'')) or (./@type = ''image'')) or (./@type
-        = ''button''))][((((./@id = ''Sign In'') or (./@name = ''Sign In'')) or contains(./@value,
-        ''Sign In'')) or contains(./@title, ''Sign In''))] | .//input[(./@type = ''image'')][contains(./@alt,
-        ''Sign In'')] | .//button[((((((./@id = ''Sign In'') or (./@name = ''Sign
-        In'')) or contains(./@value, ''Sign In'')) or contains(./@title, ''Sign In''))
-        or contains(normalize-space(string(.)), ''Sign In'')) or .//img[contains(./@alt,
-        ''Sign In'')])] | .//input[(./@type = ''image'')][contains(./@alt, ''Sign
-        In'')]"}'
+      encoding: US-ASCII
+      string: ''
     headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
       User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Content-Length:
-      - '764'
+      - Faraday v1.0.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 41a6888f1dcb772101bfe3ef38c52dc3eeb50c73
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 401
+      message: Unauthorized
     headers:
-      Content-Length:
-      - '12'
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 13 May 2020 07:08:40 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
+      Content-Length:
+      - '83'
+      Status:
+      - 401 Unauthorized
+      X-Github-Media-Type:
+      - github.v3; format=json
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '53'
+      X-Ratelimit-Reset:
+      - '1589354548'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval,
+        X-GitHub-Media-Type, Deprecation, Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Github-Request-Id:
+      - C153:5B38:333973:58B5EE:5EBB9CF7
     body:
       encoding: UTF-8
-      string: '{"value":[]}'
+      string: '{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}'
     http_version: null
-  recorded_at: Tue, 12 May 2020 07:38:45 GMT
+  recorded_at: Wed, 13 May 2020 07:08:40 GMT
 recorded_with: VCR 5.1.0
