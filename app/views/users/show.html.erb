@@ -59,5 +59,19 @@
 
   <section>
     <h1>Bookmarked Segments</h1>
+    <% if current_user.user_videos %>
+      <% current_user.user_videos.tutorials_with_videos.each do |tutorial| %>
+        <section class="tutorial-<%= tutorial.id %>">
+        <h2> <%= tutorial.title %> </h2>
+        <% tutorial.videos.each do |video| %>
+          <ul>
+            <% if video.user_videos != [] %>
+              <li> <%= link_to "#{video.title}", "/tutorials/#{tutorial.id}" %> </li>
+            <% end %>
+          </ul>
+        <% end %>
+        </section>
+      <% end %>
+    <% end %>
   </section>
 </section>

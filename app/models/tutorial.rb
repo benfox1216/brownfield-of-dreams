@@ -28,4 +28,12 @@ class Tutorial < ApplicationRecord
   def self.all_videos(page)
     Tutorial.all.paginate(page: page, per_page: 5)
   end
+  
+  def find_user_videos
+    videos.map do |video|
+      if video.user_videos
+        video
+      end
+    end
+  end
 end
